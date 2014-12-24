@@ -9,11 +9,15 @@
 /* Begin PBXBuildFile section */
 		1126F7B81A43735C000176F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1126F7B71A43735C000176F8 /* AppDelegate.swift */; };
 		1126F7BB1A43735C000176F8 /* RingOfFire.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1126F7B91A43735C000176F8 /* RingOfFire.xcdatamodeld */; };
-		1126F7BD1A43735C000176F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1126F7BC1A43735C000176F8 /* ViewController.swift */; };
+		1126F7BD1A43735C000176F8 /* ShuffleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1126F7BC1A43735C000176F8 /* ShuffleViewController.swift */; };
 		1126F7C01A43735C000176F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1126F7BE1A43735C000176F8 /* Main.storyboard */; };
 		1126F7C21A43735C000176F8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1126F7C11A43735C000176F8 /* Images.xcassets */; };
 		1126F7C51A43735C000176F8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1126F7C31A43735C000176F8 /* LaunchScreen.xib */; };
 		1126F7D11A43735C000176F8 /* RingOfFireTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1126F7D01A43735C000176F8 /* RingOfFireTests.swift */; };
+		118156361A4A428A006F655D /* SwipeToShuffleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118156351A4A428A006F655D /* SwipeToShuffleViewController.swift */; };
+		118156381A4A4469006F655D /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118156371A4A4469006F655D /* CardViewController.swift */; };
+		1181563B1A4A4503006F655D /* InstructionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1181563A1A4A4503006F655D /* InstructionViewController.swift */; };
+		1181563D1A4A464C006F655D /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1181563C1A4A464C006F655D /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,13 +35,17 @@
 		1126F7B61A43735C000176F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1126F7B71A43735C000176F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1126F7BA1A43735C000176F8 /* RingOfFire.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RingOfFire.xcdatamodel; sourceTree = "<group>"; };
-		1126F7BC1A43735C000176F8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1126F7BC1A43735C000176F8 /* ShuffleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuffleViewController.swift; sourceTree = "<group>"; };
 		1126F7BF1A43735C000176F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1126F7C11A43735C000176F8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1126F7C41A43735C000176F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		1126F7CA1A43735C000176F8 /* RingOfFireTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RingOfFireTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1126F7CF1A43735C000176F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1126F7D01A43735C000176F8 /* RingOfFireTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingOfFireTests.swift; sourceTree = "<group>"; };
+		118156351A4A428A006F655D /* SwipeToShuffleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeToShuffleViewController.swift; sourceTree = "<group>"; };
+		118156371A4A4469006F655D /* CardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
+		1181563A1A4A4503006F655D /* InstructionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstructionViewController.swift; sourceTree = "<group>"; };
+		1181563C1A4A464C006F655D /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				1126F7B71A43735C000176F8 /* AppDelegate.swift */,
-				1126F7BC1A43735C000176F8 /* ViewController.swift */,
+				118156391A4A44A9006F655D /* ViewControllers */,
 				1126F7BE1A43735C000176F8 /* Main.storyboard */,
 				1126F7C11A43735C000176F8 /* Images.xcassets */,
 				1126F7C31A43735C000176F8 /* LaunchScreen.xib */,
@@ -113,6 +121,18 @@
 				1126F7CF1A43735C000176F8 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		118156391A4A44A9006F655D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				118156371A4A4469006F655D /* CardViewController.swift */,
+				1181563C1A4A464C006F655D /* SettingsViewController.swift */,
+				118156351A4A428A006F655D /* SwipeToShuffleViewController.swift */,
+				1126F7BC1A43735C000176F8 /* ShuffleViewController.swift */,
+				1181563A1A4A4503006F655D /* InstructionViewController.swift */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,8 +236,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1126F7BD1A43735C000176F8 /* ViewController.swift in Sources */,
+				118156361A4A428A006F655D /* SwipeToShuffleViewController.swift in Sources */,
+				1126F7BD1A43735C000176F8 /* ShuffleViewController.swift in Sources */,
+				1181563D1A4A464C006F655D /* SettingsViewController.swift in Sources */,
 				1126F7BB1A43735C000176F8 /* RingOfFire.xcdatamodeld in Sources */,
+				1181563B1A4A4503006F655D /* InstructionViewController.swift in Sources */,
+				118156381A4A4469006F655D /* CardViewController.swift in Sources */,
 				1126F7B81A43735C000176F8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -410,6 +434,7 @@
 				1126F7D61A43735C000176F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1126F7D71A43735C000176F8 /* Build configuration list for PBXNativeTarget "RingOfFireTests" */ = {
 			isa = XCConfigurationList;
@@ -418,6 +443,7 @@
 				1126F7D91A43735C000176F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
