@@ -42,9 +42,18 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="up" id="HuP-5M-VTj" userLabel="Swipe Up Gesture Recognizer"/>
-                <tapGestureRecognizer id="CtG-aD-Okz"/>
+                <swipeGestureRecognizer direction="up" id="HuP-5M-VTj" userLabel="Swipe Up Gesture Recognizer">
+                    <connections>
+                        <segue destination="m1W-BJ-Rai" kind="show" id="cTT-Nj-SsP"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <tapGestureRecognizer id="CtG-aD-Okz">
+                    <connections>
+                        <segue destination="F3t-ZI-Ki9" kind="show" id="1tZ-3e-WQ0"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="312" y="105.75"/>
         </scene>
         <!--Swipe To Shuffle View Controller-->
         <scene sceneID="csq-tt-Pjl">
@@ -121,11 +130,23 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Gy-OO-rXk" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="06e-bO-Lar" userLabel="Swipe Right Gesture Recognizer"/>
-                <swipeGestureRecognizer direction="left" id="vJd-Jw-eZg" userLabel="Swipe Left Gesture Recognizer"/>
-                <swipeGestureRecognizer direction="down" id="UKN-i3-sNH" userLabel="Swipe Down Gesture Recognizer"/>
+                <swipeGestureRecognizer direction="right" id="06e-bO-Lar" userLabel="Swipe Right Gesture Recognizer">
+                    <connections>
+                        <segue destination="e15-nk-I4h" kind="show" id="Jwq-cr-fhB"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="vJd-Jw-eZg" userLabel="Swipe Left Gesture Recognizer">
+                    <connections>
+                        <segue destination="e15-nk-I4h" kind="show" id="fZB-2o-AoI"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="UKN-i3-sNH" userLabel="Swipe Down Gesture Recognizer">
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="show" id="OG2-7B-Wpg"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="241.5" y="1020"/>
+            <point key="canvasLocation" x="-301.5" y="888"/>
         </scene>
         <!--Shuffle View Controller-->
         <scene sceneID="o4D-KU-ubi">
@@ -161,7 +182,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="faX-do-Ug7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1129.5" y="895.5"/>
+            <point key="canvasLocation" x="448.5" y="883.5"/>
         </scene>
         <!--Settings View Controller-->
         <scene sceneID="Cch-nX-LvF">
@@ -179,7 +200,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pKd-sb-inW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1966.5" y="882"/>
+            <point key="canvasLocation" x="1588.5" y="2035.5"/>
         </scene>
         <!--Instruction View Controller-->
         <scene sceneID="ehC-gG-5I6">
@@ -225,9 +246,17 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="POA-Ac-tK9" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="fp6-Vs-Iq2"/>
+                <tapGestureRecognizer id="fp6-Vs-Iq2">
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="show" id="wvq-Ze-HSo"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1174.5" y="138.75"/>
+            <point key="canvasLocation" x="1117.5" y="105.75"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="OG2-7B-Wpg"/>
+        <segue reference="fZB-2o-AoI"/>
+    </inferredMetricsTieBreakers>
 </document>
