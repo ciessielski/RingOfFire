@@ -8,7 +8,7 @@
         <!--CardViewController-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController title="CardViewController" id="vXZ-lx-hvc" customClass="CardViewController" customModule="RingOfFire" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CardViewController" title="CardViewController" id="vXZ-lx-hvc" customClass="CardViewController" customModule="RingOfFire" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -89,6 +89,9 @@
                                 <state key="normal" title="Settings">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Pkl-37-KhO" kind="show" id="o2W-sp-bpm"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;-  swipe to shuffle  -&gt;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r1w-kO-UJk">
                                 <rect key="frame" x="150" y="500" width="300" height="21"/>
@@ -121,12 +124,12 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Gy-OO-rXk" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="right" id="06e-bO-Lar" userLabel="Swipe Right Gesture Recognizer">
                     <connections>
-                        <segue destination="e15-nk-I4h" kind="show" id="Jwq-cr-fhB"/>
+                        <segue destination="e15-nk-I4h" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="Jwq-cr-fhB"/>
                     </connections>
                 </swipeGestureRecognizer>
                 <swipeGestureRecognizer direction="left" id="vJd-Jw-eZg" userLabel="Swipe Left Gesture Recognizer">
                     <connections>
-                        <segue destination="e15-nk-I4h" kind="show" id="fZB-2o-AoI"/>
+                        <segue destination="e15-nk-I4h" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="fZB-2o-AoI"/>
                     </connections>
                 </swipeGestureRecognizer>
                 <swipeGestureRecognizer direction="down" id="UKN-i3-sNH" userLabel="Swipe Down Gesture Recognizer">
@@ -249,7 +252,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Jwq-cr-fhB"/>
-        <segue reference="Bs7-Iq-X07"/>
+        <segue reference="OG2-7B-Wpg"/>
+        <segue reference="fZB-2o-AoI"/>
     </inferredMetricsTieBreakers>
 </document>
