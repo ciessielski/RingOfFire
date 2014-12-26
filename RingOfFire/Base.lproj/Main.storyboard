@@ -78,15 +78,9 @@
                                     <rect key="frame" x="150" y="175" width="300" height="450"/>
                                 </variation>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a6Q-GF-GJ5">
-                                <rect key="frame" x="16" y="562" width="30" height="30"/>
-                                <state key="normal" title="?">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L2a-mt-Ngm">
-                                <rect key="frame" x="527" y="562" width="57" height="30"/>
-                                <state key="normal" title="Settings">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L2a-mt-Ngm">
+                                <rect key="frame" x="561" y="562" width="30" height="30"/>
+                                <state key="normal" image="SettingsButton">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -99,15 +93,21 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a6Q-GF-GJ5">
+                                <rect key="frame" x="9" y="562" width="30" height="30"/>
+                                <state key="normal" image="InfoButton">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.40000000600000002" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="a6Q-GF-GJ5" firstAttribute="baseline" secondItem="L2a-mt-Ngm" secondAttribute="baseline" id="37E-lz-acD"/>
                             <constraint firstItem="cOi-22-dcw" firstAttribute="centerX" secondItem="JM7-UK-vi3" secondAttribute="centerX" id="6gR-kY-l4I"/>
-                            <constraint firstItem="L2a-mt-Ngm" firstAttribute="trailing" secondItem="JM7-UK-vi3" secondAttribute="trailingMargin" id="7vy-pq-JwI"/>
+                            <constraint firstItem="L2a-mt-Ngm" firstAttribute="trailing" secondItem="JM7-UK-vi3" secondAttribute="trailingMargin" constant="7" id="7vy-pq-JwI"/>
                             <constraint firstItem="z8H-0o-zSq" firstAttribute="top" secondItem="a6Q-GF-GJ5" secondAttribute="bottom" constant="8" symbolic="YES" id="86D-LA-wr8"/>
-                            <constraint firstItem="a6Q-GF-GJ5" firstAttribute="leading" secondItem="JM7-UK-vi3" secondAttribute="leadingMargin" id="DLe-xL-WUo"/>
+                            <constraint firstItem="a6Q-GF-GJ5" firstAttribute="leading" secondItem="JM7-UK-vi3" secondAttribute="leadingMargin" constant="-7" id="DLe-xL-WUo"/>
                             <constraint firstItem="r1w-kO-UJk" firstAttribute="trailing" secondItem="cOi-22-dcw" secondAttribute="trailing" id="Iv3-8b-FpV"/>
                             <constraint firstItem="r1w-kO-UJk" firstAttribute="top" secondItem="cOi-22-dcw" secondAttribute="bottom" constant="42" id="O5Z-P1-SUo"/>
                             <constraint firstItem="r1w-kO-UJk" firstAttribute="leading" secondItem="cOi-22-dcw" secondAttribute="leading" id="jfS-C6-ZPR"/>
@@ -251,6 +251,10 @@
             <point key="canvasLocation" x="1117" y="105"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="InfoButton" width="30" height="30"/>
+        <image name="SettingsButton" width="30" height="30"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="OG2-7B-Wpg"/>
         <segue reference="fZB-2o-AoI"/>
