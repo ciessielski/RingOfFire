@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="m1W-BJ-Rai">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="m1W-BJ-Rai">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--CardViewController-->
@@ -16,8 +17,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vBW-Qc-E5o">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vBW-Qc-E5o">
+                                <rect key="frame" x="25" y="25" width="550" height="550"/>
+                                <color key="backgroundColor" red="1" green="0.45012257649999998" blue="0.76796357079999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="180" y="336" width="240" height="128"/>
+                                </variation>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="0.0" y="0.0" width="0.0" height="0.0"/>
                                 </variation>
@@ -25,7 +30,12 @@
                         </subviews>
                         <color key="backgroundColor" red="0.90842366220000004" green="0.1208788354" blue="0.081431492359999996" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
-                        <variation key="heightClass=regular-widthClass=compact"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="vBW-Qc-E5o" secondAttribute="centerX" id="2H3-4K-Dvc"/>
+                            <constraint firstItem="vBW-Qc-E5o" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="25" id="FGL-ha-hli"/>
+                            <constraint firstItem="vBW-Qc-E5o" firstAttribute="bottom" secondItem="2fi-mo-0CV" secondAttribute="top" constant="-25" id="Yty-0K-4om"/>
+                            <constraint firstAttribute="centerY" secondItem="vBW-Qc-E5o" secondAttribute="centerY" id="bur-ga-vUO"/>
+                        </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="HuP-5M-VTj" appends="YES" id="Fee-ZG-OQJ"/>
                             <outletCollection property="gestureRecognizers" destination="CtG-aD-Okz" appends="YES" id="2UQ-Ob-F8Y"/>
@@ -44,7 +54,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="312" y="105.75"/>
+            <point key="canvasLocation" x="312" y="105"/>
         </scene>
         <!--Swipe To Shuffle View Controller-->
         <scene sceneID="csq-tt-Pjl">
@@ -58,46 +68,49 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&lt;-    Swipe to shuffle    -&gt;" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bd0-AH-7Nd">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="108" y="694" width="195" height="21"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cOi-22-dcw">
+                                <rect key="frame" x="150" y="58" width="300" height="400"/>
+                                <color key="backgroundColor" red="1" green="0.45012257649999998" blue="0.76796357079999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="v86-oy-0oS"/>
+                                </constraints>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="150" y="175" width="300" height="450"/>
                                 </variation>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nBs-bu-IQq">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Button">
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a6Q-GF-GJ5">
+                                <rect key="frame" x="16" y="562" width="30" height="30"/>
+                                <state key="normal" title="?">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="762" width="46" height="30"/>
-                                </variation>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ws-E8-xJT">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L2a-mt-Ngm">
+                                <rect key="frame" x="527" y="562" width="57" height="30"/>
                                 <state key="normal" title="Settings">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="333" y="762" width="57" height="30"/>
-                                </variation>
-                                <connections>
-                                    <segue destination="Pkl-37-KhO" kind="show" id="6OD-BL-sNG"/>
-                                </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jCm-qx-Ejp">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="0.0" height="0.0"/>
-                                </variation>
-                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;-  swipe to shuffle  -&gt;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r1w-kO-UJk">
+                                <rect key="frame" x="150" y="500" width="300" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.40000000600000002" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
-                        <variation key="heightClass=regular-widthClass=compact"/>
+                        <constraints>
+                            <constraint firstItem="a6Q-GF-GJ5" firstAttribute="baseline" secondItem="L2a-mt-Ngm" secondAttribute="baseline" id="37E-lz-acD"/>
+                            <constraint firstItem="cOi-22-dcw" firstAttribute="centerX" secondItem="JM7-UK-vi3" secondAttribute="centerX" id="6gR-kY-l4I"/>
+                            <constraint firstItem="L2a-mt-Ngm" firstAttribute="trailing" secondItem="JM7-UK-vi3" secondAttribute="trailingMargin" id="7vy-pq-JwI"/>
+                            <constraint firstItem="z8H-0o-zSq" firstAttribute="top" secondItem="a6Q-GF-GJ5" secondAttribute="bottom" constant="8" symbolic="YES" id="86D-LA-wr8"/>
+                            <constraint firstItem="a6Q-GF-GJ5" firstAttribute="leading" secondItem="JM7-UK-vi3" secondAttribute="leadingMargin" id="DLe-xL-WUo"/>
+                            <constraint firstItem="r1w-kO-UJk" firstAttribute="trailing" secondItem="cOi-22-dcw" secondAttribute="trailing" id="Iv3-8b-FpV"/>
+                            <constraint firstItem="r1w-kO-UJk" firstAttribute="top" secondItem="cOi-22-dcw" secondAttribute="bottom" constant="42" id="O5Z-P1-SUo"/>
+                            <constraint firstItem="r1w-kO-UJk" firstAttribute="leading" secondItem="cOi-22-dcw" secondAttribute="leading" id="jfS-C6-ZPR"/>
+                            <constraint firstItem="cOi-22-dcw" firstAttribute="top" secondItem="3ya-M3-3DX" secondAttribute="bottom" constant="38" id="kxs-1B-9xj"/>
+                            <constraint firstItem="z8H-0o-zSq" firstAttribute="top" secondItem="cOi-22-dcw" secondAttribute="bottom" constant="142" id="rcu-89-T3D"/>
+                        </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="06e-bO-Lar" appends="YES" id="O3W-xZ-dqI"/>
                             <outletCollection property="gestureRecognizers" destination="vJd-Jw-eZg" appends="YES" id="cKl-2v-eBR"/>
@@ -122,7 +135,7 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-301.5" y="888"/>
+            <point key="canvasLocation" x="-306" y="940"/>
         </scene>
         <!--Shuffle View Controller-->
         <scene sceneID="o4D-KU-ubi">
@@ -136,20 +149,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZcP-A8-vGV">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZcP-A8-vGV">
+                                <rect key="frame" x="25" y="25" width="550" height="550"/>
+                                <color key="backgroundColor" red="1" green="0.45012257649999998" blue="0.76796357079999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                </variation>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="0.0" y="0.0" width="0.0" height="0.0"/>
                                 </variation>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        <variation key="heightClass=regular-widthClass=compact"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="ZcP-A8-vGV" secondAttribute="centerY" id="2bg-3D-XD7"/>
+                            <constraint firstItem="ZcP-A8-vGV" firstAttribute="leading" secondItem="tvu-1C-6Gm" secondAttribute="leading" constant="25" id="9WO-rO-iMd"/>
+                            <constraint firstItem="ZcP-A8-vGV" firstAttribute="bottom" secondItem="8yd-S1-kFT" secondAttribute="top" constant="-25" id="RfM-fB-8E2"/>
+                            <constraint firstAttribute="centerX" secondItem="ZcP-A8-vGV" secondAttribute="centerX" id="Zlg-mQ-FMJ"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="faX-do-Ug7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="448.5" y="883.5"/>
+            <point key="canvasLocation" x="448" y="883"/>
         </scene>
         <!--Settings View Controller-->
         <scene sceneID="Cch-nX-LvF">
@@ -181,14 +203,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lMA-zj-57T">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lMA-zj-57T">
+                                <rect key="frame" x="25" y="25" width="550" height="550"/>
+                                <color key="backgroundColor" red="0.99680536610000003" green="0.40053212199999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                </variation>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="0.0" y="0.0" width="0.0" height="0.0"/>
                                 </variation>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Samlple instruction for card." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fqJ-mn-riI">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Samlple instruction for card." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fqJ-mn-riI">
+                                <rect key="frame" x="192" y="290" width="217" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -198,7 +224,14 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
-                        <variation key="heightClass=regular-widthClass=compact"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="fqJ-mn-riI" secondAttribute="centerX" id="9Qt-Yh-7lG"/>
+                            <constraint firstAttribute="centerY" secondItem="lMA-zj-57T" secondAttribute="centerY" id="QWz-w5-nnD"/>
+                            <constraint firstItem="lMA-zj-57T" firstAttribute="bottom" secondItem="0ur-WJ-JdG" secondAttribute="top" constant="-25" id="UZ1-da-6kV"/>
+                            <constraint firstAttribute="centerY" secondItem="fqJ-mn-riI" secondAttribute="centerY" id="XLT-so-XYG"/>
+                            <constraint firstItem="lMA-zj-57T" firstAttribute="leading" secondItem="236-hQ-Dyl" secondAttribute="leading" constant="25" id="Y5i-vp-apU"/>
+                            <constraint firstAttribute="centerX" secondItem="lMA-zj-57T" secondAttribute="centerX" id="geJ-Ut-ZKe"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="POA-Ac-tK9" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -208,11 +241,11 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1117.5" y="105.75"/>
+            <point key="canvasLocation" x="1117" y="105"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="OG2-7B-Wpg"/>
-        <segue reference="fZB-2o-AoI"/>
+        <segue reference="Jwq-cr-fhB"/>
     </inferredMetricsTieBreakers>
 </document>
