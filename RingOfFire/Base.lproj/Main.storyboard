@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vBW-Qc-E5o">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DrinkLikeAKing" translatesAutoresizingMaskIntoConstraints="NO" id="vBW-Qc-E5o">
                                 <rect key="frame" x="25" y="25" width="550" height="550"/>
                                 <color key="backgroundColor" red="1" green="0.45012257649999998" blue="0.76796357079999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <variation key="heightClass=regular" fixedFrame="YES">
@@ -28,7 +28,7 @@
                                 </variation>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.90842366220000004" green="0.1208788354" blue="0.081431492359999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="vBW-Qc-E5o" secondAttribute="centerX" id="2H3-4K-Dvc"/>
@@ -70,7 +70,6 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cOi-22-dcw">
                                 <rect key="frame" x="150" y="58" width="300" height="400"/>
-                                <color key="backgroundColor" red="1" green="0.45012257649999998" blue="0.76796357079999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="v86-oy-0oS"/>
                                 </constraints>
@@ -163,7 +162,7 @@
                                 </variation>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerY" secondItem="ZcP-A8-vGV" secondAttribute="centerY" id="2bg-3D-XD7"/>
                             <constraint firstItem="ZcP-A8-vGV" firstAttribute="leading" secondItem="tvu-1C-6Gm" secondAttribute="leading" constant="25" id="9WO-rO-iMd"/>
@@ -206,9 +205,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lMA-zj-57T">
+                            <imageView userInteractionEnabled="NO" alpha="0.10000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DrinkLikeAKing" translatesAutoresizingMaskIntoConstraints="NO" id="lMA-zj-57T">
                                 <rect key="frame" x="25" y="25" width="550" height="550"/>
-                                <color key="backgroundColor" red="0.99680536610000003" green="0.40053212199999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <variation key="heightClass=regular" fixedFrame="YES">
                                     <rect key="frame" x="0.0" y="0.0" width="0.0" height="0.0"/>
                                 </variation>
@@ -216,30 +215,32 @@
                                     <rect key="frame" x="0.0" y="0.0" width="0.0" height="0.0"/>
                                 </variation>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sample instruction for card." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fqJ-mn-riI">
-                                <rect key="frame" x="194" y="290" width="213" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="52" y="316" width="306" height="132"/>
-                                </variation>
-                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="JnK-5T-MQ5">
+                                <rect key="frame" x="27" y="154" width="546" height="292"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="fqJ-mn-riI" secondAttribute="centerX" id="9Qt-Yh-7lG"/>
+                            <constraint firstItem="JnK-5T-MQ5" firstAttribute="top" secondItem="iH6-lb-xYK" secondAttribute="bottom" constant="134" id="3wY-1r-mqc"/>
+                            <constraint firstItem="JnK-5T-MQ5" firstAttribute="leading" secondItem="236-hQ-Dyl" secondAttribute="leadingMargin" constant="11" id="JgB-nF-Rjj"/>
                             <constraint firstAttribute="centerY" secondItem="lMA-zj-57T" secondAttribute="centerY" id="QWz-w5-nnD"/>
                             <constraint firstItem="lMA-zj-57T" firstAttribute="bottom" secondItem="0ur-WJ-JdG" secondAttribute="top" constant="-25" id="UZ1-da-6kV"/>
-                            <constraint firstAttribute="centerY" secondItem="fqJ-mn-riI" secondAttribute="centerY" id="XLT-so-XYG"/>
                             <constraint firstItem="lMA-zj-57T" firstAttribute="leading" secondItem="236-hQ-Dyl" secondAttribute="leading" constant="25" id="Y5i-vp-apU"/>
+                            <constraint firstItem="0ur-WJ-JdG" firstAttribute="top" secondItem="JnK-5T-MQ5" secondAttribute="bottom" constant="154" id="YsF-xr-dC2"/>
                             <constraint firstAttribute="centerX" secondItem="lMA-zj-57T" secondAttribute="centerX" id="geJ-Ut-ZKe"/>
+                            <constraint firstItem="JnK-5T-MQ5" firstAttribute="centerX" secondItem="lMA-zj-57T" secondAttribute="centerX" id="rmB-Pk-7zG"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="rbr-AE-rBq" appends="YES" id="MnS-yY-f0h"/>
                         </connections>
                     </view>
+                    <connections>
+                        <outlet property="instructionTextView" destination="JnK-5T-MQ5" id="AbO-Kh-wQ7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="POA-Ac-tK9" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="rbr-AE-rBq">
@@ -248,15 +249,16 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1117" y="105"/>
+            <point key="canvasLocation" x="1117" y="128"/>
         </scene>
     </scenes>
     <resources>
+        <image name="DrinkLikeAKing" width="248" height="346"/>
         <image name="InfoButton" width="30" height="30"/>
         <image name="SettingsButton" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="OG2-7B-Wpg"/>
         <segue reference="fZB-2o-AoI"/>
+        <segue reference="Bs7-Iq-X07"/>
     </inferredMetricsTieBreakers>
 </document>
