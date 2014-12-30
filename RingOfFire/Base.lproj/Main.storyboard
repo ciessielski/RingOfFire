@@ -191,7 +191,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pKd-sb-inW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1588.5" y="2035.5"/>
+            <point key="canvasLocation" x="1530" y="1699"/>
         </scene>
         <!--Instruction View Controller-->
         <scene sceneID="ehC-gG-5I6">
@@ -216,29 +216,39 @@
                                 </variation>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="JnK-5T-MQ5">
-                                <rect key="frame" x="27" y="154" width="546" height="292"/>
+                                <rect key="frame" x="27" y="192" width="546" height="292"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ya4-x9-oly">
+                                <rect key="frame" x="279" y="139" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="JnK-5T-MQ5" firstAttribute="top" secondItem="iH6-lb-xYK" secondAttribute="bottom" constant="134" id="3wY-1r-mqc"/>
-                            <constraint firstItem="JnK-5T-MQ5" firstAttribute="leading" secondItem="236-hQ-Dyl" secondAttribute="leadingMargin" constant="11" id="JgB-nF-Rjj"/>
-                            <constraint firstAttribute="centerY" secondItem="lMA-zj-57T" secondAttribute="centerY" id="QWz-w5-nnD"/>
-                            <constraint firstItem="lMA-zj-57T" firstAttribute="bottom" secondItem="0ur-WJ-JdG" secondAttribute="top" constant="-25" id="UZ1-da-6kV"/>
-                            <constraint firstItem="lMA-zj-57T" firstAttribute="leading" secondItem="236-hQ-Dyl" secondAttribute="leading" constant="25" id="Y5i-vp-apU"/>
-                            <constraint firstItem="0ur-WJ-JdG" firstAttribute="top" secondItem="JnK-5T-MQ5" secondAttribute="bottom" constant="154" id="YsF-xr-dC2"/>
-                            <constraint firstAttribute="centerX" secondItem="lMA-zj-57T" secondAttribute="centerX" id="geJ-Ut-ZKe"/>
-                            <constraint firstItem="JnK-5T-MQ5" firstAttribute="centerX" secondItem="lMA-zj-57T" secondAttribute="centerX" id="rmB-Pk-7zG"/>
+                            <constraint firstItem="Ya4-x9-oly" firstAttribute="centerX" secondItem="236-hQ-Dyl" secondAttribute="centerX" id="7Gm-bd-WTc"/>
+                            <constraint firstItem="JnK-5T-MQ5" firstAttribute="top" secondItem="Ya4-x9-oly" secondAttribute="bottom" constant="32" id="7pV-W7-PHf"/>
+                            <constraint firstItem="Ya4-x9-oly" firstAttribute="centerX" secondItem="lMA-zj-57T" secondAttribute="centerX" id="LsD-zM-W78"/>
+                            <constraint firstItem="Ya4-x9-oly" firstAttribute="top" secondItem="iH6-lb-xYK" secondAttribute="bottom" constant="119" id="Rsp-z0-rse"/>
+                            <constraint firstItem="lMA-zj-57T" firstAttribute="top" secondItem="iH6-lb-xYK" secondAttribute="bottom" constant="5" id="VYE-J5-xWj"/>
+                            <constraint firstItem="lMA-zj-57T" firstAttribute="centerY" secondItem="236-hQ-Dyl" secondAttribute="centerY" id="lXb-AZ-nCX"/>
+                            <constraint firstItem="lMA-zj-57T" firstAttribute="leading" secondItem="236-hQ-Dyl" secondAttribute="leadingMargin" constant="9" id="nRk-H8-byS"/>
+                            <constraint firstAttribute="centerY" secondItem="JnK-5T-MQ5" secondAttribute="centerY" constant="-38" id="py9-Je-kXn"/>
+                            <constraint firstItem="JnK-5T-MQ5" firstAttribute="leading" secondItem="236-hQ-Dyl" secondAttribute="leadingMargin" constant="11" id="tA4-S8-aNv"/>
+                            <constraint firstAttribute="centerX" secondItem="JnK-5T-MQ5" secondAttribute="centerX" id="xYp-Lb-UIQ"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="rbr-AE-rBq" appends="YES" id="MnS-yY-f0h"/>
+                            <outletCollection property="gestureRecognizers" destination="6Kb-tN-6iG" appends="YES" id="Iux-7G-D39"/>
                         </connections>
                     </view>
                     <connections>
+                        <outlet property="cardTitle" destination="Ya4-x9-oly" id="238-z6-kCb"/>
                         <outlet property="instructionTextView" destination="JnK-5T-MQ5" id="AbO-Kh-wQ7"/>
                     </connections>
                 </viewController>
@@ -248,6 +258,11 @@
                         <segue destination="vXZ-lx-hvc" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="Bs7-Iq-X07"/>
                     </connections>
                 </tapGestureRecognizer>
+                <swipeGestureRecognizer direction="up" id="6Kb-tN-6iG">
+                    <connections>
+                        <segue destination="m1W-BJ-Rai" kind="presentation" id="SW8-WT-PXf"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1117" y="128"/>
         </scene>
@@ -258,7 +273,8 @@
         <image name="SettingsButton" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="fZB-2o-AoI"/>
         <segue reference="Bs7-Iq-X07"/>
+        <segue reference="fZB-2o-AoI"/>
+        <segue reference="SW8-WT-PXf"/>
     </inferredMetricsTieBreakers>
 </document>
