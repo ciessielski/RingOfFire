@@ -1,5 +1,5 @@
 //
-//  GamePlay.swift
+//  Gameplay.swift
 //  RingOfFire
 //
 //  Created by Paweł Charatonik on 30.12.2014.
@@ -9,7 +9,7 @@
 import Foundation
 
 class Gameplay {
-    
+       
     var deck: NSMutableArray
     var cardOnTop: NSNumber
 
