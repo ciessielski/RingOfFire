@@ -18,6 +18,7 @@
 		118156381A4A4469006F655D /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118156371A4A4469006F655D /* CardViewController.swift */; };
 		1181563B1A4A4503006F655D /* InstructionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1181563A1A4A4503006F655D /* InstructionViewController.swift */; };
 		1181563D1A4A464C006F655D /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1181563C1A4A464C006F655D /* SettingsViewController.swift */; };
+		9FC977DD1A52411A001E8920 /* Gameplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC977DC1A52411A001E8920 /* Gameplay.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		118156371A4A4469006F655D /* CardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 		1181563A1A4A4503006F655D /* InstructionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstructionViewController.swift; sourceTree = "<group>"; };
 		1181563C1A4A464C006F655D /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		9FC977DC1A52411A001E8920 /* Gameplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gameplay.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				1126F7B71A43735C000176F8 /* AppDelegate.swift */,
+				9FC977DC1A52411A001E8920 /* Gameplay.swift */,
 				118156391A4A44A9006F655D /* ViewControllers */,
 				1126F7BE1A43735C000176F8 /* Main.storyboard */,
 				1126F7C11A43735C000176F8 /* Images.xcassets */,
@@ -238,6 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				118156361A4A428A006F655D /* SwipeToShuffleViewController.swift in Sources */,
+				9FC977DD1A52411A001E8920 /* Gameplay.swift in Sources */,
 				1126F7BD1A43735C000176F8 /* ShuffleViewController.swift in Sources */,
 				1181563D1A4A464C006F655D /* SettingsViewController.swift in Sources */,
 				1126F7BB1A43735C000176F8 /* RingOfFire.xcdatamodeld in Sources */,
