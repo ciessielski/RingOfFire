@@ -184,10 +184,11 @@
 				TargetAttributes = {
 					1126F7B11A43735C000176F8 = {
 						CreatedOnToolsVersion = 6.1;
-						DevelopmentTeam = 4V9FNC79Z9;
+						DevelopmentTeam = PKHAF6RM9S;
 					};
 					1126F7C91A43735C000176F8 = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = PKHAF6RM9S;
 						TestTargetID = 1126F7B11A43735C000176F8;
 					};
 				};
@@ -366,6 +367,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RingOfFire/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -376,6 +378,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RingOfFire/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
