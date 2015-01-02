@@ -13,6 +13,12 @@ class CardViewController: UIViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        var game = Gameplay()
+        for i in 0...57 {
+//            println("Wylosowana karta to \(game.deck[i].title)")
+            
+        }
+        
     }
     
     override func didReceiveMemoryWarning()
