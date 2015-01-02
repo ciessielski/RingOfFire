@@ -9,7 +9,7 @@
 import Foundation
 
 class Gameplay {
-       
+    
     var deck: NSMutableArray
     var cardOnTop: NSNumber
 
@@ -22,4 +22,3 @@ class Gameplay {
     func resetGame(){
     }
 }
-
