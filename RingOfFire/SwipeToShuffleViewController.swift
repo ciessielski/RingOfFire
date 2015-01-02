@@ -10,9 +10,18 @@ import UIKit
 
 class SwipeToShuffleViewController: UIViewController
 {
+    @IBOutlet var swipeToShuffleLabel: UILabel!
+    
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
+
+        
+        UIView.animateWithDuration(1.5, delay: 0, options: .Repeat | .Autoreverse , animations: {self.swipeToShuffleLabel.alpha = 0}, completion: nil)
+    
+
+    
     }
     
     override func didReceiveMemoryWarning()
