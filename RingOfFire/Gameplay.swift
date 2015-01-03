@@ -21,7 +21,7 @@ class Gameplay {
     {
         createDeck()
         assignAttributes()
-//        shuffle()
+        shuffle()
     }
     
     func createDeck() {
@@ -62,16 +62,13 @@ class Gameplay {
     }
     
     func shuffle(){
-        //crashes at half of deck's count. debug
         var tempDeck : Array<Card> = []
-        var times = deck.count-1
-        for i in 0...times { //wykonaj 58 razy (deck.count)
-            let j = Int(arc4random_uniform(UInt32(deck.count-i)))
+        for i in 0...51 { //52 times
+            let j = Int(arc4random_uniform(UInt32(deck.count-1))) // used to be (UInt32(deck.count-i)) heh
             
-            println("jest \(deck.count) elementów, usuwamy el o indeksie \(j)")
-//            println(j)
-//            println(i)
-//            tempDeck.append(deck.removeAtIndex(0))
+//            println("jest \(deck.count) elementów, usuwamy el o indeksie \(j)")
+            tempDeck.append(deck[j])
+            deck.removeAtIndex(j)
             
         }
         

@@ -14,11 +14,11 @@ class CardViewController: UIViewController
     {
         super.viewDidLoad()
         var game = Gameplay()
-        for i in 0...57 {
-//            println("Wylosowana karta to \(game.deck[i].title)")
-            
-        }
-        
+//        for i in 0...51 {
+//           println("Wylosowana karta to \(game.deck[i].title)")
+//
+//        }
+//        
     }
     
     override func didReceiveMemoryWarning()
