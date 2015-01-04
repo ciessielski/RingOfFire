@@ -17,22 +17,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DrinkLikeAKing" translatesAutoresizingMaskIntoConstraints="NO" id="vBW-Qc-E5o">
-                                <rect key="frame" x="25" y="25" width="550" height="550"/>
-                                <color key="backgroundColor" red="1" green="0.45012257649999998" blue="0.76796357079999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="0.0" height="0.0"/>
-                                </variation>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="king" translatesAutoresizingMaskIntoConstraints="NO" id="fzX-ss-Jle">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="vBW-Qc-E5o" secondAttribute="centerX" id="2H3-4K-Dvc"/>
-                            <constraint firstItem="vBW-Qc-E5o" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="25" id="FGL-ha-hli"/>
-                            <constraint firstItem="vBW-Qc-E5o" firstAttribute="bottom" secondItem="2fi-mo-0CV" secondAttribute="top" constant="-25" id="Yty-0K-4om"/>
-                            <constraint firstAttribute="centerY" secondItem="vBW-Qc-E5o" secondAttribute="centerY" id="bur-ga-vUO"/>
+                            <constraint firstAttribute="trailing" secondItem="fzX-ss-Jle" secondAttribute="trailing" id="IrG-ny-uMi"/>
+                            <constraint firstItem="fzX-ss-Jle" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="UAP-63-mGk"/>
+                            <constraint firstItem="fzX-ss-Jle" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="UQH-vt-AY4"/>
+                            <constraint firstItem="fzX-ss-Jle" firstAttribute="bottom" secondItem="2fi-mo-0CV" secondAttribute="top" id="eMU-cA-FU0"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="fzX-ss-Jle"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="IrG-ny-uMi"/>
+                                <exclude reference="UAP-63-mGk"/>
+                                <exclude reference="UQH-vt-AY4"/>
+                                <exclude reference="eMU-cA-FU0"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="fzX-ss-Jle"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="IrG-ny-uMi"/>
+                                <include reference="UAP-63-mGk"/>
+                                <include reference="UQH-vt-AY4"/>
+                                <include reference="eMU-cA-FU0"/>
+                            </mask>
+                        </variation>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="HuP-5M-VTj" appends="YES" id="Fee-ZG-OQJ"/>
                             <outletCollection property="gestureRecognizers" destination="CtG-aD-Okz" appends="YES" id="2UQ-Ob-F8Y"/>
@@ -151,9 +169,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZcP-A8-vGV">
                                 <rect key="frame" x="25" y="25" width="550" height="550"/>
                                 <color key="backgroundColor" red="1" green="0.45012257649999998" blue="0.76796357079999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="0.0" height="0.0"/>
-                                </variation>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -202,9 +217,6 @@
                             <imageView userInteractionEnabled="NO" alpha="0.10000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DrinkLikeAKing" translatesAutoresizingMaskIntoConstraints="NO" id="lMA-zj-57T">
                                 <rect key="frame" x="25" y="25" width="550" height="550"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="0.0" height="0.0"/>
-                                </variation>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="JnK-5T-MQ5">
                                 <rect key="frame" x="27" y="192" width="546" height="292"/>
@@ -259,14 +271,15 @@
         </scene>
     </scenes>
     <resources>
-        <image name="DrinkLikeAKing" width="248" height="346"/>
+        <image name="DrinkLikeAKing" width="320" height="445"/>
         <image name="InfoButton" width="30" height="30"/>
         <image name="SettingsButton" width="30" height="30"/>
         <image name="bucket" width="231" height="380"/>
+        <image name="king" width="320" height="445"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="cTT-Nj-SsP"/>
         <segue reference="Bs7-Iq-X07"/>
-        <segue reference="SW8-WT-PXf"/>
         <segue reference="fZB-2o-AoI"/>
     </inferredMetricsTieBreakers>
 </document>
