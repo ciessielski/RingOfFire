@@ -11,6 +11,8 @@ import UIKit
 class ShuffleViewController: UIViewController
 {
     
+    //start
+    
     func performSegue()
     {
         let vc : UIViewController = self.storyboard?.instantiateViewControllerWithIdentifier("CardViewController") as CardViewController;
