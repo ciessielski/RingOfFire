@@ -11,7 +11,6 @@ import Foundation
 class Gameplay {
     
     var deck: Array<Card> = []
-//    var cardOnTop: NSNumber?
     
     var titlesDictionary = ["castle": "King of the Castle", "categories" : "Categories", "chicks" : "Chicks", "you" : "You Drink", "choose" : "You Choose", "dicks" : "Dicks", "mate" : "Pick a Mate", "heaven" : "Heaven", "fis" : "Fis & Bas", "story" : "Story", "snake" : "Snake Eyes", "king" : "Drink Like a King", "rhyme" : "Rhyme", "tale" : "Tale", "smoke" : "Smoke Break"]
 
@@ -64,20 +63,20 @@ class Gameplay {
     func shuffle(){
         var tempDeck : Array<Card> = []
         for i in 0...51 { //52 times
-            let j = Int(arc4random_uniform(UInt32(deck.count-1))) // used to be (UInt32(deck.count-i)) heh
-            
-//            println("jest \(deck.count) elementów, usuwamy el o indeksie \(j)")
-            tempDeck.append(deck[j])
-            deck.removeAtIndex(j)
+        let j = Int(arc4random_uniform(UInt32(deck.count-1))) // used to be (UInt32(deck.count-i)) heh
+//      println("jest \(deck.count) elementów, usuwamy el o indeksie \(j)")
+        tempDeck.append(deck[j])
+        deck.removeAtIndex(j)
             
         }
-        
-    
-        
         deck = tempDeck
     }
     
     func resetGame(){
+        deck=[]
+        createDeck()
+        assignAttributes()
+        shuffle()
     }
 }
 
