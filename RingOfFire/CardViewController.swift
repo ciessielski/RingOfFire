@@ -12,6 +12,7 @@ class CardViewController: UIViewController
 {
     override func viewDidLoad()
     {
+        
         super.viewDidLoad()
         var game = Gameplay()    // nie w viewdidload 
         for i in 0...51 {
