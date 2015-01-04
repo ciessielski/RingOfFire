@@ -20,7 +20,7 @@ class CardViewController: UIViewController
         for i in 0...game.deck.count-1 {
             println("Wylosowana karta to \(game.deck[i].title)")
         }
-        cardView.image=UIImage(named: "DrinkLikeAKing");
+        cardView.image=UIImage(named: game.deck[0].slug);
         if(game.deck.count > 0){
             game.deck.removeAtIndex(0)
         }
