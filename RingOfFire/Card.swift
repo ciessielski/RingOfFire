@@ -10,14 +10,15 @@ import Foundation
 
 
 
-class Card{
+class Card
+{
 
-//    var type : NSString
     var title : String?
     var instructions : String?
     var slug : String
     
-    init(slug: String) {
+    init(slug: String)
+    {
         self.slug = slug
     }
 
