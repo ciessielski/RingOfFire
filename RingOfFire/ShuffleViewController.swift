@@ -12,6 +12,7 @@ import AVFoundation
 class ShuffleViewController: UIViewController
 {
     
+    
     @IBOutlet weak var shuffleImageView: UIImageView!
     var audioPlayer = AVAudioPlayer()
     
