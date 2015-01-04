@@ -32,19 +32,11 @@ class ShuffleViewController: UIViewController
         super.viewDidLoad()
         
         var alertSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("beat", ofType: "wav")!)
-        println(alertSound)
-        
-        // Removed deprecated use of AVAudioSessionDelegate protocol
-        AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback, error: nil)
-        AVAudioSession.sharedInstance().setActive(true, error: nil)
-        
         var error:NSError?
         audioPlayer = AVAudioPlayer(contentsOfURL: alertSound, error: &error)
         audioPlayer.prepareToPlay()
         audioPlayer.play()
     
-
-        
         shuffleImageView.image = images[index++]
         animateImageView()
         NSTimer.scheduledTimerWithTimeInterval(1.5, target: self, selector:Selector("performSegue"), userInfo: nil, repeats: false)
