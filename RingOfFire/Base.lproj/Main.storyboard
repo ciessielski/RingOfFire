@@ -59,6 +59,9 @@
                             <outletCollection property="gestureRecognizers" destination="CtG-aD-Okz" appends="YES" id="2UQ-Ob-F8Y"/>
                         </connections>
                     </view>
+                    <connections>
+                        <outlet property="cardView" destination="vBW-Qc-E5o" id="gHr-rw-3gS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="up" id="HuP-5M-VTj" userLabel="Swipe Up Gesture Recognizer">
@@ -182,6 +185,9 @@
                             <constraint firstAttribute="centerX" secondItem="ZcP-A8-vGV" secondAttribute="centerX" id="Zlg-mQ-FMJ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="shuffleImageView" destination="ZcP-A8-vGV" id="I4T-ie-uZ6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="faX-do-Ug7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

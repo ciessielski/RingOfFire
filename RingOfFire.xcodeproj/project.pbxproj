@@ -18,6 +18,8 @@
 		118156381A4A4469006F655D /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118156371A4A4469006F655D /* CardViewController.swift */; };
 		1181563B1A4A4503006F655D /* InstructionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1181563A1A4A4503006F655D /* InstructionViewController.swift */; };
 		1181563D1A4A464C006F655D /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1181563C1A4A464C006F655D /* SettingsViewController.swift */; };
+		11E55EC91A59EB8300F89D55 /* beat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 11E55EC81A59EB8300F89D55 /* beat.wav */; };
+		11E55ECB1A59EF1100F89D55 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11E55ECA1A59EF1100F89D55 /* AVFoundation.framework */; };
 		9F59BDDF1A5741C1005954A5 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F59BDDE1A5741C1005954A5 /* Card.swift */; };
 		9FC977DD1A52411A001E8920 /* RingOfFire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC977DC1A52411A001E8920 /* RingOfFire.swift */; };
 /* End PBXBuildFile section */
@@ -48,6 +50,8 @@
 		118156371A4A4469006F655D /* CardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 		1181563A1A4A4503006F655D /* InstructionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstructionViewController.swift; sourceTree = "<group>"; };
 		1181563C1A4A464C006F655D /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		11E55EC81A59EB8300F89D55 /* beat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = beat.wav; sourceTree = "<group>"; };
+		11E55ECA1A59EF1100F89D55 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		9F59BDDE1A5741C1005954A5 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		9FC977DC1A52411A001E8920 /* RingOfFire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RingOfFire.swift; path = ../../../../../Documents/RingOfFire/RingOfFire.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -57,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11E55ECB1A59EF1100F89D55 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +78,7 @@
 		1126F7A91A43735C000176F8 = {
 			isa = PBXGroup;
 			children = (
+				11E55ECA1A59EF1100F89D55 /* AVFoundation.framework */,
 				1126F7B41A43735C000176F8 /* RingOfFire */,
 				1126F7CD1A43735C000176F8 /* RingOfFireTests */,
 				1126F7B31A43735C000176F8 /* Products */,
@@ -107,6 +113,7 @@
 		1126F7B51A43735C000176F8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				11E55EC81A59EB8300F89D55 /* beat.wav */,
 				1126F7B61A43735C000176F8 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -223,6 +230,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11E55EC91A59EB8300F89D55 /* beat.wav in Resources */,
 				1126F7C01A43735C000176F8 /* Main.storyboard in Resources */,
 				1126F7C51A43735C000176F8 /* LaunchScreen.xib in Resources */,
 				1126F7C21A43735C000176F8 /* Images.xcassets in Resources */,
