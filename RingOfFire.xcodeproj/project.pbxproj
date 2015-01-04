@@ -57,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11E55ECB1A59EF1100F89D55 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +74,7 @@
 		1126F7A91A43735C000176F8 = {
 			isa = PBXGroup;
 			children = (
+				11E55ECA1A59EF1100F89D55 /* AVFoundation.framework */,
 				1126F7B41A43735C000176F8 /* RingOfFire */,
 				1126F7CD1A43735C000176F8 /* RingOfFireTests */,
 				1126F7B31A43735C000176F8 /* Products */,
@@ -107,6 +109,7 @@
 		1126F7B51A43735C000176F8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				11E55EC81A59EB8300F89D55 /* beat.wav */,
 				1126F7B61A43735C000176F8 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -223,6 +226,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11E55EC91A59EB8300F89D55 /* beat.wav in Resources */,
 				1126F7C01A43735C000176F8 /* Main.storyboard in Resources */,
 				1126F7C51A43735C000176F8 /* LaunchScreen.xib in Resources */,
 				1126F7C21A43735C000176F8 /* Images.xcassets in Resources */,
