@@ -7,12 +7,13 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ShuffleViewController: UIViewController
 {
     
     @IBOutlet weak var shuffleImageView: UIImageView!
-    
+    var audioPlayer = AVAudioPlayer()
     
     let images = [
         UIImage(named: "shuffle1")!,
@@ -29,6 +30,20 @@ class ShuffleViewController: UIViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        
+        var alertSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("beat", ofType: "wav")!)
+        println(alertSound)
+        
+        // Removed deprecated use of AVAudioSessionDelegate protocol
+        AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback, error: nil)
+        AVAudioSession.sharedInstance().setActive(true, error: nil)
+        
+        var error:NSError?
+        audioPlayer = AVAudioPlayer(contentsOfURL: alertSound, error: &error)
+        audioPlayer.prepareToPlay()
+        audioPlayer.play()
+    
+
         
         shuffleImageView.image = images[index++]
         animateImageView()
