@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="m1W-BJ-Rai">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -18,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DrinkLikeAKing" translatesAutoresizingMaskIntoConstraints="NO" id="vBW-Qc-E5o">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vBW-Qc-E5o">
                                 <rect key="frame" x="25" y="25" width="550" height="550"/>
                                 <color key="backgroundColor" red="1" green="0.45012257649999998" blue="0.76796357079999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <variation key="heightClass=regular" fixedFrame="YES">
@@ -42,6 +41,9 @@
                             <outletCollection property="gestureRecognizers" destination="CtG-aD-Okz" appends="YES" id="2UQ-Ob-F8Y"/>
                         </connections>
                     </view>
+                    <connections>
+                        <outlet property="cardView" destination="vBW-Qc-E5o" id="gHr-rw-3gS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="up" id="HuP-5M-VTj" userLabel="Swipe Up Gesture Recognizer">
@@ -279,7 +281,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Bs7-Iq-X07"/>
-        <segue reference="SW8-WT-PXf"/>
+        <segue reference="cTT-Nj-SsP"/>
         <segue reference="fZB-2o-AoI"/>
     </inferredMetricsTieBreakers>
 </document>

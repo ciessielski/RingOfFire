@@ -8,11 +8,13 @@
 
 import UIKit
 
+
+var game = Gameplay()
+
 class SwipeToShuffleViewController: UIViewController
 {
     @IBOutlet var swipeToShuffleLabel: UILabel!
-    
-    
+        
     override func viewDidLoad()
     {
         super.viewDidLoad()

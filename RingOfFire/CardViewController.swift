@@ -10,12 +10,19 @@ import UIKit
 
 class CardViewController: UIViewController
 {
+    @IBOutlet weak var cardView: UIImageView!
+    
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        var game = Gameplay()    // nie w viewdidload 
-        for i in 0...51 {
-           println("Wylosowana karta to \(game.deck[i].title)")
+        print("liczba kart: \(game.deck.count)")
+        for i in 0...game.deck.count-1 {
+            println("Wylosowana karta to \(game.deck[i].title)")
+        }
+        cardView.image=UIImage(named: "DrinkLikeAKing");
+        if(game.deck.count > 0){
+            game.deck.removeAtIndex(0)
         }
     }
     
