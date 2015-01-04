@@ -7,7 +7,6 @@
 //
 
 import Foundation
-
 class Gameplay {
     
     var deck: Array<Card> = []
