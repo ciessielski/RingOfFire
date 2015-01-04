@@ -67,7 +67,6 @@ class Gameplay {
 //      println("jest \(deck.count) elementów, usuwamy el o indeksie \(j)")
         tempDeck.append(deck[j])
         deck.removeAtIndex(j)
-            
         }
         deck = tempDeck
     }
