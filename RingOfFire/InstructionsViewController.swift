@@ -8,18 +8,18 @@
 
 import UIKit
 
-class InstructionViewController: UIViewController
+class InstructionsViewController: UIViewController
 
 {
  
-    @IBOutlet weak var instructionTextView: UITextView!
+    @IBOutlet weak var instructionsTextView: UITextView!
     @IBOutlet weak var cardTitle: UILabel!
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
         cardTitle.text = game.deck[0].title
-        instructionTextView.text = game.deck[0].instructions
+        instructionsTextView.text = game.deck[0].instructions
         
 //        if(game.deck.count > 0)
 //        {

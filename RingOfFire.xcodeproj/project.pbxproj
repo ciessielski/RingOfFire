@@ -16,7 +16,7 @@
 		1126F7D11A43735C000176F8 /* RingOfFireTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1126F7D01A43735C000176F8 /* RingOfFireTests.swift */; };
 		118156361A4A428A006F655D /* SwipeToShuffleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118156351A4A428A006F655D /* SwipeToShuffleViewController.swift */; };
 		118156381A4A4469006F655D /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118156371A4A4469006F655D /* CardViewController.swift */; };
-		1181563B1A4A4503006F655D /* InstructionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1181563A1A4A4503006F655D /* InstructionViewController.swift */; };
+		1181563B1A4A4503006F655D /* InstructionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1181563A1A4A4503006F655D /* InstructionsViewController.swift */; };
 		1181563D1A4A464C006F655D /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1181563C1A4A464C006F655D /* SettingsViewController.swift */; };
 		11E55EC91A59EB8300F89D55 /* beat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 11E55EC81A59EB8300F89D55 /* beat.wav */; };
 		11E55ECB1A59EF1100F89D55 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11E55ECA1A59EF1100F89D55 /* AVFoundation.framework */; };
@@ -48,7 +48,7 @@
 		1126F7D01A43735C000176F8 /* RingOfFireTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingOfFireTests.swift; sourceTree = "<group>"; };
 		118156351A4A428A006F655D /* SwipeToShuffleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeToShuffleViewController.swift; sourceTree = "<group>"; };
 		118156371A4A4469006F655D /* CardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
-		1181563A1A4A4503006F655D /* InstructionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstructionViewController.swift; sourceTree = "<group>"; };
+		1181563A1A4A4503006F655D /* InstructionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstructionsViewController.swift; sourceTree = "<group>"; };
 		1181563C1A4A464C006F655D /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		11E55EC81A59EB8300F89D55 /* beat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = beat.wav; sourceTree = "<group>"; };
 		11E55ECA1A59EF1100F89D55 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -78,7 +78,6 @@
 		1126F7A91A43735C000176F8 = {
 			isa = PBXGroup;
 			children = (
-				11E55ECA1A59EF1100F89D55 /* AVFoundation.framework */,
 				1126F7B41A43735C000176F8 /* RingOfFire */,
 				1126F7CD1A43735C000176F8 /* RingOfFireTests */,
 				1126F7B31A43735C000176F8 /* Products */,
@@ -112,6 +111,7 @@
 		1126F7B51A43735C000176F8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				11E55ECA1A59EF1100F89D55 /* AVFoundation.framework */,
 				11E55EC81A59EB8300F89D55 /* beat.wav */,
 				1126F7B61A43735C000176F8 /* Info.plist */,
 			);
@@ -142,7 +142,7 @@
 				1181563C1A4A464C006F655D /* SettingsViewController.swift */,
 				118156351A4A428A006F655D /* SwipeToShuffleViewController.swift */,
 				1126F7BC1A43735C000176F8 /* ShuffleViewController.swift */,
-				1181563A1A4A4503006F655D /* InstructionViewController.swift */,
+				1181563A1A4A4503006F655D /* InstructionsViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -264,7 +264,7 @@
 				1126F7BD1A43735C000176F8 /* ShuffleViewController.swift in Sources */,
 				1181563D1A4A464C006F655D /* SettingsViewController.swift in Sources */,
 				1126F7BB1A43735C000176F8 /* RingOfFire.xcdatamodeld in Sources */,
-				1181563B1A4A4503006F655D /* InstructionViewController.swift in Sources */,
+				1181563B1A4A4503006F655D /* InstructionsViewController.swift in Sources */,
 				118156381A4A4469006F655D /* CardViewController.swift in Sources */,
 				9F59BDDF1A5741C1005954A5 /* Card.swift in Sources */,
 				1126F7B81A43735C000176F8 /* AppDelegate.swift in Sources */,
