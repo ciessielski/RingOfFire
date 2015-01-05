@@ -17,11 +17,14 @@ class CardViewController: UIViewController
     {
         super.viewDidLoad()
         print("liczba kart: \(game.deck.count)")
-        for i in 0...game.deck.count-1 {
+        for i in 0...game.deck.count-1
+        {
             println("Wylosowana karta to \(game.deck[i].title)")
         }
+        
         cardView.image=UIImage(named: game.deck[0].slug);
-        if(game.deck.count > 0){
+        if(game.deck.count > 0)
+        {
             game.deck.removeAtIndex(0)
         }
     }

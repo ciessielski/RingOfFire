@@ -18,8 +18,13 @@ class InstructionViewController: UIViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        cardTitle.text = "Drink like a King"
-        instructionTextView.text = "You must pour a little of your drink into the cup that is in the middle of the table. Whoever picks up the FORTH card must drink the whole cup, which could be filled with different drinks, so who knows how bad it could taste!";
+        cardTitle.text = game.deck[0].title
+        instructionTextView.text = game.deck[0].instructions
+        
+//        if(game.deck.count > 0)
+//        {
+//            game.deck.removeAtIndex(0)
+//        }
     }
 
     override func didReceiveMemoryWarning()
