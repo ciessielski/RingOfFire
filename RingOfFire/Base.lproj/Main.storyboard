@@ -214,16 +214,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" alpha="0.10000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DrinkLikeAKing" translatesAutoresizingMaskIntoConstraints="NO" id="lMA-zj-57T">
-                                <rect key="frame" x="25" y="25" width="550" height="550"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="0.0" height="0.0"/>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="0.0" height="0.0"/>
-                                </variation>
-                            </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="JnK-5T-MQ5">
                                 <rect key="frame" x="27" y="192" width="546" height="292"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -236,6 +226,16 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" alpha="0.10000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lMA-zj-57T">
+                                <rect key="frame" x="25" y="25" width="550" height="550"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                </variation>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -251,6 +251,11 @@
                             <constraint firstItem="JnK-5T-MQ5" firstAttribute="leading" secondItem="236-hQ-Dyl" secondAttribute="leadingMargin" constant="11" id="tA4-S8-aNv"/>
                             <constraint firstAttribute="centerX" secondItem="JnK-5T-MQ5" secondAttribute="centerX" id="xYp-Lb-UIQ"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="JnK-5T-MQ5"/>
+                            </mask>
+                        </variation>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="rbr-AE-rBq" appends="YES" id="MnS-yY-f0h"/>
                             <outletCollection property="gestureRecognizers" destination="6Kb-tN-6iG" appends="YES" id="Iux-7G-D39"/>
@@ -258,7 +263,11 @@
                     </view>
                     <connections>
                         <outlet property="cardTitle" destination="Ya4-x9-oly" id="238-z6-kCb"/>
+                        <outlet property="cardView" destination="lMA-zj-57T" id="CaH-7h-L1t"/>
                         <outlet property="instructionTextView" destination="JnK-5T-MQ5" id="AbO-Kh-wQ7"/>
+                        <outlet property="instructionsTextView" destination="JnK-5T-MQ5" id="CYi-bt-IVi"/>
+                        <outlet property="instructionsView" destination="JnK-5T-MQ5" id="tDb-hc-pAt"/>
+                        <outlet property="titleLabel" destination="Ya4-x9-oly" id="2fe-OA-4yf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="POA-Ac-tK9" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -277,14 +286,13 @@
         </scene>
     </scenes>
     <resources>
-        <image name="DrinkLikeAKing" width="248" height="346"/>
         <image name="InfoButton" width="30" height="30"/>
         <image name="SettingsButton" width="30" height="30"/>
         <image name="bucket" width="231" height="380"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="cTT-Nj-SsP"/>
+        <segue reference="OG2-7B-Wpg"/>
         <segue reference="fZB-2o-AoI"/>
-        <segue reference="SW8-WT-PXf"/>
-        <segue reference="Bs7-Iq-X07"/>
     </inferredMetricsTieBreakers>
 </document>
