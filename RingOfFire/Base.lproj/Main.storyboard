@@ -222,7 +222,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ewj-on-nm7">
-                                <rect key="frame" x="27" y="190" width="547" height="220"/>
+                                <rect key="frame" x="27" y="190" width="547" height="249"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -243,13 +243,13 @@
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="Ya4-x9-oly" firstAttribute="centerX" secondItem="236-hQ-Dyl" secondAttribute="centerX" id="7Gm-bd-WTc"/>
-                            <constraint firstItem="lMA-zj-57T" firstAttribute="centerY" secondItem="ewj-on-nm7" secondAttribute="centerY" id="8zv-AA-05V"/>
+                            <constraint firstItem="lMA-zj-57T" firstAttribute="centerY" secondItem="ewj-on-nm7" secondAttribute="centerY" constant="-14.5" id="8zv-AA-05V"/>
                             <constraint firstItem="lMA-zj-57T" firstAttribute="centerX" secondItem="Ya4-x9-oly" secondAttribute="centerX" id="AwN-cE-aCd"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ewj-on-nm7" secondAttribute="trailing" constant="10" id="Ihl-8f-Uex"/>
                             <constraint firstItem="Ya4-x9-oly" firstAttribute="top" secondItem="iH6-lb-xYK" secondAttribute="bottom" constant="119" id="Rsp-z0-rse"/>
-                            <constraint firstAttribute="centerY" secondItem="ewj-on-nm7" secondAttribute="centerY" id="Xtd-0R-4fq"/>
+                            <constraint firstAttribute="centerY" secondItem="ewj-on-nm7" secondAttribute="centerY" constant="-14.5" id="Xtd-0R-4fq"/>
                             <constraint firstAttribute="centerX" secondItem="ewj-on-nm7" secondAttribute="centerX" id="cCT-Ki-VJL"/>
-                            <constraint firstAttribute="centerY" secondItem="ewj-on-nm7" secondAttribute="centerY" id="kt2-W0-g5z"/>
+                            <constraint firstAttribute="centerY" secondItem="ewj-on-nm7" secondAttribute="centerY" constant="-14.5" id="kt2-W0-g5z"/>
                             <constraint firstItem="lMA-zj-57T" firstAttribute="leading" secondItem="236-hQ-Dyl" secondAttribute="leadingMargin" constant="9" id="mcc-Eb-FXK"/>
                             <constraint firstItem="lMA-zj-57T" firstAttribute="top" secondItem="iH6-lb-xYK" secondAttribute="bottom" constant="5" id="oXC-dO-Gkg"/>
                             <constraint firstAttribute="centerX" secondItem="ewj-on-nm7" secondAttribute="centerX" id="p0n-xk-Avv"/>
