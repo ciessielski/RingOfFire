@@ -15,21 +15,22 @@ class InstructionsViewController: UIViewController
     @IBOutlet weak var cardTitle: UILabel!
     @IBOutlet weak var cardView: UIImageView!
     @IBOutlet weak var cardInstructions: UITextView!
-
+   
 
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
         
+    
+        cardTitle.text = game.deck[0].title
+        cardView.image = UIImage(named: game.deck[0].slug)
+        cardInstructions.text = game.deck[0].instructions
         
-//        cardTitle.text = game.deck[0].title
-//        instructionsTextView.text = game.deck[0].instructions
-//        
-////        if(game.deck.count > 0)
-////        {
-////            game.deck.removeAtIndex(0)
-////        }
+//        if(game.deck.count > 0)
+//        {
+//            game.deck.removeAtIndex(0)
+//        }
     }
 
     override func didReceiveMemoryWarning()

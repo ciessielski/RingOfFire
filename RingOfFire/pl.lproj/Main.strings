@@ -1,0 +1,9 @@
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "Ya4-x9-oly"; */
+"Ya4-x9-oly.text" = "Label";
+
+/* Class = "IBUILabel"; text = "←  swipe to shuffle  →"; ObjectID = "r1w-kO-UJk"; */
+"r1w-kO-UJk.text" = "←  swipe to shuffle  →";
+
+/* Class = "IBUIViewController"; title = "CardViewController"; ObjectID = "vXZ-lx-hvc"; */
+"vXZ-lx-hvc.title" = "CardViewController";

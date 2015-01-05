@@ -18,6 +18,7 @@
 		118156381A4A4469006F655D /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118156371A4A4469006F655D /* CardViewController.swift */; };
 		1181563B1A4A4503006F655D /* InstructionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1181563A1A4A4503006F655D /* InstructionsViewController.swift */; };
 		1181563D1A4A464C006F655D /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1181563C1A4A464C006F655D /* SettingsViewController.swift */; };
+		11C5C4751A5B13DA00737545 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 11C5C4771A5B13DA00737545 /* Localizable.strings */; };
 		11E55EC91A59EB8300F89D55 /* beat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 11E55EC81A59EB8300F89D55 /* beat.wav */; };
 		11E55ECB1A59EF1100F89D55 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11E55ECA1A59EF1100F89D55 /* AVFoundation.framework */; };
 		9F59BDDF1A5741C1005954A5 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F59BDDE1A5741C1005954A5 /* Card.swift */; };
@@ -50,6 +51,11 @@
 		118156371A4A4469006F655D /* CardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 		1181563A1A4A4503006F655D /* InstructionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstructionsViewController.swift; sourceTree = "<group>"; };
 		1181563C1A4A464C006F655D /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		11C5C4711A5B134300737545 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Main.strings; sourceTree = "<group>"; };
+		11C5C4721A5B134300737545 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		11C5C4761A5B13DA00737545 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		11C5C4781A5B13DC00737545 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		11C5C4791A5B13DD00737545 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
 		11E55EC81A59EB8300F89D55 /* beat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = beat.wav; sourceTree = "<group>"; };
 		11E55ECA1A59EF1100F89D55 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		9F59BDDE1A5741C1005954A5 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
@@ -97,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				1126F7B71A43735C000176F8 /* AppDelegate.swift */,
+				11C5C4771A5B13DA00737545 /* Localizable.strings */,
 				11F7CD601A5A079800330CFB /* Model */,
 				118156391A4A44A9006F655D /* ViewControllers */,
 				1126F7BE1A43735C000176F8 /* Main.storyboard */,
@@ -221,6 +228,7 @@
 			knownRegions = (
 				en,
 				Base,
+				pl,
 			);
 			mainGroup = 1126F7A91A43735C000176F8;
 			productRefGroup = 1126F7B31A43735C000176F8 /* Products */;
@@ -238,6 +246,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11C5C4751A5B13DA00737545 /* Localizable.strings in Resources */,
 				11E55EC91A59EB8300F89D55 /* beat.wav in Resources */,
 				1126F7C01A43735C000176F8 /* Main.storyboard in Resources */,
 				1126F7C51A43735C000176F8 /* LaunchScreen.xib in Resources */,
@@ -294,6 +303,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				1126F7BF1A43735C000176F8 /* Base */,
+				11C5C4711A5B134300737545 /* pl */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -302,8 +312,19 @@
 			isa = PBXVariantGroup;
 			children = (
 				1126F7C41A43735C000176F8 /* Base */,
+				11C5C4721A5B134300737545 /* pl */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		11C5C4771A5B13DA00737545 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11C5C4761A5B13DA00737545 /* Base */,
+				11C5C4781A5B13DC00737545 /* en */,
+				11C5C4791A5B13DD00737545 /* pl */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -391,7 +412,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RingOfFire/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -402,7 +423,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RingOfFire/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
