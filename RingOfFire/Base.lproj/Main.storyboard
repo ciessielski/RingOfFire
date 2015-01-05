@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="m1W-BJ-Rai">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -59,9 +59,6 @@
                             <outletCollection property="gestureRecognizers" destination="CtG-aD-Okz" appends="YES" id="2UQ-Ob-F8Y"/>
                         </connections>
                     </view>
-                    <connections>
-                        <outlet property="cardView" destination="vBW-Qc-E5o" id="gHr-rw-3gS"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="up" id="HuP-5M-VTj" userLabel="Swipe Up Gesture Recognizer">
@@ -223,7 +220,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" alpha="0.10000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DrinkLikeAKing" translatesAutoresizingMaskIntoConstraints="NO" id="lMA-zj-57T">
+                            <imageView userInteractionEnabled="NO" alpha="0.10000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lMA-zj-57T">
                                 <rect key="frame" x="25" y="25" width="550" height="550"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </imageView>
@@ -280,16 +277,14 @@
         </scene>
     </scenes>
     <resources>
-        <image name="DrinkLikeAKing" width="320" height="445"/>
         <image name="InfoButton" width="30" height="30"/>
         <image name="SettingsButton" width="30" height="30"/>
         <image name="bucket" width="231" height="380"/>
         <image name="king" width="320" height="445"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="cTT-Nj-SsP"/>
         <segue reference="Bs7-Iq-X07"/>
-        <segue reference="cTT-Nj-SsP"/>
+        <segue reference="SW8-WT-PXf"/>
         <segue reference="fZB-2o-AoI"/>
     </inferredMetricsTieBreakers>
 </document>
