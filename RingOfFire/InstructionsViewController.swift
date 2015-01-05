@@ -22,7 +22,6 @@ class InstructionsViewController: UIViewController
     {
         super.viewDidLoad()
         
-    
         cardTitle.text = game.deck[0].title
         cardView.image = UIImage(named: game.deck[0].slug)
         cardInstructions.text = game.deck[0].instructions
