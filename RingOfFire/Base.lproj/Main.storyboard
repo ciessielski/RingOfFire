@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="m1W-BJ-Rai">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -262,12 +263,9 @@
                         </connections>
                     </view>
                     <connections>
-                        <outlet property="cardTitle" destination="Ya4-x9-oly" id="238-z6-kCb"/>
-                        <outlet property="cardView" destination="lMA-zj-57T" id="CaH-7h-L1t"/>
-                        <outlet property="instructionTextView" destination="JnK-5T-MQ5" id="AbO-Kh-wQ7"/>
-                        <outlet property="instructionsTextView" destination="JnK-5T-MQ5" id="CYi-bt-IVi"/>
-                        <outlet property="instructionsView" destination="JnK-5T-MQ5" id="tDb-hc-pAt"/>
-                        <outlet property="titleLabel" destination="Ya4-x9-oly" id="2fe-OA-4yf"/>
+                        <outlet property="cardInstructions" destination="JnK-5T-MQ5" id="ZJf-Kr-mGQ"/>
+                        <outlet property="cardTitle" destination="Ya4-x9-oly" id="xHk-JN-OXG"/>
+                        <outlet property="cardView" destination="lMA-zj-57T" id="QpK-gk-fBY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="POA-Ac-tK9" userLabel="First Responder" sceneMemberID="firstResponder"/>

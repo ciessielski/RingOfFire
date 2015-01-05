@@ -12,9 +12,10 @@ class InstructionsViewController: UIViewController
 
 {
  
-    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var cardTitle: UILabel!
     @IBOutlet weak var cardView: UIImageView!
-    @IBOutlet weak var instructionsView: UITextView!
+    @IBOutlet weak var cardInstructions: UITextView!
+
 
     
     override func viewDidLoad()
