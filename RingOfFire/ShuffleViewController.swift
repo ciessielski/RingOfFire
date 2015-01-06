@@ -33,6 +33,10 @@ class ShuffleViewController: UIViewController
     {
         super.viewDidLoad()
         
+
+        game.deck.removeAtIndex(0)
+        activeCard = game.deck[0]
+        
         var alertSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("beat", ofType: "wav")!)
         var error:NSError?
         audioPlayer = AVAudioPlayer(contentsOfURL: alertSound, error: &error)
