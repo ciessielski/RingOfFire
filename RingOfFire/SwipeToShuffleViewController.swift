@@ -10,6 +10,7 @@ import UIKit
 
 
 var game = Gameplay()
+var activeCard : Card = game.deck[0]
 
 class SwipeToShuffleViewController: UIViewController
 {

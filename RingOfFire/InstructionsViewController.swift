@@ -22,14 +22,15 @@ class InstructionsViewController: UIViewController
     {
         super.viewDidLoad()
         
-        cardTitle.text = game.deck[0].title
-        cardView.image = UIImage(named: game.deck[0].slug)
-        cardInstructions.text = game.deck[0].instructions
+        cardTitle.text = activeCard.title
+        cardView.image = UIImage(named: activeCard.slug)
+        cardInstructions.text = activeCard.instructions
         
-//        if(game.deck.count > 0)
-//        {
-//            game.deck.removeAtIndex(0)
-//        }
+        if(game.deck.count > 0)
+        {
+            game.deck.removeAtIndex(0)
+            activeCard = game.deck[0]
+        }
     }
 
     override func didReceiveMemoryWarning()
