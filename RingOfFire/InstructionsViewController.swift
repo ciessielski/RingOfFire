@@ -26,11 +26,6 @@ class InstructionsViewController: UIViewController
         cardView.image = UIImage(named: activeCard.slug)
         cardInstructions.text = activeCard.instructions
         
-        if(game.deck.count > 0)
-        {
-            game.deck.removeAtIndex(0)
-            activeCard = game.deck[0]
-        }
     }
 
     override func didReceiveMemoryWarning()

@@ -111,6 +111,7 @@ class Gameplay
             
         }
         deck = tempDeck
+        deck.insert(Card(slug:"king"), atIndex: 0) //first element for removing at viewdidload
     }
     
     func resetGame()

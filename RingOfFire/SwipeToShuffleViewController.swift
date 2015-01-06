@@ -20,7 +20,11 @@ class SwipeToShuffleViewController: UIViewController
     {
         super.viewDidLoad()
 
-        
+        if(game.deck.count > 0)
+        {
+            game.deck.removeAtIndex(0)
+            activeCard = game.deck[0]
+        }
         UIView.animateWithDuration(1.5, delay: 0, options: .Repeat | .Autoreverse , animations: {self.swipeToShuffleLabel.alpha = 0}, completion: nil)
     
 
