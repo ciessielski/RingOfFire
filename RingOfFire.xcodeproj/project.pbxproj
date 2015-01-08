@@ -18,6 +18,8 @@
 		118156381A4A4469006F655D /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118156371A4A4469006F655D /* CardViewController.swift */; };
 		1181563B1A4A4503006F655D /* InstructionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1181563A1A4A4503006F655D /* InstructionsViewController.swift */; };
 		1181563D1A4A464C006F655D /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1181563C1A4A464C006F655D /* SettingsViewController.swift */; };
+		118423DB1A5F352F006E8755 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118423DA1A5F352F006E8755 /* TutorialViewController.swift */; };
+		118423DD1A5F366D006E8755 /* ContentPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118423DC1A5F366D006E8755 /* ContentPageViewController.swift */; };
 		11C5C4751A5B13DA00737545 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 11C5C4771A5B13DA00737545 /* Localizable.strings */; };
 		11E55EC91A59EB8300F89D55 /* beat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 11E55EC81A59EB8300F89D55 /* beat.wav */; };
 		11E55ECB1A59EF1100F89D55 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11E55ECA1A59EF1100F89D55 /* AVFoundation.framework */; };
@@ -51,6 +53,8 @@
 		118156371A4A4469006F655D /* CardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 		1181563A1A4A4503006F655D /* InstructionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstructionsViewController.swift; sourceTree = "<group>"; };
 		1181563C1A4A464C006F655D /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		118423DA1A5F352F006E8755 /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
+		118423DC1A5F366D006E8755 /* ContentPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentPageViewController.swift; sourceTree = "<group>"; };
 		11C5C4711A5B134300737545 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Main.strings; sourceTree = "<group>"; };
 		11C5C4721A5B134300737545 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		11C5C4761A5B13DA00737545 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -150,6 +154,8 @@
 				118156351A4A428A006F655D /* SwipeToShuffleViewController.swift */,
 				1126F7BC1A43735C000176F8 /* ShuffleViewController.swift */,
 				1181563A1A4A4503006F655D /* InstructionsViewController.swift */,
+				118423DA1A5F352F006E8755 /* TutorialViewController.swift */,
+				118423DC1A5F366D006E8755 /* ContentPageViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -270,8 +276,10 @@
 			files = (
 				118156361A4A428A006F655D /* SwipeToShuffleViewController.swift in Sources */,
 				9FC977DD1A52411A001E8920 /* Gameplay.swift in Sources */,
+				118423DB1A5F352F006E8755 /* TutorialViewController.swift in Sources */,
 				1126F7BD1A43735C000176F8 /* ShuffleViewController.swift in Sources */,
 				1181563D1A4A464C006F655D /* SettingsViewController.swift in Sources */,
+				118423DD1A5F366D006E8755 /* ContentPageViewController.swift in Sources */,
 				1126F7BB1A43735C000176F8 /* RingOfFire.xcdatamodeld in Sources */,
 				1181563B1A4A4503006F655D /* InstructionsViewController.swift in Sources */,
 				118156381A4A4469006F655D /* CardViewController.swift in Sources */,
