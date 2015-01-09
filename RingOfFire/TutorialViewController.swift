@@ -14,6 +14,13 @@ class TutorialViewController: UIViewController, UIPageViewControllerDataSource {
     private var pageViewController: UIPageViewController?
     private let contentImages = ["tutorial1", "tutorial2", "tutorial3"]
     
+    @IBAction func startPlayingButtonPressed(sender: AnyObject)
+    {
+        println("start playing button pressed")
+        NSUserDefaults.standardUserDefaults().setObject("no", forKey: "firstOpen")
+        NSUserDefaults.standardUserDefaults().synchronize()
+    }
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()

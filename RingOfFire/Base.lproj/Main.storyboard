@@ -63,7 +63,7 @@
         <!--Swipe To Shuffle View Controller-->
         <scene sceneID="csq-tt-Pjl">
             <objects>
-                <viewController id="m1W-BJ-Rai" customClass="SwipeToShuffleViewController" customModule="RingOfFire" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SwipeToShuffle" id="m1W-BJ-Rai" customClass="SwipeToShuffleViewController" customModule="RingOfFire" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3ya-M3-3DX"/>
                         <viewControllerLayoutGuide type="bottom" id="z8H-0o-zSq"/>
@@ -152,7 +152,7 @@
         <!--Tutorial View Controller-->
         <scene sceneID="XmQ-gV-Rd6">
             <objects>
-                <viewController id="CQH-lz-0Ql" customClass="TutorialViewController" customModule="RingOfFire" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Tutorial" id="CQH-lz-0Ql" customClass="TutorialViewController" customModule="RingOfFire" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="pVa-aI-Qj0"/>
                         <viewControllerLayoutGuide type="bottom" id="FlY-Q5-AQ5"/>
@@ -168,6 +168,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="startPlayingButtonPressed:" destination="CQH-lz-0Ql" eventType="touchUpInside" id="cbh-kq-Fb9"/>
                                     <segue destination="m1W-BJ-Rai" kind="show" id="YIa-kL-EYk"/>
                                 </connections>
                             </button>

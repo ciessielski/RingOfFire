@@ -14,9 +14,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     
+    var defaults: NSUserDefaults = NSUserDefaults.standardUserDefaults()
+
     
-    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+    
+    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool
+    {
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        
+        var storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        var initialViewController: UIViewController?
+        
+        if (defaults.objectForKey("firstOpen") != nil)
+        {
+            initialViewController = storyboard.instantiateViewControllerWithIdentifier("SwipeToShuffle") as? UIViewController
+        }
+        
+        else
+        {
+            initialViewController = storyboard.instantiateViewControllerWithIdentifier("Tutorial") as? UIViewController
+        }
+        
+        self.window?.rootViewController = initialViewController
+        self.window?.makeKeyAndVisible()
+        
         return true
     }
 
