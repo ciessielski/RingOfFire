@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="m1W-BJ-Rai">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="CQH-lz-0Ql">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
@@ -102,7 +102,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="CQH-lz-0Ql" kind="show" id="8z8-bd-sUc"/>
+                                    <segue destination="CQH-lz-0Ql" kind="show" id="Hoh-XA-GPd"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -160,7 +160,23 @@
                     <view key="view" contentMode="scaleToFill" id="ZAd-Oj-j9j">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0T3-av-Ruy">
+                                <rect key="frame" x="244" y="562" width="114" height="30"/>
+                                <state key="normal" title="START PLAYING">
+                                    <color key="titleColor" red="0.90842366220000004" green="0.1208788354" blue="0.081431492359999996" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="m1W-BJ-Rai" kind="show" id="YIa-kL-EYk"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0T3-av-Ruy" firstAttribute="centerX" secondItem="ZAd-Oj-j9j" secondAttribute="centerX" constant="1" id="K40-sF-Ild"/>
+                            <constraint firstItem="FlY-Q5-AQ5" firstAttribute="top" secondItem="0T3-av-Ruy" secondAttribute="bottom" constant="8" symbolic="YES" id="pbp-LW-0md"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Feg-te-Ea2" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -170,7 +186,7 @@
         <!--Page View Controller-->
         <scene sceneID="Zeo-sL-Uec">
             <objects>
-                <pageViewController storyboardIdentifier="PageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="HcU-5I-bkH" sceneMemberID="viewController"/>
+                <pageViewController storyboardIdentifier="PageController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="HcU-5I-bkH" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jV4-nW-z7e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="311" y="1741"/>
@@ -214,10 +230,10 @@
             </objects>
             <point key="canvasLocation" x="1936" y="571"/>
         </scene>
-        <!--View Controller-->
+        <!--Page Item Controller-->
         <scene sceneID="pgD-kE-j3r">
             <objects>
-                <viewController storyboardIdentifier="ContentPageViewController" id="YQ9-bs-dRc" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ItemController" id="YQ9-bs-dRc" customClass="PageItemController" customModule="RingOfFire" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="NDN-3I-Ch8"/>
                         <viewControllerLayoutGuide type="bottom" id="quD-Qn-Uli"/>
@@ -226,12 +242,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WAU-kL-VnY">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WAU-kL-VnY">
+                                <rect key="frame" x="0.0" y="-35" width="600" height="641"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="WAU-kL-VnY" secondAttribute="trailing" id="BrV-Vn-1hq"/>
+                            <constraint firstItem="WAU-kL-VnY" firstAttribute="leading" secondItem="HtK-fY-Wky" secondAttribute="leading" id="U8t-OY-eUC"/>
+                            <constraint firstItem="WAU-kL-VnY" firstAttribute="top" secondItem="HtK-fY-Wky" secondAttribute="top" constant="-35" id="sYq-wp-0Ij"/>
+                            <constraint firstItem="WAU-kL-VnY" firstAttribute="bottom" secondItem="quD-Qn-Uli" secondAttribute="top" constant="6" id="yHu-ak-lhA"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="contentImageView" destination="WAU-kL-VnY" id="cea-ew-3QJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gNd-Ry-Btv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -339,8 +364,8 @@
         <image name="bucket" width="231" height="380"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="SW8-WT-PXf"/>
-        <segue reference="OG2-7B-Wpg"/>
+        <segue reference="YIa-kL-EYk"/>
         <segue reference="fZB-2o-AoI"/>
+        <segue reference="OG2-7B-Wpg"/>
     </inferredMetricsTieBreakers>
 </document>
