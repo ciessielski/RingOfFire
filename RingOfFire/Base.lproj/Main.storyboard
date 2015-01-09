@@ -256,7 +256,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="contentImageView" destination="WAU-kL-VnY" id="cea-ew-3QJ"/>
+                        <outlet property="contentImageView" destination="WAU-kL-VnY" id="i3q-bl-AHZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gNd-Ry-Btv" userLabel="First Responder" sceneMemberID="firstResponder"/>
