@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="m1W-BJ-Rai">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="m1W-BJ-Rai">
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -102,10 +101,20 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cards left:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gNw-rw-hr2">
+                                <rect key="frame" x="336" y="58" width="114" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="114" id="8fZ-k0-hnc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="gNw-rw-hr2" firstAttribute="trailing" secondItem="cOi-22-dcw" secondAttribute="trailing" id="1zp-Vv-LcS"/>
                             <constraint firstItem="a6Q-GF-GJ5" firstAttribute="baseline" secondItem="L2a-mt-Ngm" secondAttribute="baseline" id="37E-lz-acD"/>
                             <constraint firstItem="cOi-22-dcw" firstAttribute="centerX" secondItem="JM7-UK-vi3" secondAttribute="centerX" id="6gR-kY-l4I"/>
                             <constraint firstItem="L2a-mt-Ngm" firstAttribute="trailing" secondItem="JM7-UK-vi3" secondAttribute="trailingMargin" constant="7" id="7vy-pq-JwI"/>
@@ -113,6 +122,7 @@
                             <constraint firstItem="a6Q-GF-GJ5" firstAttribute="leading" secondItem="JM7-UK-vi3" secondAttribute="leadingMargin" constant="-7" id="DLe-xL-WUo"/>
                             <constraint firstItem="r1w-kO-UJk" firstAttribute="trailing" secondItem="cOi-22-dcw" secondAttribute="trailing" id="Iv3-8b-FpV"/>
                             <constraint firstItem="r1w-kO-UJk" firstAttribute="top" secondItem="cOi-22-dcw" secondAttribute="bottom" constant="42" id="O5Z-P1-SUo"/>
+                            <constraint firstItem="gNw-rw-hr2" firstAttribute="top" secondItem="cOi-22-dcw" secondAttribute="top" id="iuB-fH-Gnd"/>
                             <constraint firstItem="r1w-kO-UJk" firstAttribute="leading" secondItem="cOi-22-dcw" secondAttribute="leading" id="jfS-C6-ZPR"/>
                             <constraint firstItem="cOi-22-dcw" firstAttribute="top" secondItem="3ya-M3-3DX" secondAttribute="bottom" constant="38" id="kxs-1B-9xj"/>
                             <constraint firstItem="z8H-0o-zSq" firstAttribute="top" secondItem="cOi-22-dcw" secondAttribute="bottom" constant="142" id="rcu-89-T3D"/>
@@ -124,6 +134,7 @@
                         </connections>
                     </view>
                     <connections>
+                        <outlet property="NumberOfCardsLabel" destination="gNw-rw-hr2" id="VIt-L4-Efe"/>
                         <outlet property="swipeToShuffleLabel" destination="r1w-kO-UJk" id="SdB-xt-2tZ"/>
                     </connections>
                 </viewController>
@@ -224,6 +235,9 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ewj-on-nm7">
                                 <rect key="frame" x="27" y="190" width="547" height="249"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" notEnabled="YES"/>
+                                </accessibility>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -287,8 +301,8 @@
         <image name="bucket" width="231" height="380"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="fZB-2o-AoI"/>
         <segue reference="SW8-WT-PXf"/>
-        <segue reference="Bs7-Iq-X07"/>
+        <segue reference="OG2-7B-Wpg"/>
+        <segue reference="Jwq-cr-fhB"/>
     </inferredMetricsTieBreakers>
 </document>
