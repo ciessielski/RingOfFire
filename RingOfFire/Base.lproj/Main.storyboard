@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="m1W-BJ-Rai">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -255,15 +256,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WAU-kL-VnY">
-                                <rect key="frame" x="0.0" y="-35" width="600" height="641"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="641"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="WAU-kL-VnY" secondAttribute="trailing" id="BrV-Vn-1hq"/>
                             <constraint firstItem="WAU-kL-VnY" firstAttribute="leading" secondItem="HtK-fY-Wky" secondAttribute="leading" id="U8t-OY-eUC"/>
-                            <constraint firstItem="WAU-kL-VnY" firstAttribute="top" secondItem="HtK-fY-Wky" secondAttribute="top" constant="-35" id="sYq-wp-0Ij"/>
-                            <constraint firstItem="WAU-kL-VnY" firstAttribute="bottom" secondItem="quD-Qn-Uli" secondAttribute="top" constant="6" id="yHu-ak-lhA"/>
+                            <constraint firstItem="WAU-kL-VnY" firstAttribute="top" secondItem="HtK-fY-Wky" secondAttribute="top" id="sYq-wp-0Ij"/>
+                            <constraint firstItem="WAU-kL-VnY" firstAttribute="bottom" secondItem="quD-Qn-Uli" secondAttribute="top" constant="41" id="yHu-ak-lhA"/>
                         </constraints>
                     </view>
                     <connections>

@@ -23,10 +23,22 @@ class ShuffleViewController: UIViewController
         UIImage(named: "shuffle3")!,
         UIImage(named: "shuffle4")!,
         UIImage(named: "shuffle5")!,
-        UIImage(named: "shuffle6")!]
+        UIImage(named: "shuffle6")!,
+        UIImage(named: "shuffle7")!,
+        UIImage(named: "shuffle8")!,
+        UIImage(named: "shuffle9")!,
+        UIImage(named: "shuffle10")!,
+        UIImage(named: "shuffle11")!,
+        UIImage(named: "shuffle12")!,
+        UIImage(named: "shuffle13")!,
+        UIImage(named: "shuffle14")!,
+        UIImage(named: "shuffle15")!,
+        UIImage(named: "shuffle16")!,
+        UIImage(named: "shuffle17")!,
+        UIImage(named: "shuffle18")!,]
     var index = 0
     let animationDuration: NSTimeInterval = 0
-    let switchingInterval: NSTimeInterval = 0.25
+    let switchingInterval: NSTimeInterval = 0.1
     
     
     override func viewDidLoad()
@@ -45,7 +57,7 @@ class ShuffleViewController: UIViewController
     
         shuffleImageView.image = images[index++]
         animateImageView()
-        NSTimer.scheduledTimerWithTimeInterval(1.5, target: self, selector:Selector("performSegue"), userInfo: nil, repeats: false)
+        NSTimer.scheduledTimerWithTimeInterval(1.8, target: self, selector:Selector("performSegue"), userInfo: nil, repeats: false)
     }
     
     func animateImageView() {
