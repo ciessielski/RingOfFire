@@ -217,7 +217,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZcP-A8-vGV">
-                                <rect key="frame" x="25" y="25" width="550" height="550"/>
+                                <rect key="frame" x="25" y="74" width="550" height="501"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <variation key="heightClass=regular" fixedFrame="YES">
                                     <rect key="frame" x="0.0" y="0.0" width="0.0" height="0.0"/>
@@ -229,7 +229,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="centerY" secondItem="ZcP-A8-vGV" secondAttribute="centerY" id="2bg-3D-XD7"/>
+                            <constraint firstAttribute="centerY" secondItem="ZcP-A8-vGV" secondAttribute="centerY" constant="-24.5" id="2bg-3D-XD7"/>
                             <constraint firstItem="ZcP-A8-vGV" firstAttribute="leading" secondItem="tvu-1C-6Gm" secondAttribute="leading" constant="25" id="9WO-rO-iMd"/>
                             <constraint firstItem="ZcP-A8-vGV" firstAttribute="bottom" secondItem="8yd-S1-kFT" secondAttribute="top" constant="-25" id="RfM-fB-8E2"/>
                             <constraint firstAttribute="centerX" secondItem="ZcP-A8-vGV" secondAttribute="centerX" id="Zlg-mQ-FMJ"/>
