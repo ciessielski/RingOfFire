@@ -25,7 +25,7 @@ class InstructionsViewController: UIViewController
         cardTitle.text = activeCard.title
         cardView.image = UIImage(named: activeCard.slug)
         cardInstructions.text = activeCard.instructions
-        
+        cardInstructions.textAlignment = .Center
     }
 
     override func didReceiveMemoryWarning()

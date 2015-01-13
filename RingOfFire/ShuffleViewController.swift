@@ -30,7 +30,7 @@ class ShuffleViewController: UIViewController
         }
         
         shuffleImageView.animationImages = images
-        shuffleImageView.animationDuration = 1.8
+        shuffleImageView.animationDuration = 2.0
         shuffleImageView.startAnimating()
 
         game.deck.removeAtIndex(0)

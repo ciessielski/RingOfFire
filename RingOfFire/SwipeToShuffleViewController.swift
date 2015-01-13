@@ -26,7 +26,7 @@ class SwipeToShuffleViewController: UIViewController
         }
         UIView.animateWithDuration(1.5, delay: 0, options: .Repeat | .Autoreverse , animations: {self.swipeToShuffleLabel.alpha = 0}, completion: nil)
         
-        numberOfCardsLabel.text="Left: \(game.deck.count-1) "
+        numberOfCardsLabel.text="Cards left: \(game.deck.count-1) "
     
 
     }
