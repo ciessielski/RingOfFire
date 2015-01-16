@@ -241,11 +241,11 @@
                 </swipeGestureRecognizer>
                 <swipeGestureRecognizer direction="down" id="UKN-i3-sNH" userLabel="Swipe Down Gesture Recognizer">
                     <connections>
-                        <segue destination="vXZ-lx-hvc" kind="show" id="OG2-7B-Wpg"/>
+                        <segue destination="vXZ-lx-hvc" kind="custom" customClass="FromTopVerticalSegue" id="OG2-7B-Wpg"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1182" y="627.75"/>
+            <point key="canvasLocation" x="983" y="583"/>
         </scene>
         <!--Tutorial View Controller-->
         <scene sceneID="XmQ-gV-Rd6">
@@ -559,8 +559,8 @@
         <image name="bucket" width="320" height="447"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="YIa-kL-EYk"/>
+        <segue reference="cTT-Nj-SsP"/>
+        <segue reference="OG2-7B-Wpg"/>
         <segue reference="Jwq-cr-fhB"/>
-        <segue reference="Bs7-Iq-X07"/>
     </inferredMetricsTieBreakers>
 </document>
