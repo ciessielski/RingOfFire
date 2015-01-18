@@ -125,14 +125,19 @@
                                     <segue destination="CQH-lz-0Ql" kind="show" id="Hoh-XA-GPd"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999973" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Cards left:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gNw-rw-hr2">
-                                <rect key="frame" x="336" y="58" width="114" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="←  swipe to shuffle  →" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r1w-kO-UJk">
+                                <rect key="frame" x="150" y="500" width="300" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999973" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Cards left:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gNw-rw-hr2">
+                                <rect key="frame" x="477" y="58" width="114" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="114" id="8fZ-k0-hnc"/>
                                     <constraint firstAttribute="width" constant="114" id="H3a-Pj-wDr"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -141,22 +146,14 @@
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact">
                                     <mask key="constraints">
-                                        <exclude reference="8fZ-k0-hnc"/>
                                         <include reference="H3a-Pj-wDr"/>
                                     </mask>
                                 </variation>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="←  swipe to shuffle  →" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r1w-kO-UJk">
-                                <rect key="frame" x="150" y="500" width="300" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="gNw-rw-hr2" firstAttribute="trailing" secondItem="cOi-22-dcw" secondAttribute="trailing" id="1zp-Vv-LcS"/>
                             <constraint firstItem="a6Q-GF-GJ5" firstAttribute="baseline" secondItem="L2a-mt-Ngm" secondAttribute="baseline" id="37E-lz-acD"/>
                             <constraint firstItem="cOi-22-dcw" firstAttribute="centerX" secondItem="JM7-UK-vi3" secondAttribute="centerX" id="6gR-kY-l4I"/>
                             <constraint firstItem="L2a-mt-Ngm" firstAttribute="trailing" secondItem="JM7-UK-vi3" secondAttribute="trailingMargin" constant="7" id="7vy-pq-JwI"/>
@@ -181,6 +178,7 @@
                             <constraint firstItem="cOi-22-dcw" firstAttribute="bottom" secondItem="z8H-0o-zSq" secondAttribute="top" id="sj7-fY-mdP">
                                 <variation key="heightClass=regular-widthClass=compact" constant="-46"/>
                             </constraint>
+                            <constraint firstItem="gNw-rw-hr2" firstAttribute="trailing" secondItem="L2a-mt-Ngm" secondAttribute="trailing" id="skT-bp-6dI"/>
                             <constraint firstItem="gNw-rw-hr2" firstAttribute="top" secondItem="3ya-M3-3DX" secondAttribute="bottom" constant="8" symbolic="YES" id="zFY-AM-Ogu"/>
                         </constraints>
                         <variation key="default">
@@ -204,7 +202,6 @@
                                 <exclude reference="kxs-1B-9xj"/>
                                 <include reference="nOq-eb-iZv"/>
                                 <include reference="sj7-fY-mdP"/>
-                                <exclude reference="1zp-Vv-LcS"/>
                                 <include reference="8kT-TT-rxC"/>
                                 <exclude reference="iuB-fH-Gnd"/>
                                 <include reference="zFY-AM-Ogu"/>
