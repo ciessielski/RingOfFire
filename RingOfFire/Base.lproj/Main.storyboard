@@ -93,20 +93,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="bucket" translatesAutoresizingMaskIntoConstraints="NO" id="cOi-22-dcw">
-                                <rect key="frame" x="150" y="58" width="300" height="400"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="v86-oy-0oS"/>
-                                </constraints>
-                                <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="150" y="175" width="300" height="450"/>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <mask key="constraints">
-                                        <exclude reference="v86-oy-0oS"/>
-                                    </mask>
-                                </variation>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L2a-mt-Ngm" userLabel="Settings">
                                 <rect key="frame" x="561" y="562" width="30" height="30"/>
                                 <state key="normal" image="SettingsButton">
@@ -150,6 +136,20 @@
                                     </mask>
                                 </variation>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bucket" translatesAutoresizingMaskIntoConstraints="NO" id="cOi-22-dcw">
+                                <rect key="frame" x="150" y="40" width="300" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="v86-oy-0oS"/>
+                                </constraints>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="150" y="175" width="300" height="450"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <exclude reference="v86-oy-0oS"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -167,14 +167,14 @@
                             <constraint firstItem="z8H-0o-zSq" firstAttribute="top" secondItem="r1w-kO-UJk" secondAttribute="bottom" constant="79" id="Nps-hr-eS6">
                                 <variation key="heightClass=regular-widthClass=compact" constant="46"/>
                             </constraint>
-                            <constraint firstItem="r1w-kO-UJk" firstAttribute="top" secondItem="cOi-22-dcw" secondAttribute="bottom" constant="42" id="O5Z-P1-SUo"/>
-                            <constraint firstItem="gNw-rw-hr2" firstAttribute="top" secondItem="cOi-22-dcw" secondAttribute="top" id="iuB-fH-Gnd"/>
+                            <constraint firstItem="r1w-kO-UJk" firstAttribute="top" secondItem="cOi-22-dcw" secondAttribute="bottom" constant="60" id="O5Z-P1-SUo"/>
+                            <constraint firstItem="gNw-rw-hr2" firstAttribute="top" secondItem="cOi-22-dcw" secondAttribute="top" constant="18" id="iuB-fH-Gnd"/>
                             <constraint firstItem="r1w-kO-UJk" firstAttribute="leading" secondItem="cOi-22-dcw" secondAttribute="leading" id="jfS-C6-ZPR"/>
-                            <constraint firstItem="cOi-22-dcw" firstAttribute="top" secondItem="3ya-M3-3DX" secondAttribute="bottom" constant="38" id="kxs-1B-9xj"/>
+                            <constraint firstItem="cOi-22-dcw" firstAttribute="top" secondItem="3ya-M3-3DX" secondAttribute="bottom" constant="40" id="kxs-1B-9xj"/>
                             <constraint firstItem="cOi-22-dcw" firstAttribute="top" secondItem="JM7-UK-vi3" secondAttribute="top" id="nOq-eb-iZv">
                                 <variation key="heightClass=regular-widthClass=compact" constant="37"/>
                             </constraint>
-                            <constraint firstItem="z8H-0o-zSq" firstAttribute="top" secondItem="cOi-22-dcw" secondAttribute="bottom" constant="142" id="rcu-89-T3D"/>
+                            <constraint firstItem="z8H-0o-zSq" firstAttribute="top" secondItem="cOi-22-dcw" secondAttribute="bottom" constant="160" id="rcu-89-T3D"/>
                             <constraint firstItem="cOi-22-dcw" firstAttribute="bottom" secondItem="z8H-0o-zSq" secondAttribute="top" id="sj7-fY-mdP">
                                 <variation key="heightClass=regular-widthClass=compact" constant="-46"/>
                             </constraint>
@@ -273,9 +273,7 @@
                             <constraint firstItem="0T3-av-Ruy" firstAttribute="centerX" secondItem="ZAd-Oj-j9j" secondAttribute="centerX" constant="1" id="K40-sF-Ild">
                                 <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
                             </constraint>
-                            <constraint firstItem="FlY-Q5-AQ5" firstAttribute="top" secondItem="0T3-av-Ruy" secondAttribute="bottom" constant="8" symbolic="YES" id="pbp-LW-0md">
-                                <variation key="heightClass=regular-widthClass=compact" constant="20"/>
-                            </constraint>
+                            <constraint firstItem="FlY-Q5-AQ5" firstAttribute="top" secondItem="0T3-av-Ruy" secondAttribute="bottom" constant="8" symbolic="YES" id="pbp-LW-0md"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -556,8 +554,8 @@
         <image name="bucket" width="320" height="447"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Bs7-Iq-X07"/>
-        <segue reference="SW8-WT-PXf"/>
+        <segue reference="YIa-kL-EYk"/>
+        <segue reference="OG2-7B-Wpg"/>
         <segue reference="Jwq-cr-fhB"/>
     </inferredMetricsTieBreakers>
 </document>
