@@ -12,6 +12,11 @@
     },
     {
       "idiom" : "iphone",
+      "subtype" : "retina4",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "iphone",
       "scale" : "3x",
       "filename" : "castle-3x-w1080.png"
     }
