@@ -117,8 +117,8 @@
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999973" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Cards left:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gNw-rw-hr2">
-                                <rect key="frame" x="477" y="58" width="114" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999973" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cards left:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gNw-rw-hr2">
+                                <rect key="frame" x="520" y="58" width="71" height="18"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="114" id="H3a-Pj-wDr"/>
                                 </constraints>
@@ -364,24 +364,26 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WAU-kL-VnY">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="641"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="WAU-kL-VnY" secondAttribute="trailing" id="BrV-Vn-1hq"/>
+                            <constraint firstAttribute="trailing" secondItem="WAU-kL-VnY" secondAttribute="trailing" id="2Jg-bn-daG"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="WAU-kL-VnY" secondAttribute="bottom" constant="-41" id="LHO-dl-wY5"/>
+                            <constraint firstItem="WAU-kL-VnY" firstAttribute="top" secondItem="HtK-fY-Wky" secondAttribute="top" id="Ox2-vs-LHP"/>
                             <constraint firstItem="WAU-kL-VnY" firstAttribute="leading" secondItem="HtK-fY-Wky" secondAttribute="leading" id="RFz-Gb-bMC"/>
-                            <constraint firstItem="WAU-kL-VnY" firstAttribute="leading" secondItem="HtK-fY-Wky" secondAttribute="leading" id="U8t-OY-eUC"/>
-                            <constraint firstItem="WAU-kL-VnY" firstAttribute="top" secondItem="HtK-fY-Wky" secondAttribute="top" id="sYq-wp-0Ij"/>
+                            <constraint firstItem="WAU-kL-VnY" firstAttribute="bottom" secondItem="quD-Qn-Uli" secondAttribute="top" id="Y95-NR-Cya"/>
+                            <constraint firstItem="WAU-kL-VnY" firstAttribute="leading" secondItem="HtK-fY-Wky" secondAttribute="leading" id="qze-yR-kSl"/>
                             <constraint firstAttribute="bottomMargin" secondItem="WAU-kL-VnY" secondAttribute="bottom" constant="-41" id="tCl-1P-yb4">
                                 <variation key="heightClass=regular-widthClass=compact" constant="20"/>
                             </constraint>
                             <constraint firstAttribute="trailing" secondItem="WAU-kL-VnY" secondAttribute="trailing" id="xqG-BL-cOl"/>
-                            <constraint firstItem="WAU-kL-VnY" firstAttribute="bottom" secondItem="quD-Qn-Uli" secondAttribute="top" constant="41" id="yHu-ak-lhA"/>
                             <constraint firstItem="WAU-kL-VnY" firstAttribute="top" secondItem="HtK-fY-Wky" secondAttribute="top" id="yxv-2Q-tpz"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="LHO-dl-wY5"/>
                                 <exclude reference="RFz-Gb-bMC"/>
                                 <exclude reference="tCl-1P-yb4"/>
                                 <exclude reference="xqG-BL-cOl"/>
@@ -390,13 +392,9 @@
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="constraints">
-                                <exclude reference="BrV-Vn-1hq"/>
                                 <include reference="RFz-Gb-bMC"/>
-                                <exclude reference="U8t-OY-eUC"/>
-                                <exclude reference="sYq-wp-0Ij"/>
                                 <include reference="tCl-1P-yb4"/>
                                 <include reference="xqG-BL-cOl"/>
-                                <exclude reference="yHu-ak-lhA"/>
                                 <include reference="yxv-2Q-tpz"/>
                             </mask>
                         </variation>
@@ -407,7 +405,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gNd-Ry-Btv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="942" y="1740.75"/>
+            <point key="canvasLocation" x="942" y="1740"/>
         </scene>
         <!--Settings View Controller-->
         <scene sceneID="Cch-nX-LvF">
@@ -455,8 +453,8 @@
                                     <rect key="frame" x="0.0" y="0.0" width="0.0" height="0.0"/>
                                 </variation>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Card title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ya4-x9-oly">
-                                <rect key="frame" x="279" y="139" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Card title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ya4-x9-oly">
+                                <rect key="frame" x="265" y="139" width="70" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
