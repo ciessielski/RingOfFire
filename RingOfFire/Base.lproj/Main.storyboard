@@ -164,6 +164,7 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
                         <outlet property="numberOfCardsLabel" destination="GCi-o4-mRt" id="rc4-k1-cba"/>
+                        <outlet property="swipeDownGesture" destination="UKN-i3-sNH" id="rGe-5m-CU5"/>
                         <outlet property="swipeToShuffleLabel" destination="r1w-kO-UJk" id="SdB-xt-2tZ"/>
                     </connections>
                 </viewController>
@@ -180,7 +181,7 @@
                 </swipeGestureRecognizer>
                 <swipeGestureRecognizer direction="down" id="UKN-i3-sNH" userLabel="Swipe Down Gesture Recognizer">
                     <connections>
-                        <segue destination="vXZ-lx-hvc" kind="custom" customClass="FromTopVerticalSegue" id="OG2-7B-Wpg"/>
+                        <segue destination="vXZ-lx-hvc" kind="custom" identifier="showMeLastCard" customClass="FromTopVerticalSegue" id="OG2-7B-Wpg"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
@@ -494,8 +495,8 @@
         <image name="bucket" width="320" height="447"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="YIa-kL-EYk"/>
+        <segue reference="fZB-2o-AoI"/>
+        <segue reference="cTT-Nj-SsP"/>
         <segue reference="OG2-7B-Wpg"/>
-        <segue reference="Jwq-cr-fhB"/>
     </inferredMetricsTieBreakers>
 </document>

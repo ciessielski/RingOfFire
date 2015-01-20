@@ -16,6 +16,8 @@ class SwipeToShuffleViewController: UIViewController
 {
     @IBOutlet weak var numberOfCardsLabel: UILabel!
     @IBOutlet var swipeToShuffleLabel: UILabel!
+    @IBOutlet var swipeDownGesture: UISwipeGestureRecognizer!
+
     
     override func viewDidAppear(animated: Bool)
     {
@@ -30,6 +32,12 @@ class SwipeToShuffleViewController: UIViewController
         super.viewDidLoad()
         
         numberOfCardsLabel.text="cards left: \(game.deck.count-1)"
+        
+        if game.deck.count == 53
+        {
+            self.view.removeGestureRecognizer(swipeDownGesture)
+        }
+        
     }
     
     override func didReceiveMemoryWarning()
