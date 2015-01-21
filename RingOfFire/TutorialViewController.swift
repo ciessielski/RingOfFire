@@ -32,7 +32,7 @@ class TutorialViewController: UIViewController, UIPageViewControllerDataSource {
     {
         
         let pageController = self.storyboard!.instantiateViewControllerWithIdentifier("PageController") as UIPageViewController
-        pageController.dataSource = self
+            pageController.dataSource = self
         
         if contentImages.count > 0 {
             let firstController = getItemController(0)!
@@ -59,7 +59,7 @@ class TutorialViewController: UIViewController, UIPageViewControllerDataSource {
         
         let itemController = viewController as PageItemController
         
-        if itemController.itemIndex > 0 {
+        if  itemController.itemIndex > 0 {
             return getItemController(itemController.itemIndex-1)
         }
         
@@ -70,7 +70,7 @@ class TutorialViewController: UIViewController, UIPageViewControllerDataSource {
         
         let itemController = viewController as PageItemController
         
-        if itemController.itemIndex+1 < contentImages.count {
+        if  itemController.itemIndex+1 < contentImages.count {
             return getItemController(itemController.itemIndex+1)
         }
         
@@ -80,12 +80,11 @@ class TutorialViewController: UIViewController, UIPageViewControllerDataSource {
     private func getItemController(itemIndex: Int) -> PageItemController?
     {
         
-        if itemIndex < contentImages.count
-    {
+        if itemIndex < contentImages.count{
             let pageItemController = self.storyboard!.instantiateViewControllerWithIdentifier("ItemController") as PageItemController
-            pageItemController.itemIndex = itemIndex
-            pageItemController.imageName = contentImages[itemIndex]
-            return pageItemController
+                pageItemController.itemIndex = itemIndex
+                pageItemController.imageName = contentImages[itemIndex]
+         return pageItemController
         }
         
         return nil
