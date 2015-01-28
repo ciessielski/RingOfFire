@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1103DD701A7991F100B1BB0C /* EndOfTheGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1103DD6F1A7991F100B1BB0C /* EndOfTheGameViewController.swift */; };
 		1126F7B81A43735C000176F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1126F7B71A43735C000176F8 /* AppDelegate.swift */; };
 		1126F7BB1A43735C000176F8 /* RingOfFire.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1126F7B91A43735C000176F8 /* RingOfFire.xcdatamodeld */; };
 		1126F7BD1A43735C000176F8 /* ShuffleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1126F7BC1A43735C000176F8 /* ShuffleViewController.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1103DD6F1A7991F100B1BB0C /* EndOfTheGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EndOfTheGameViewController.swift; path = ../EndOfTheGameViewController.swift; sourceTree = "<group>"; };
 		1126F7B21A43735C000176F8 /* RingOfFire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RingOfFire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1126F7B61A43735C000176F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1126F7B71A43735C000176F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 				1181563A1A4A4503006F655D /* InstructionsViewController.swift */,
 				118423E01A5FE86C006E8755 /* TutorialViewController.swift */,
 				1163C7521A60A14100F90168 /* PageItemViewController.swift */,
+				1103DD6F1A7991F100B1BB0C /* EndOfTheGameViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 				1181563D1A4A464C006F655D /* SettingsViewController.swift in Sources */,
 				1126F7BB1A43735C000176F8 /* RingOfFire.xcdatamodeld in Sources */,
 				1181563B1A4A4503006F655D /* InstructionsViewController.swift in Sources */,
+				1103DD701A7991F100B1BB0C /* EndOfTheGameViewController.swift in Sources */,
 				118156381A4A4469006F655D /* CardViewController.swift in Sources */,
 				9F59BDDF1A5741C1005954A5 /* Card.swift in Sources */,
 				1126F7B81A43735C000176F8 /* AppDelegate.swift in Sources */,

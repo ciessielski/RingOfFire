@@ -93,7 +93,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L2a-mt-Ngm" userLabel="Settings">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L2a-mt-Ngm" userLabel="Settings">
                                 <rect key="frame" x="561" y="562" width="30" height="30"/>
                                 <state key="normal" image="SettingsButton">
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -376,6 +376,24 @@
                 </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1852" y="1777"/>
+        </scene>
+        <!--End Of The Game View Controller-->
+        <scene sceneID="n82-nz-Hjc">
+            <objects>
+                <viewController id="OgM-A6-Q7M" customClass="EndOfTheGameViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mLo-dt-d03"/>
+                        <viewControllerLayoutGuide type="bottom" id="3e5-2h-ID8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GxK-eE-Q6m">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Ka-v5-ii4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2654" y="1343"/>
         </scene>
         <!--Instructions View Controller-->
         <scene sceneID="ehC-gG-5I6">
