@@ -10,9 +10,14 @@ import UIKit
 
 class EndOfTheGameViewController: UIViewController {
 
-    @IBAction func newGameClicked(sender: AnyObject) {
-        game = Gameplay()
+
+
+    @IBAction func newGame(sender: AnyObject) {
+        
+        println("test")
+        println("fck xcode")
     }
+
 
     override func viewDidLoad() {
         super.viewDidLoad()

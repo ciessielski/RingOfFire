@@ -66,7 +66,7 @@
                     <connections>
                         <outlet property="cardView" destination="vBW-Qc-E5o" id="gHr-rw-3gS"/>
                         <segue destination="m1W-BJ-Rai" kind="presentation" identifier="cardToSwipe" id="yxi-qg-uPl"/>
-                        <segue destination="OgM-A6-Q7M" kind="modal" identifier="cardToEnd" id="KcM-EB-eAo"/>
+                        <segue destination="OgM-A6-Q7M" kind="presentation" identifier="cardToEnd" id="KcM-EB-eAo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -392,21 +392,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="agL-d0-V4J">
-                                <rect key="frame" x="214" y="285" width="172" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cII-aM-EFJ">
+                                <rect key="frame" x="235" y="285" width="130" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="172" id="FoU-Mt-dJB"/>
+                                    <constraint firstAttribute="width" constant="130" id="LEh-UT-7AE"/>
                                 </constraints>
                                 <state key="normal" title="new game">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="newGame:" destination="OgM-A6-Q7M" eventType="touchUpInside" id="mQI-20-18B"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.14117647059999999" green="0.52156862749999999" blue="0.71764705880000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="agL-d0-V4J" firstAttribute="centerX" secondItem="GxK-eE-Q6m" secondAttribute="centerX" id="IZx-Uq-KtZ"/>
-                            <constraint firstItem="agL-d0-V4J" firstAttribute="centerY" secondItem="GxK-eE-Q6m" secondAttribute="centerY" id="XfL-Ya-Pvt"/>
+                            <constraint firstItem="cII-aM-EFJ" firstAttribute="centerY" secondItem="GxK-eE-Q6m" secondAttribute="centerY" id="S2p-Pq-0x0"/>
+                            <constraint firstItem="cII-aM-EFJ" firstAttribute="centerX" secondItem="GxK-eE-Q6m" secondAttribute="centerX" id="lCJ-Yv-UEj"/>
                         </constraints>
                     </view>
                     <connections>
@@ -521,9 +524,9 @@
         <image name="bucket" width="320" height="447"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="KcM-EB-eAo"/>
         <segue reference="Bs7-Iq-X07"/>
-        <segue reference="VkR-ph-e0R"/>
-        <segue reference="TeZ-AY-rmC"/>
+        <segue reference="yxi-qg-uPl"/>
         <segue reference="Jwq-cr-fhB"/>
     </inferredMetricsTieBreakers>
 </document>
