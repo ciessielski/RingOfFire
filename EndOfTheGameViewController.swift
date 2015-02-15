@@ -12,16 +12,15 @@ class EndOfTheGameViewController: UIViewController {
 
 
 
-    @IBAction func newGame(sender: AnyObject) {
-        
-        println("test")
-        println("fck xcode")
+    @IBAction func newGame(sender: AnyObject)
+    {
         game = Gameplay()
         performSegueWithIdentifier("endToSwipe", sender: self)
     }
 
 
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.

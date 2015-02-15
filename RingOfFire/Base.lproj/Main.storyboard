@@ -378,22 +378,21 @@
                                 </state>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JZb-v3-ArR">
-                                <rect key="frame" x="65" y="226" width="463" height="321"/>
+                                <rect key="frame" x="16" y="226" width="568" height="321"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.45012257652237708" blue="0.76796357083597211" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="8PN-xx-QaZ" firstAttribute="top" secondItem="q0t-2v-PWm" secondAttribute="bottom" constant="44" id="2fN-ci-ZlL"/>
                             <constraint firstItem="xRe-u0-9H7" firstAttribute="top" secondItem="JZb-v3-ArR" secondAttribute="bottom" constant="53" id="ABf-Oa-eEb"/>
                             <constraint firstItem="q0t-2v-PWm" firstAttribute="top" secondItem="rzv-9W-Zf4" secondAttribute="bottom" constant="68" id="Mq6-lP-BJc"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="JZb-v3-ArR" secondAttribute="trailing" constant="56" id="Vbe-me-9hT"/>
-                            <constraint firstItem="JZb-v3-ArR" firstAttribute="leading" secondItem="oIQ-Pj-h8F" secondAttribute="leadingMargin" constant="49" id="Y32-41-XZ2"/>
-                            <constraint firstItem="JZb-v3-ArR" firstAttribute="centerX" secondItem="8PN-xx-QaZ" secondAttribute="centerX" id="gyQ-nU-DPa"/>
+                            <constraint firstItem="JZb-v3-ArR" firstAttribute="leading" secondItem="oIQ-Pj-h8F" secondAttribute="leadingMargin" id="Y32-41-XZ2"/>
+                            <constraint firstItem="JZb-v3-ArR" firstAttribute="trailing" secondItem="oIQ-Pj-h8F" secondAttribute="trailingMargin" id="aKZ-ws-Pnk"/>
+                            <constraint firstItem="JZb-v3-ArR" firstAttribute="centerX" secondItem="8PN-xx-QaZ" secondAttribute="centerX" constant="4" id="gyQ-nU-DPa"/>
                             <constraint firstItem="q0t-2v-PWm" firstAttribute="centerX" secondItem="8PN-xx-QaZ" secondAttribute="centerX" id="l1W-Du-4VP"/>
                             <constraint firstItem="JZb-v3-ArR" firstAttribute="top" secondItem="8PN-xx-QaZ" secondAttribute="bottom" constant="54" id="l7H-hA-TBv"/>
                         </constraints>
@@ -555,9 +554,9 @@
         <image name="bucket" width="320" height="447"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="OG2-7B-Wpg"/>
-        <segue reference="TeZ-AY-rmC"/>
         <segue reference="KcM-EB-eAo"/>
+        <segue reference="OG2-7B-Wpg"/>
+        <segue reference="8xp-uZ-vrT"/>
         <segue reference="Jwq-cr-fhB"/>
     </inferredMetricsTieBreakers>
 </document>
