@@ -476,6 +476,7 @@
                         <outlet property="cardInstructions" destination="ewj-on-nm7" id="7wG-MO-23a"/>
                         <outlet property="cardTitle" destination="Ya4-x9-oly" id="xHk-JN-OXG"/>
                         <outlet property="cardView" destination="lMA-zj-57T" id="QpK-gk-fBY"/>
+                        <segue destination="m1W-BJ-Rai" kind="presentation" identifier="instructionToSwipe" id="6SY-e3-H7Z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="POA-Ac-tK9" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -486,7 +487,7 @@
                 </tapGestureRecognizer>
                 <swipeGestureRecognizer direction="up" id="6Kb-tN-6iG">
                     <connections>
-                        <segue destination="m1W-BJ-Rai" kind="presentation" id="SW8-WT-PXf"/>
+                        <action selector="throwCardAway:" destination="F3t-ZI-Ki9" id="XMC-07-6nP"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
@@ -499,8 +500,8 @@
         <image name="bucket" width="320" height="447"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="yxi-qg-uPl"/>
-        <segue reference="Bs7-Iq-X07"/>
+        <segue reference="6SY-e3-H7Z"/>
+        <segue reference="OG2-7B-Wpg"/>
         <segue reference="Jwq-cr-fhB"/>
     </inferredMetricsTieBreakers>
 </document>

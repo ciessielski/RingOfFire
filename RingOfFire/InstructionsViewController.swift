@@ -16,6 +16,11 @@ class InstructionsViewController: UIViewController
     @IBOutlet weak var cardView: UIImageView!
     @IBOutlet weak var cardInstructions: UITextView!
    
+    @IBAction func throwCardAway(sender: UISwipeGestureRecognizer)
+    {
+        performSegueWithIdentifier("instructionToSwipe", sender: self)
+        println("wywalam karte")
+    }
 
     
     override func viewDidLoad()
