@@ -383,7 +383,7 @@
         <!--End Of The Game View Controller-->
         <scene sceneID="n82-nz-Hjc">
             <objects>
-                <viewController id="OgM-A6-Q7M" customClass="EndOfTheGameViewController" sceneMemberID="viewController">
+                <viewController id="OgM-A6-Q7M" customClass="EndOfTheGameViewController" customModule="RingOfFire" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mLo-dt-d03"/>
                         <viewControllerLayoutGuide type="bottom" id="3e5-2h-ID8"/>
@@ -402,7 +402,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="newGame:" destination="OgM-A6-Q7M" eventType="touchUpInside" id="mQI-20-18B"/>
+                                    <action selector="newGame:" destination="OgM-A6-Q7M" eventType="touchUpInside" id="OQ1-wA-tEh"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -524,9 +524,9 @@
         <image name="bucket" width="320" height="447"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="OG2-7B-Wpg"/>
+        <segue reference="TeZ-AY-rmC"/>
         <segue reference="KcM-EB-eAo"/>
-        <segue reference="Bs7-Iq-X07"/>
-        <segue reference="yxi-qg-uPl"/>
         <segue reference="Jwq-cr-fhB"/>
     </inferredMetricsTieBreakers>
 </document>
