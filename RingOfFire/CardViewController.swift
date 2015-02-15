@@ -17,8 +17,7 @@ class CardViewController: UIViewController
     {
         super.viewDidLoad()
         
-        var i = 0
-        var activeCard = game.deck[i]
+        var activeCard = game.deck[0]
         
         cardView.image = UIImage(named: activeCard.slug)
      
