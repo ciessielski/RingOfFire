@@ -18,8 +18,15 @@ class InstructionsViewController: UIViewController
    
     @IBAction func throwCardAway(sender: UISwipeGestureRecognizer)
     {
-        performSegueWithIdentifier("instructionToSwipe", sender: self)
-        println("wywalam karte")
+        if (game.deck.count == 1)
+        {
+            performSegueWithIdentifier("instructionToEnd", sender: self)
+            
+        }
+        else
+        {
+            performSegueWithIdentifier("instructionToSwipe", sender: self)
+        }
     }
 
     

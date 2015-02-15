@@ -16,12 +16,13 @@ class CardViewController: UIViewController
     {
         if (game.deck.count == 1)
         {
-            performSegueWithIdentifier("toEnd", sender: self)
+            performSegueWithIdentifier("cardToEnd", sender: self)
             
         }
-        else{
-        performSegueWithIdentifier("cardToSwipe", sender: self)
-            println("wywalam karte")}
+        else
+        {
+            performSegueWithIdentifier("cardToSwipe", sender: self)
+        }
     }
     
     override func viewDidLoad()
