@@ -401,9 +401,6 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <segue destination="m1W-BJ-Rai" kind="presentation" identifier="newGame" id="ORx-ge-41y"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.14117647059999999" green="0.52156862749999999" blue="0.71764705880000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -412,6 +409,9 @@
                             <constraint firstItem="agL-d0-V4J" firstAttribute="centerY" secondItem="GxK-eE-Q6m" secondAttribute="centerY" id="XfL-Ya-Pvt"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="m1W-BJ-Rai" kind="presentation" identifier="endToSwipe" id="TeZ-AY-rmC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Ka-v5-ii4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -521,9 +521,9 @@
         <image name="bucket" width="320" height="447"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="6SY-e3-H7Z"/>
         <segue reference="Bs7-Iq-X07"/>
         <segue reference="VkR-ph-e0R"/>
+        <segue reference="TeZ-AY-rmC"/>
         <segue reference="Jwq-cr-fhB"/>
     </inferredMetricsTieBreakers>
 </document>
