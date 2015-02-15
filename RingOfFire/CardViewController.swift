@@ -11,8 +11,12 @@ import UIKit
 class CardViewController: UIViewController
 {
     @IBOutlet weak var cardView: UIImageView!
-    @IBOutlet var throwCardAway: UISwipeGestureRecognizer!
     
+    @IBAction func throwCardAway(sender: UISwipeGestureRecognizer)
+    {
+        performSegueWithIdentifier("cardToSwipe", sender: self)
+        println("wywalam karte")
+    }
     
     override func viewDidLoad()
     {
