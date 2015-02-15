@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="m1W-BJ-Rai">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="m1W-BJ-Rai">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
@@ -65,7 +65,8 @@
                     </view>
                     <connections>
                         <outlet property="cardView" destination="vBW-Qc-E5o" id="gHr-rw-3gS"/>
-                        <segue destination="OgM-A6-Q7M" kind="modal" identifier="toEnd" id="r7V-kp-wsy"/>
+                        <segue destination="m1W-BJ-Rai" kind="presentation" identifier="cardToSwipe" id="yxi-qg-uPl"/>
+                        <segue destination="OgM-A6-Q7M" kind="modal" identifier="toEnd" id="KcM-EB-eAo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -390,7 +391,21 @@
                     <view key="view" contentMode="scaleToFill" id="GxK-eE-Q6m">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="agL-d0-V4J">
+                                <rect key="frame" x="214" y="285" width="172" height="30"/>
+                                <state key="normal" title="new game">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.14117647059999999" green="0.52156862749999999" blue="0.71764705880000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="agL-d0-V4J" secondAttribute="trailing" constant="198" id="2xo-qI-Rwh"/>
+                            <constraint firstItem="agL-d0-V4J" firstAttribute="centerY" secondItem="GxK-eE-Q6m" secondAttribute="centerY" id="PyT-y3-ala"/>
+                            <constraint firstItem="agL-d0-V4J" firstAttribute="leading" secondItem="GxK-eE-Q6m" secondAttribute="leadingMargin" constant="198" id="cDa-be-s0d"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Ka-v5-ii4" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -499,8 +514,8 @@
         <image name="bucket" width="320" height="447"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="OG2-7B-Wpg"/>
         <segue reference="yxi-qg-uPl"/>
-        <segue reference="Bs7-Iq-X07"/>
         <segue reference="Jwq-cr-fhB"/>
     </inferredMetricsTieBreakers>
 </document>

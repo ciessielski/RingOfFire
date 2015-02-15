@@ -14,8 +14,14 @@ class CardViewController: UIViewController
     
     @IBAction func throwCardAway(sender: UISwipeGestureRecognizer)
     {
+        if (game.deck.count == 1)
+        {
+            performSegueWithIdentifier("toEnd", sender: self)
+            
+        }
+        else{
         performSegueWithIdentifier("cardToSwipe", sender: self)
-        println("wywalam karte")
+            println("wywalam karte")}
     }
     
     override func viewDidLoad()
