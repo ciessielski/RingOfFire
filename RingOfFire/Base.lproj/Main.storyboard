@@ -364,8 +364,39 @@
                     <view key="view" contentMode="scaleToFill" id="oIQ-Pj-h8F">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q0t-2v-PWm">
+                                <rect key="frame" x="244" y="68" width="105" height="30"/>
+                                <state key="normal" title="Continue game">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8PN-xx-QaZ">
+                                <rect key="frame" x="250" y="142" width="92" height="30"/>
+                                <state key="normal" title="Restart game">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JZb-v3-ArR">
+                                <rect key="frame" x="65" y="226" width="463" height="321"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="0.45012257652237708" blue="0.76796357083597211" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="8PN-xx-QaZ" firstAttribute="top" secondItem="q0t-2v-PWm" secondAttribute="bottom" constant="44" id="2fN-ci-ZlL"/>
+                            <constraint firstItem="xRe-u0-9H7" firstAttribute="top" secondItem="JZb-v3-ArR" secondAttribute="bottom" constant="53" id="ABf-Oa-eEb"/>
+                            <constraint firstItem="q0t-2v-PWm" firstAttribute="top" secondItem="rzv-9W-Zf4" secondAttribute="bottom" constant="68" id="Mq6-lP-BJc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JZb-v3-ArR" secondAttribute="trailing" constant="56" id="Vbe-me-9hT"/>
+                            <constraint firstItem="JZb-v3-ArR" firstAttribute="leading" secondItem="oIQ-Pj-h8F" secondAttribute="leadingMargin" constant="49" id="Y32-41-XZ2"/>
+                            <constraint firstItem="JZb-v3-ArR" firstAttribute="centerX" secondItem="8PN-xx-QaZ" secondAttribute="centerX" id="gyQ-nU-DPa"/>
+                            <constraint firstItem="q0t-2v-PWm" firstAttribute="centerX" secondItem="8PN-xx-QaZ" secondAttribute="centerX" id="l1W-Du-4VP"/>
+                            <constraint firstItem="JZb-v3-ArR" firstAttribute="top" secondItem="8PN-xx-QaZ" secondAttribute="bottom" constant="54" id="l7H-hA-TBv"/>
+                        </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="8aB-JA-H3B" appends="YES" id="8dY-El-wtU"/>
                         </connections>
