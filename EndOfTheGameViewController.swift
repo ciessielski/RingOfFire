@@ -14,8 +14,6 @@ class EndOfTheGameViewController: UIViewController {
 
     @IBAction func newGame(sender: AnyObject) {
         
-        println("test")
-        println("fck xcode")
         game = Gameplay()
         performSegueWithIdentifier("endToSwipe", sender: self)
     }

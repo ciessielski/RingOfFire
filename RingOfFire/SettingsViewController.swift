@@ -10,6 +10,20 @@ import UIKit
 
 class SettingsViewController: UIViewController
 {
+    @IBAction func continueAction(sender: AnyObject) {
+    
+        performSegueWithIdentifier("backToGame", sender: self)
+    }
+    
+    
+    
+    @IBAction func restartAction(sender: AnyObject) {
+        game = Gameplay()
+        performSegueWithIdentifier("backToGame", sender: self)
+    }
+    
+    
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()

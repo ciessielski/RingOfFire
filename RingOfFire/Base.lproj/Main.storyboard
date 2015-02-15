@@ -370,12 +370,10 @@
                                 <state key="normal" title="Continue game">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8PN-xx-QaZ">
-                                <rect key="frame" x="250" y="142" width="92" height="30"/>
-                                <state key="normal" title="Restart game">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                                <connections>
+                                    <action selector="continueAction:" destination="Pkl-37-KhO" eventType="touchUpInside" id="cRc-F1-oTm"/>
+                                    <action selector="continueGamePrwssed:" destination="Pkl-37-KhO" eventType="touchUpInside" id="kh7-ED-zPS"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JZb-v3-ArR">
                                 <rect key="frame" x="65" y="226" width="463" height="321"/>
@@ -384,8 +382,17 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8PN-xx-QaZ">
+                                <rect key="frame" x="250" y="142" width="92" height="30"/>
+                                <state key="normal" title="Restart game">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="restartAction:" destination="Pkl-37-KhO" eventType="touchUpInside" id="3aV-sF-EVN"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.45012257652237708" blue="0.76796357083597211" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="8PN-xx-QaZ" firstAttribute="top" secondItem="q0t-2v-PWm" secondAttribute="bottom" constant="44" id="2fN-ci-ZlL"/>
@@ -401,6 +408,9 @@
                             <outletCollection property="gestureRecognizers" destination="8aB-JA-H3B" appends="YES" id="8dY-El-wtU"/>
                         </connections>
                     </view>
+                    <connections>
+                        <segue destination="m1W-BJ-Rai" kind="presentation" identifier="backToGame" id="wP8-l2-ifS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pKd-sb-inW" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="up" id="8aB-JA-H3B">
@@ -555,9 +565,9 @@
         <image name="bucket" width="320" height="447"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="wP8-l2-ifS"/>
+        <segue reference="fZB-2o-AoI"/>
         <segue reference="OG2-7B-Wpg"/>
-        <segue reference="TeZ-AY-rmC"/>
         <segue reference="KcM-EB-eAo"/>
-        <segue reference="Jwq-cr-fhB"/>
     </inferredMetricsTieBreakers>
 </document>
