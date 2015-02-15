@@ -11,6 +11,7 @@ import UIKit
 class CardViewController: UIViewController
 {
     @IBOutlet weak var cardView: UIImageView!
+    @IBOutlet var throwCardAway: UISwipeGestureRecognizer!
     
     
     override func viewDidLoad()

@@ -65,6 +65,7 @@
                     </view>
                     <connections>
                         <outlet property="cardView" destination="vBW-Qc-E5o" id="gHr-rw-3gS"/>
+                        <outlet property="throwCardAway" destination="HuP-5M-VTj" id="dOA-Pn-aup"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -498,8 +499,8 @@
         <image name="bucket" width="320" height="447"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="fZB-2o-AoI"/>
-        <segue reference="SW8-WT-PXf"/>
         <segue reference="OG2-7B-Wpg"/>
+        <segue reference="cTT-Nj-SsP"/>
+        <segue reference="fZB-2o-AoI"/>
     </inferredMetricsTieBreakers>
 </document>
