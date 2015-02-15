@@ -80,26 +80,26 @@ class Gameplay
             deck.append(Card(slug: "castle"))
         }
      
-//        for i in 0...2
-//        {
-//            deck.append(Card(slug: "snake"))
-//            deck.append(Card(slug: "dicks"))
-//            deck.append(Card(slug: "chicks"))
-//            deck.append(Card(slug: "mate"))
-//        }
-//
-//        for i in 0...3
-//        {
-//            deck.append(Card(slug: "king"))
-//            deck.append(Card(slug: "story"))
-//            deck.append(Card(slug: "categories"))
-//            deck.append(Card(slug: "tale"))
-//            deck.append(Card(slug: "heaven"))
-//            deck.append(Card(slug: "you"))
-//            deck.append(Card(slug: "choose"))
-//            deck.append(Card(slug: "rhyme"))
-//            deck.append(Card(slug: "fis"))
-//        }
+        for i in 0...2
+        {
+            deck.append(Card(slug: "snake"))
+            deck.append(Card(slug: "dicks"))
+            deck.append(Card(slug: "chicks"))
+            deck.append(Card(slug: "mate"))
+        }
+
+        for i in 0...3
+        {
+            deck.append(Card(slug: "king"))
+            deck.append(Card(slug: "story"))
+            deck.append(Card(slug: "categories"))
+            deck.append(Card(slug: "tale"))
+            deck.append(Card(slug: "heaven"))
+            deck.append(Card(slug: "you"))
+            deck.append(Card(slug: "choose"))
+            deck.append(Card(slug: "rhyme"))
+            deck.append(Card(slug: "fis"))
+        }
 
     }
     
@@ -120,7 +120,7 @@ class Gameplay
     {
         var tempDeck : Array<Card> = []
        
-        for i in 0...1
+        for i in 0...51
         {
             let j = Int(arc4random_uniform(UInt32(deck.count-1)))            
             tempDeck.append(deck[j])

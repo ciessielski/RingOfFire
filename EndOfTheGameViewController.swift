@@ -16,6 +16,8 @@ class EndOfTheGameViewController: UIViewController {
         
         println("test")
         println("fck xcode")
+        game = Gameplay()
+        performSegueWithIdentifier("endToSwipe", sender: self)
     }
 
 
