@@ -372,7 +372,6 @@
                                 </state>
                                 <connections>
                                     <action selector="continueAction:" destination="Pkl-37-KhO" eventType="touchUpInside" id="cRc-F1-oTm"/>
-                                    <action selector="continueGamePrwssed:" destination="Pkl-37-KhO" eventType="touchUpInside" id="kh7-ED-zPS"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JZb-v3-ArR">
@@ -392,7 +391,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="8PN-xx-QaZ" firstAttribute="top" secondItem="q0t-2v-PWm" secondAttribute="bottom" constant="44" id="2fN-ci-ZlL"/>
