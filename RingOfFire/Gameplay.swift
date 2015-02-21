@@ -10,7 +10,6 @@ import Foundation
 
 class Gameplay
 {
-    
     var deck: Array<Card> = []
     var titlesDictionary =
         [ "castle"     : "King of the Castle"
