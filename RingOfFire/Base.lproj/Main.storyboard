@@ -124,7 +124,7 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GCi-o4-mRt">
                                 <rect key="frame" x="150" y="500" width="300" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -581,9 +581,9 @@
         <image name="bucket" width="320" height="447"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="YIa-kL-EYk"/>
-        <segue reference="Bs7-Iq-X07"/>
-        <segue reference="VkR-ph-e0R"/>
         <segue reference="fZB-2o-AoI"/>
+        <segue reference="wP8-l2-ifS"/>
+        <segue reference="OG2-7B-Wpg"/>
+        <segue reference="VkR-ph-e0R"/>
     </inferredMetricsTieBreakers>
 </document>

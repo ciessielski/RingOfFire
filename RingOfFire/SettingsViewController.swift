@@ -15,14 +15,10 @@ class SettingsViewController: UIViewController
         performSegueWithIdentifier("backToGame", sender: self)
     }
     
-    
-    
     @IBAction func restartAction(sender: AnyObject) {
         game = Gameplay()
         performSegueWithIdentifier("backToGame", sender: self)
     }
-    
-    
     
     override func viewDidLoad()
     {
