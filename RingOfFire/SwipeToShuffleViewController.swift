@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 var game = Gameplay()
 var activeCard : Card = game.deck[0]
 
@@ -19,7 +18,6 @@ class SwipeToShuffleViewController: UIViewController
     @IBOutlet var swipeDownGesture: UISwipeGestureRecognizer!
     @IBOutlet weak var numberOfCardsLabel: UILabel!
 
-    
     override func viewDidAppear(animated: Bool)
     {
         super.viewDidAppear(animated)

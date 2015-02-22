@@ -43,14 +43,11 @@ class ShuffleViewController: UIViewController
         NSTimer.scheduledTimerWithTimeInterval(1.8, target: self, selector:Selector("performSegue"), userInfo: nil, repeats: false)
     }
     
-
-
     func performSegue()
     {
         let vc : UIViewController = self.storyboard?.instantiateViewControllerWithIdentifier("CardViewController") as CardViewController;
         self.presentViewController(vc, animated: false, completion: nil)
     }
-    
 
     override func didReceiveMemoryWarning()
     {

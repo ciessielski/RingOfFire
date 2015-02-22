@@ -13,7 +13,6 @@ class EndOfTheGameViewController: UIViewController
 
     @IBAction func newGame(sender: AnyObject)
     {
-        
         game = Gameplay()
         performSegueWithIdentifier("endToSwipe", sender: self)
     }

@@ -9,7 +9,6 @@
 import UIKit
 
 class InstructionsViewController: UIViewController
-
 {
  
     @IBOutlet weak var cardTitle: UILabel!
@@ -27,7 +26,6 @@ class InstructionsViewController: UIViewController
             performSegueWithIdentifier("instructionToSwipe", sender: self)
         }
     }
-
     
     override func viewDidLoad()
     {

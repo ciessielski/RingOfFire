@@ -14,11 +14,11 @@ class SettingsViewController: UIViewController
     {
         performSegueWithIdentifier("backToGame", sender: self)
     }
+    
     @IBAction func goToStoreButton(sender: UIButton) {
         UIApplication.sharedApplication().openURL(NSURL(string: "http://rudypijegin.pl/shop/ring-of-fire-karty-gry/")!)
     }
 
-    
     @IBAction func restartAction(sender: AnyObject)
     {
         game = Gameplay()

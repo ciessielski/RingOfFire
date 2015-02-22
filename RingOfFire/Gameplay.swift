@@ -68,8 +68,6 @@ class Gameplay
         shuffle()
     }
     
-    
-    
     func createDeck()
     {
 
@@ -102,8 +100,6 @@ class Gameplay
 
     }
     
-    
-    
     func assignAttributes()
     {
         for card in deck
@@ -112,8 +108,6 @@ class Gameplay
             card.instructions = instructionsDictionary[card.slug]
         }
     }
-    
-    
     
     func shuffle()
     {
@@ -127,10 +121,8 @@ class Gameplay
         }
         
         deck = tempDeck
-        deck.insert(Card(slug:"king"), atIndex: 0)                                      //First element is directly removed from deck after viewDidLoad is called
+        deck.insert(Card(slug:"king"), atIndex: 0)
     }
-    
-    
     
     func resetGame()
     {

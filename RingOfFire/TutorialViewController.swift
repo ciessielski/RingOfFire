@@ -8,8 +8,8 @@
 
 import UIKit
 
-
-class TutorialViewController: UIViewController, UIPageViewControllerDataSource {
+class TutorialViewController: UIViewController, UIPageViewControllerDataSource
+{
     
     private var pageViewController: UIPageViewController?
     private let contentImages = ["tutorial1", "tutorial2", "tutorial3"]
