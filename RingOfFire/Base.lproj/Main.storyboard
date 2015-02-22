@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14D72i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="m1W-BJ-Rai">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="m1W-BJ-Rai">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
@@ -142,7 +142,7 @@
                                     <rect key="frame" x="150" y="175" width="300" height="450"/>
                                 </variation>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="swipeToShuffle" translatesAutoresizingMaskIntoConstraints="NO" id="tFl-c8-pXl">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swipeToShuffle" translatesAutoresizingMaskIntoConstraints="NO" id="tFl-c8-pXl">
                                 <rect key="frame" x="176" y="478" width="249" height="66"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="left: 52" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RnQ-6I-OQ4">
@@ -152,7 +152,6 @@
                                     <constraint firstAttribute="width" constant="59" id="ALm-mr-Bvc"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="15"/>
-                                <color key="textColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -571,7 +570,7 @@ Zestaw składa się z 54 kart z ręcznie wykonanymi ilustracjami, instrukcje w j
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView userInteractionEnabled="NO" alpha="0.10000000000000001" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lMA-zj-57T">
-                                <rect key="frame" x="0.0" y="0.0" width="605" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <variation key="heightClass=regular" fixedFrame="YES">
                                     <rect key="frame" x="0.0" y="0.0" width="0.0" height="0.0"/>
@@ -593,8 +592,8 @@ Zestaw składa się z 54 kart z ręcznie wykonanymi ilustracjami, instrukcje w j
                             <constraint firstItem="ewj-on-nm7" firstAttribute="top" secondItem="Ya4-x9-oly" secondAttribute="bottom" constant="30" id="fi6-hk-MxL"/>
                             <constraint firstItem="lMA-zj-57T" firstAttribute="leading" secondItem="236-hQ-Dyl" secondAttribute="leading" id="oFx-dY-izM"/>
                             <constraint firstItem="lMA-zj-57T" firstAttribute="bottom" secondItem="0ur-WJ-JdG" secondAttribute="top" id="rBf-ke-7C7"/>
-                            <constraint firstItem="Ya4-x9-oly" firstAttribute="centerX" secondItem="lMA-zj-57T" secondAttribute="centerX" constant="-2.5" id="rJI-TR-gVd"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="lMA-zj-57T" secondAttribute="trailing" constant="-21" id="sA0-zE-P9j"/>
+                            <constraint firstItem="Ya4-x9-oly" firstAttribute="centerX" secondItem="lMA-zj-57T" secondAttribute="centerX" id="rJI-TR-gVd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lMA-zj-57T" secondAttribute="trailing" constant="-16" id="sA0-zE-P9j"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -649,9 +648,9 @@ Zestaw składa się z 54 kart z ręcznie wykonanymi ilustracjami, instrukcje w j
         <image name="swipeToShuffle" width="249" height="66"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="6SY-e3-H7Z"/>
         <segue reference="Bs7-Iq-X07"/>
         <segue reference="VkR-ph-e0R"/>
+        <segue reference="6SY-e3-H7Z"/>
         <segue reference="fZB-2o-AoI"/>
     </inferredMetricsTieBreakers>
 </document>
