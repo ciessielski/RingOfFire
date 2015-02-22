@@ -29,9 +29,7 @@ class CardViewController: UIViewController
         super.viewDidLoad()
         
         var activeCard = game.deck[0]
-        
         cardView.image = UIImage(named: activeCard.slug)
-     
     }
     
     override func didReceiveMemoryWarning()

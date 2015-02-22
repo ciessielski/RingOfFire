@@ -10,12 +10,13 @@ import UIKit
 
 class SettingsViewController: UIViewController
 {
-    @IBAction func continueAction(sender: AnyObject) {
-    
+    @IBAction func continueAction(sender: AnyObject)
+    {
         performSegueWithIdentifier("backToGame", sender: self)
     }
     
-    @IBAction func restartAction(sender: AnyObject) {
+    @IBAction func restartAction(sender: AnyObject)
+    {
         game = Gameplay()
         performSegueWithIdentifier("backToGame", sender: self)
     }

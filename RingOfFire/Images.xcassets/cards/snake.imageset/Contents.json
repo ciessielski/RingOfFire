@@ -2,13 +2,18 @@
   "images" : [
     {
       "idiom" : "iphone",
-      "scale" : "1x",
-      "filename" : "snake-1x-w320.png"
+      "scale" : "1x"
     },
     {
       "idiom" : "iphone",
       "scale" : "2x",
-      "filename" : "snake-2x-w750.png"
+      "filename" : "snake-2x-w640-1.png"
+    },
+    {
+      "idiom" : "iphone",
+      "filename" : "snake-2x-w640.png",
+      "subtype" : "retina4",
+      "scale" : "2x"
     },
     {
       "idiom" : "iphone",

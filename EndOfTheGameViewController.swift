@@ -8,26 +8,23 @@
 
 import UIKit
 
-class EndOfTheGameViewController: UIViewController {
+class EndOfTheGameViewController: UIViewController
+{
 
-
-
-    @IBAction func newGame(sender: AnyObject) {
+    @IBAction func newGame(sender: AnyObject)
+    {
         
         game = Gameplay()
         performSegueWithIdentifier("endToSwipe", sender: self)
     }
 
-
     override func viewDidLoad()
     {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
+    override func didReceiveMemoryWarning()
+    {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 }

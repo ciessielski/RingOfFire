@@ -21,7 +21,6 @@ class InstructionsViewController: UIViewController
         if (game.deck.count == 1)
         {
             performSegueWithIdentifier("instructionToEnd", sender: self)
-            
         }
         else
         {
