@@ -28,6 +28,7 @@ class SwipeToShuffleViewController: UIViewController
     
     override func viewDidLoad()
     {
+        numberOfCardsLabel.font = UIFont(name: "Bohemian typewriter.ttf", size: 14)
         super.viewDidLoad()
         numberOfCardsLabel.text="left: \(game.deck.count-1)"
         
