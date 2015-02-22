@@ -6,19 +6,16 @@
     },
     {
       "idiom" : "iphone",
-      "scale" : "2x",
-      "filename" : "JPEG3.JPG"
+      "scale" : "2x"
     },
     {
       "idiom" : "iphone",
-      "filename" : "JPEG33.JPG",
       "subtype" : "retina4",
       "scale" : "2x"
     },
     {
       "idiom" : "iphone",
-      "scale" : "3x",
-      "filename" : "JPEG333.JPG"
+      "scale" : "3x"
     }
   ],
   "info" : {
