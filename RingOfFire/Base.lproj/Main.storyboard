@@ -120,7 +120,7 @@
                                     <constraint firstAttribute="height" constant="21" id="qKH-88-azo"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GCi-o4-mRt">
@@ -149,7 +149,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="swipeToShuffle" translatesAutoresizingMaskIntoConstraints="NO" id="tFl-c8-pXl">
-                                <rect key="frame" x="176" y="478" width="224" height="59"/>
+                                <rect key="frame" x="188" y="481" width="224" height="59"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -157,7 +157,7 @@
                         <constraints>
                             <constraint firstItem="cOi-22-dcw" firstAttribute="centerX" secondItem="JM7-UK-vi3" secondAttribute="centerX" id="1Uc-TH-kS1"/>
                             <constraint firstItem="r1w-kO-UJk" firstAttribute="bottom" secondItem="GCi-o4-mRt" secondAttribute="bottom" id="53c-he-oqW"/>
-                            <constraint firstItem="z8H-0o-zSq" firstAttribute="top" secondItem="tFl-c8-pXl" secondAttribute="bottom" constant="56" id="7kp-PW-SX9"/>
+                            <constraint firstItem="z8H-0o-zSq" firstAttribute="top" secondItem="tFl-c8-pXl" secondAttribute="bottom" constant="60" id="7kp-PW-SX9"/>
                             <constraint firstAttribute="centerX" secondItem="tFl-c8-pXl" secondAttribute="centerX" id="8GK-p6-Sck"/>
                             <constraint firstItem="r1w-kO-UJk" firstAttribute="top" secondItem="GCi-o4-mRt" secondAttribute="top" id="8Qa-7j-i4E"/>
                             <constraint firstItem="z8H-0o-zSq" firstAttribute="top" secondItem="GCi-o4-mRt" secondAttribute="bottom" constant="79" id="NZe-lA-RaB"/>
@@ -185,6 +185,7 @@
                     <connections>
                         <outlet property="numberOfCardsLabel" destination="RnQ-6I-OQ4" id="zdp-F0-fzt"/>
                         <outlet property="swipeDownGesture" destination="UKN-i3-sNH" id="rGe-5m-CU5"/>
+                        <outlet property="swipeToShuffle" destination="tFl-c8-pXl" id="Blh-pZ-4m7"/>
                         <outlet property="swipeToShuffleLabel" destination="r1w-kO-UJk" id="SdB-xt-2tZ"/>
                     </connections>
                 </viewController>
