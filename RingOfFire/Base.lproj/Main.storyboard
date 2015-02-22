@@ -98,7 +98,11 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L2a-mt-Ngm" userLabel="Settings">
                                 <rect key="frame" x="561" y="562" width="30" height="30"/>
-                                <state key="normal" image="SettingsButton">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="S6w-BS-Y6c"/>
+                                    <constraint firstAttribute="height" constant="30" id="xgQ-Vb-Wk7"/>
+                                </constraints>
+                                <state key="normal" image="settings">
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -157,18 +161,18 @@
                         <constraints>
                             <constraint firstItem="cOi-22-dcw" firstAttribute="centerX" secondItem="JM7-UK-vi3" secondAttribute="centerX" id="1Uc-TH-kS1"/>
                             <constraint firstItem="r1w-kO-UJk" firstAttribute="bottom" secondItem="GCi-o4-mRt" secondAttribute="bottom" id="53c-he-oqW"/>
-                            <constraint firstItem="z8H-0o-zSq" firstAttribute="top" secondItem="tFl-c8-pXl" secondAttribute="bottom" constant="60" id="7kp-PW-SX9"/>
+                            <constraint firstItem="z8H-0o-zSq" firstAttribute="top" secondItem="tFl-c8-pXl" secondAttribute="bottom" constant="56" id="7kp-PW-SX9"/>
                             <constraint firstAttribute="centerX" secondItem="tFl-c8-pXl" secondAttribute="centerX" id="8GK-p6-Sck"/>
                             <constraint firstItem="r1w-kO-UJk" firstAttribute="top" secondItem="GCi-o4-mRt" secondAttribute="top" id="8Qa-7j-i4E"/>
+                            <constraint firstItem="L2a-mt-Ngm" firstAttribute="top" secondItem="a6Q-GF-GJ5" secondAttribute="top" id="98K-Cv-YV5"/>
                             <constraint firstItem="z8H-0o-zSq" firstAttribute="top" secondItem="GCi-o4-mRt" secondAttribute="bottom" constant="79" id="NZe-lA-RaB"/>
                             <constraint firstItem="z8H-0o-zSq" firstAttribute="top" secondItem="a6Q-GF-GJ5" secondAttribute="bottom" constant="8" symbolic="YES" id="Qgo-BA-Fs7"/>
-                            <constraint firstItem="a6Q-GF-GJ5" firstAttribute="top" secondItem="L2a-mt-Ngm" secondAttribute="top" id="UrI-Nh-w05"/>
                             <constraint firstItem="RnQ-6I-OQ4" firstAttribute="top" secondItem="3ya-M3-3DX" secondAttribute="bottom" constant="8" symbolic="YES" id="UsN-yO-VFS"/>
                             <constraint firstItem="r1w-kO-UJk" firstAttribute="leading" secondItem="cOi-22-dcw" secondAttribute="leading" id="XT6-qw-WYZ"/>
+                            <constraint firstItem="L2a-mt-Ngm" firstAttribute="trailing" secondItem="RnQ-6I-OQ4" secondAttribute="trailing" id="a4R-1s-MkO"/>
                             <constraint firstItem="RnQ-6I-OQ4" firstAttribute="trailing" secondItem="JM7-UK-vi3" secondAttribute="trailingMargin" constant="7" id="aZw-Ga-sBQ"/>
                             <constraint firstItem="a6Q-GF-GJ5" firstAttribute="leading" secondItem="JM7-UK-vi3" secondAttribute="leadingMargin" constant="-7" id="dNC-II-qxJ"/>
                             <constraint firstItem="GCi-o4-mRt" firstAttribute="trailing" secondItem="cOi-22-dcw" secondAttribute="trailing" id="mMr-JY-6Ve"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="L2a-mt-Ngm" secondAttribute="trailing" constant="-7" id="qzJ-h3-1uQ"/>
                             <constraint firstItem="r1w-kO-UJk" firstAttribute="top" secondItem="cOi-22-dcw" secondAttribute="bottom" constant="27" id="rQs-ni-vhn"/>
                             <constraint firstItem="GCi-o4-mRt" firstAttribute="leading" secondItem="r1w-kO-UJk" secondAttribute="leading" id="wyN-HE-bxJ"/>
                             <constraint firstItem="r1w-kO-UJk" firstAttribute="trailing" secondItem="GCi-o4-mRt" secondAttribute="trailing" id="yFj-R7-zcU"/>
@@ -519,6 +523,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.10000000000000001" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lMA-zj-57T">
+                                <rect key="frame" x="-31" y="9" width="605" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                </variation>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Card title" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ya4-x9-oly">
                                 <rect key="frame" x="263" y="139" width="75" height="21"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
@@ -535,13 +546,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" alpha="0.10000000000000001" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lMA-zj-57T">
-                                <rect key="frame" x="-31" y="9" width="605" height="600"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="0.0" height="0.0"/>
-                                </variation>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -607,16 +611,16 @@
     </scenes>
     <resources>
         <image name="InfoButton" width="30" height="30"/>
-        <image name="SettingsButton" width="30" height="30"/>
         <image name="bucket" width="320" height="447"/>
         <image name="continue" width="540" height="237"/>
         <image name="restart" width="540" height="237"/>
+        <image name="settings" width="1181" height="1181"/>
         <image name="swipeToShuffle" width="249" height="66"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="fZB-2o-AoI"/>
-        <segue reference="wP8-l2-ifS"/>
         <segue reference="VkR-ph-e0R"/>
-        <segue reference="OG2-7B-Wpg"/>
+        <segue reference="Bs7-Iq-X07"/>
+        <segue reference="6SY-e3-H7Z"/>
+        <segue reference="fZB-2o-AoI"/>
     </inferredMetricsTieBreakers>
 </document>
