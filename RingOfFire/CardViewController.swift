@@ -17,7 +17,6 @@ class CardViewController: UIViewController
         if (game.deck.count == 1)
         {
             performSegueWithIdentifier("cardToEnd", sender: self)
-            
         }
         else
         {
