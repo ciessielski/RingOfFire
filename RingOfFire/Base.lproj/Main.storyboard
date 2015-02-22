@@ -148,8 +148,8 @@
                                 <color key="textColor" red="0.60392156862745094" green="0.60392156862745094" blue="0.60392156862745094" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tFl-c8-pXl">
-                                <rect key="frame" x="180" y="447" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swipeToShuffle" translatesAutoresizingMaskIntoConstraints="NO" id="tFl-c8-pXl">
+                                <rect key="frame" x="176" y="478" width="249" height="66"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -157,6 +157,8 @@
                         <constraints>
                             <constraint firstItem="cOi-22-dcw" firstAttribute="centerX" secondItem="JM7-UK-vi3" secondAttribute="centerX" id="1Uc-TH-kS1"/>
                             <constraint firstItem="r1w-kO-UJk" firstAttribute="bottom" secondItem="GCi-o4-mRt" secondAttribute="bottom" id="53c-he-oqW"/>
+                            <constraint firstItem="z8H-0o-zSq" firstAttribute="top" secondItem="tFl-c8-pXl" secondAttribute="bottom" constant="56" id="7kp-PW-SX9"/>
+                            <constraint firstAttribute="centerX" secondItem="tFl-c8-pXl" secondAttribute="centerX" id="8GK-p6-Sck"/>
                             <constraint firstItem="r1w-kO-UJk" firstAttribute="top" secondItem="GCi-o4-mRt" secondAttribute="top" id="8Qa-7j-i4E"/>
                             <constraint firstItem="z8H-0o-zSq" firstAttribute="top" secondItem="GCi-o4-mRt" secondAttribute="bottom" constant="79" id="NZe-lA-RaB"/>
                             <constraint firstItem="z8H-0o-zSq" firstAttribute="top" secondItem="a6Q-GF-GJ5" secondAttribute="bottom" constant="8" symbolic="YES" id="Qgo-BA-Fs7"/>
@@ -608,6 +610,7 @@
         <image name="bucket" width="320" height="447"/>
         <image name="continue" width="540" height="237"/>
         <image name="restart" width="540" height="237"/>
+        <image name="swipeToShuffle" width="249" height="66"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="fZB-2o-AoI"/>
