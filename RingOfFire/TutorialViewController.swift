@@ -16,7 +16,6 @@ class TutorialViewController: UIViewController, UIPageViewControllerDataSource {
     
     @IBAction func startPlayingButtonPressed(sender: AnyObject)
     {
-        println("start playing button pressed")
         NSUserDefaults.standardUserDefaults().setObject("no", forKey: "firstOpen")
         NSUserDefaults.standardUserDefaults().synchronize()
     }
@@ -34,7 +33,8 @@ class TutorialViewController: UIViewController, UIPageViewControllerDataSource {
         let pageController = self.storyboard!.instantiateViewControllerWithIdentifier("PageController") as UIPageViewController
             pageController.dataSource = self
         
-        if contentImages.count > 0 {
+        if contentImages.count > 0
+        {
             let firstController = getItemController(0)!
             let startingViewControllers: NSArray = [firstController]
             pageController.setViewControllers(startingViewControllers, direction: UIPageViewControllerNavigationDirection.Forward, animated: false, completion: nil)
@@ -55,22 +55,26 @@ class TutorialViewController: UIViewController, UIPageViewControllerDataSource {
         appearance.backgroundColor = UIColor.whiteColor()
     }
         
-    func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
+    func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController?
+    {
         
         let itemController = viewController as PageItemController
         
-        if  itemController.itemIndex > 0 {
+        if  itemController.itemIndex > 0
+        {
             return getItemController(itemController.itemIndex-1)
         }
         
         return nil
     }
     
-    func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
+    func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController?
+    {
         
         let itemController = viewController as PageItemController
         
-        if  itemController.itemIndex+1 < contentImages.count {
+        if  itemController.itemIndex+1 < contentImages.count
+        {
             return getItemController(itemController.itemIndex+1)
         }
         
@@ -80,7 +84,8 @@ class TutorialViewController: UIViewController, UIPageViewControllerDataSource {
     private func getItemController(itemIndex: Int) -> PageItemController?
     {
         
-        if itemIndex < contentImages.count{
+        if itemIndex < contentImages.count
+        {
             let pageItemController = self.storyboard!.instantiateViewControllerWithIdentifier("ItemController") as PageItemController
                 pageItemController.itemIndex = itemIndex
                 pageItemController.imageName = contentImages[itemIndex]

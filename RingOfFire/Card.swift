@@ -12,7 +12,6 @@ import Foundation
 
 class Card
 {
-
     var title : String?
     var instructions : String?
     var slug : String
