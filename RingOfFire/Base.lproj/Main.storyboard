@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14D72i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="m1W-BJ-Rai">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="m1W-BJ-Rai">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
@@ -139,7 +139,7 @@
                                 </variation>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="left: 52" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RnQ-6I-OQ4">
-                                <rect key="frame" x="536" y="8" width="48" height="21"/>
+                                <rect key="frame" x="543" y="8" width="48" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="1ww-OU-4A5"/>
                                     <constraint firstAttribute="width" constant="48" id="ALm-mr-Bvc"/>
@@ -160,7 +160,7 @@
                             <constraint firstItem="a6Q-GF-GJ5" firstAttribute="top" secondItem="L2a-mt-Ngm" secondAttribute="top" id="UrI-Nh-w05"/>
                             <constraint firstItem="RnQ-6I-OQ4" firstAttribute="top" secondItem="3ya-M3-3DX" secondAttribute="bottom" constant="8" symbolic="YES" id="UsN-yO-VFS"/>
                             <constraint firstItem="r1w-kO-UJk" firstAttribute="leading" secondItem="cOi-22-dcw" secondAttribute="leading" id="XT6-qw-WYZ"/>
-                            <constraint firstItem="RnQ-6I-OQ4" firstAttribute="trailing" secondItem="JM7-UK-vi3" secondAttribute="trailingMargin" id="aZw-Ga-sBQ"/>
+                            <constraint firstItem="RnQ-6I-OQ4" firstAttribute="trailing" secondItem="JM7-UK-vi3" secondAttribute="trailingMargin" constant="7" id="aZw-Ga-sBQ"/>
                             <constraint firstItem="a6Q-GF-GJ5" firstAttribute="leading" secondItem="JM7-UK-vi3" secondAttribute="leadingMargin" constant="-7" id="dNC-II-qxJ"/>
                             <constraint firstItem="GCi-o4-mRt" firstAttribute="trailing" secondItem="cOi-22-dcw" secondAttribute="trailing" id="mMr-JY-6Ve"/>
                             <constraint firstAttribute="trailingMargin" secondItem="L2a-mt-Ngm" secondAttribute="trailing" constant="-7" id="qzJ-h3-1uQ"/>
@@ -627,7 +627,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="fZB-2o-AoI"/>
         <segue reference="wP8-l2-ifS"/>
-        <segue reference="Bs7-Iq-X07"/>
         <segue reference="VkR-ph-e0R"/>
+        <segue reference="OG2-7B-Wpg"/>
     </inferredMetricsTieBreakers>
 </document>
