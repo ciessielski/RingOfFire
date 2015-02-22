@@ -148,6 +148,9 @@
                                 <color key="textColor" red="0.60392156862745094" green="0.60392156862745094" blue="0.60392156862745094" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swipeToShuffle" translatesAutoresizingMaskIntoConstraints="NO" id="J19-BK-cRb">
+                                <rect key="frame" x="176" y="478" width="249" height="66"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -155,6 +158,8 @@
                             <constraint firstItem="cOi-22-dcw" firstAttribute="centerX" secondItem="JM7-UK-vi3" secondAttribute="centerX" id="1Uc-TH-kS1"/>
                             <constraint firstItem="r1w-kO-UJk" firstAttribute="bottom" secondItem="GCi-o4-mRt" secondAttribute="bottom" id="53c-he-oqW"/>
                             <constraint firstItem="r1w-kO-UJk" firstAttribute="top" secondItem="GCi-o4-mRt" secondAttribute="top" id="8Qa-7j-i4E"/>
+                            <constraint firstItem="z8H-0o-zSq" firstAttribute="top" secondItem="J19-BK-cRb" secondAttribute="bottom" constant="56" id="G3G-2L-WS5"/>
+                            <constraint firstAttribute="centerX" secondItem="J19-BK-cRb" secondAttribute="centerX" id="HhI-UM-9xj"/>
                             <constraint firstItem="z8H-0o-zSq" firstAttribute="top" secondItem="GCi-o4-mRt" secondAttribute="bottom" constant="79" id="NZe-lA-RaB"/>
                             <constraint firstItem="z8H-0o-zSq" firstAttribute="top" secondItem="a6Q-GF-GJ5" secondAttribute="bottom" constant="8" symbolic="YES" id="Qgo-BA-Fs7"/>
                             <constraint firstItem="a6Q-GF-GJ5" firstAttribute="top" secondItem="L2a-mt-Ngm" secondAttribute="top" id="UrI-Nh-w05"/>
@@ -605,11 +610,12 @@
         <image name="bucket" width="320" height="447"/>
         <image name="continue" width="540" height="237"/>
         <image name="restart" width="540" height="237"/>
+        <image name="swipeToShuffle" width="249" height="66"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="fZB-2o-AoI"/>
-        <segue reference="wP8-l2-ifS"/>
-        <segue reference="VkR-ph-e0R"/>
         <segue reference="OG2-7B-Wpg"/>
+        <segue reference="8xp-uZ-vrT"/>
+        <segue reference="VkR-ph-e0R"/>
+        <segue reference="fZB-2o-AoI"/>
     </inferredMetricsTieBreakers>
 </document>
