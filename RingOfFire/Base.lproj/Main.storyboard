@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14D72i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="m1W-BJ-Rai">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="m1W-BJ-Rai">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
@@ -395,14 +395,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q0t-2v-PWm">
-                                <rect key="frame" x="16" y="252" width="568" height="170"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8PN-xx-QaZ">
+                                <rect key="frame" x="16" y="410" width="568" height="150"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" secondItem="8PN-xx-QaZ" secondAttribute="height" multiplier="65:17" id="byf-92-8y0"/>
+                                </constraints>
+                                <state key="normal" title="Restart game" image="restart">
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="byf-92-8y0"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="restartAction:" destination="Pkl-37-KhO" eventType="touchUpInside" id="3aV-sF-EVN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q0t-2v-PWm">
+                                <rect key="frame" x="16" y="252" width="568" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="7X6-BL-P9S"/>
                                     <constraint firstAttribute="width" secondItem="q0t-2v-PWm" secondAttribute="height" multiplier="39:10" id="gHX-6L-mSQ"/>
                                     <constraint firstAttribute="height" constant="170" id="n8a-aW-z3v"/>
                                 </constraints>
                                 <state key="normal" title="Continue game" image="continue">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -414,42 +432,26 @@
                                     <action selector="continueAction:" destination="Pkl-37-KhO" eventType="touchUpInside" id="cRc-F1-oTm"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8PN-xx-QaZ">
-                                <rect key="frame" x="16" y="430" width="568" height="170"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="170" id="NjL-kg-Htm"/>
-                                    <constraint firstAttribute="width" secondItem="8PN-xx-QaZ" secondAttribute="height" multiplier="65:17" id="byf-92-8y0"/>
-                                </constraints>
-                                <state key="normal" title="Restart game" image="restart">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="byf-92-8y0"/>
-                                    </mask>
-                                </variation>
-                                <connections>
-                                    <action selector="restartAction:" destination="Pkl-37-KhO" eventType="touchUpInside" id="3aV-sF-EVN"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="8PN-xx-QaZ" firstAttribute="leading" secondItem="oIQ-Pj-h8F" secondAttribute="leadingMargin" id="23o-aF-dBE"/>
                             <constraint firstItem="q0t-2v-PWm" firstAttribute="leading" secondItem="oIQ-Pj-h8F" secondAttribute="leadingMargin" constant="7" id="4TY-O1-Y8S"/>
-                            <constraint firstItem="8PN-xx-QaZ" firstAttribute="centerY" secondItem="oIQ-Pj-h8F" secondAttribute="centerY" constant="215" id="6Sd-qg-c1M"/>
-                            <constraint firstItem="q0t-2v-PWm" firstAttribute="trailing" secondItem="8PN-xx-QaZ" secondAttribute="trailing" id="8Hj-k8-cML"/>
-                            <constraint firstItem="8PN-xx-QaZ" firstAttribute="top" secondItem="q0t-2v-PWm" secondAttribute="bottom" constant="8" id="CwC-Qw-V8p"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="8PN-xx-QaZ" secondAttribute="trailing" id="OoO-l1-D1r"/>
-                            <constraint firstItem="q0t-2v-PWm" firstAttribute="leading" secondItem="8PN-xx-QaZ" secondAttribute="leading" id="VOA-6c-Bmq"/>
+                            <constraint firstItem="q0t-2v-PWm" firstAttribute="top" secondItem="rzv-9W-Zf4" secondAttribute="bottom" constant="252" id="5Cl-0n-c2x"/>
+                            <constraint firstItem="8PN-xx-QaZ" firstAttribute="top" secondItem="q0t-2v-PWm" secondAttribute="bottom" constant="8" symbolic="YES" id="7Tp-55-UBZ"/>
+                            <constraint firstItem="q0t-2v-PWm" firstAttribute="leading" secondItem="8PN-xx-QaZ" secondAttribute="leading" id="F33-zb-HON"/>
+                            <constraint firstItem="q0t-2v-PWm" firstAttribute="trailing" secondItem="8PN-xx-QaZ" secondAttribute="trailing" id="QEo-ic-YEr"/>
+                            <constraint firstItem="8PN-xx-QaZ" firstAttribute="height" secondItem="q0t-2v-PWm" secondAttribute="height" id="TM5-pG-2DJ"/>
+                            <constraint firstItem="8PN-xx-QaZ" firstAttribute="bottom" secondItem="xRe-u0-9H7" secondAttribute="top" constant="-40" id="URG-p4-bVg"/>
+                            <constraint firstItem="q0t-2v-PWm" firstAttribute="leading" secondItem="oIQ-Pj-h8F" secondAttribute="leadingMargin" id="Xb5-yD-6KB"/>
+                            <constraint firstItem="8PN-xx-QaZ" firstAttribute="height" secondItem="q0t-2v-PWm" secondAttribute="height" id="YZv-Qo-5Cc"/>
                             <constraint firstItem="q0t-2v-PWm" firstAttribute="top" secondItem="oIQ-Pj-h8F" secondAttribute="top" constant="20" symbolic="YES" id="Zjp-OL-Yzs"/>
-                            <constraint firstItem="q0t-2v-PWm" firstAttribute="top" secondItem="oIQ-Pj-h8F" secondAttribute="top" constant="252" id="gzD-eI-8qU"/>
                             <constraint firstItem="8PN-xx-QaZ" firstAttribute="centerY" secondItem="oIQ-Pj-h8F" secondAttribute="centerY" id="otT-Ja-b2U"/>
                             <constraint firstAttribute="centerY" secondItem="q0t-2v-PWm" secondAttribute="centerY" constant="195" id="plV-4q-X0J"/>
                             <constraint firstItem="8PN-xx-QaZ" firstAttribute="centerX" secondItem="q0t-2v-PWm" secondAttribute="centerX" id="w3y-0A-Ebi"/>
                             <constraint firstItem="8PN-xx-QaZ" firstAttribute="leading" secondItem="oIQ-Pj-h8F" secondAttribute="leadingMargin" constant="13" id="x99-jx-8W7"/>
                             <constraint firstItem="8PN-xx-QaZ" firstAttribute="top" secondItem="q0t-2v-PWm" secondAttribute="bottom" constant="25" id="xqY-nP-1oc"/>
+                            <constraint firstItem="8PN-xx-QaZ" firstAttribute="trailing" secondItem="oIQ-Pj-h8F" secondAttribute="trailingMargin" id="zZF-4a-x12"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -462,20 +464,12 @@
                                 <exclude reference="xqY-nP-1oc"/>
                             </mask>
                         </variation>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="8aB-JA-H3B" appends="YES" id="8dY-El-wtU"/>
-                        </connections>
                     </view>
                     <connections>
                         <segue destination="m1W-BJ-Rai" kind="presentation" identifier="backToGame" id="wP8-l2-ifS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pKd-sb-inW" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="up" id="8aB-JA-H3B">
-                    <connections>
-                        <segue destination="m1W-BJ-Rai" kind="show" id="8xp-uZ-vrT"/>
-                    </connections>
-                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1852" y="1777"/>
         </scene>
@@ -547,8 +541,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" alpha="0.10000000000000001" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lMA-zj-57T">
-                                <rect key="frame" x="-31" y="9" width="605" height="600"/>
+                            <imageView userInteractionEnabled="NO" alpha="0.10000000000000001" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lMA-zj-57T">
+                                <rect key="frame" x="0.0" y="0.0" width="605" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <variation key="heightClass=regular" fixedFrame="YES">
                                     <rect key="frame" x="0.0" y="0.0" width="0.0" height="0.0"/>
@@ -627,7 +621,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="fZB-2o-AoI"/>
         <segue reference="wP8-l2-ifS"/>
-        <segue reference="Bs7-Iq-X07"/>
         <segue reference="VkR-ph-e0R"/>
+        <segue reference="Bs7-Iq-X07"/>
     </inferredMetricsTieBreakers>
 </document>
