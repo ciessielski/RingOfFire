@@ -170,13 +170,21 @@
                             <constraint firstItem="r1w-kO-UJk" firstAttribute="leading" secondItem="cOi-22-dcw" secondAttribute="leading" id="XT6-qw-WYZ"/>
                             <constraint firstItem="L2a-mt-Ngm" firstAttribute="trailing" secondItem="RnQ-6I-OQ4" secondAttribute="trailing" id="a4R-1s-MkO"/>
                             <constraint firstItem="RnQ-6I-OQ4" firstAttribute="trailing" secondItem="JM7-UK-vi3" secondAttribute="trailingMargin" constant="7" id="aZw-Ga-sBQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="RnQ-6I-OQ4" secondAttribute="trailing" constant="8" id="azc-3m-ON5"/>
                             <constraint firstItem="a6Q-GF-GJ5" firstAttribute="leading" secondItem="JM7-UK-vi3" secondAttribute="leadingMargin" constant="-7" id="dNC-II-qxJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="RnQ-6I-OQ4" secondAttribute="trailing" constant="-7" id="di7-xV-f5Z"/>
                             <constraint firstItem="GCi-o4-mRt" firstAttribute="trailing" secondItem="cOi-22-dcw" secondAttribute="trailing" id="mMr-JY-6Ve"/>
                             <constraint firstItem="r1w-kO-UJk" firstAttribute="top" secondItem="cOi-22-dcw" secondAttribute="bottom" constant="27" id="rQs-ni-vhn"/>
                             <constraint firstItem="GCi-o4-mRt" firstAttribute="leading" secondItem="r1w-kO-UJk" secondAttribute="leading" id="wyN-HE-bxJ"/>
                             <constraint firstItem="r1w-kO-UJk" firstAttribute="trailing" secondItem="GCi-o4-mRt" secondAttribute="trailing" id="yFj-R7-zcU"/>
                             <constraint firstItem="cOi-22-dcw" firstAttribute="top" secondItem="JM7-UK-vi3" secondAttribute="top" constant="45" id="yM5-lS-Z5J"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="aZw-Ga-sBQ"/>
+                                <exclude reference="azc-3m-ON5"/>
+                            </mask>
+                        </variation>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="06e-bO-Lar" appends="YES" id="O3W-xZ-dqI"/>
                             <outletCollection property="gestureRecognizers" destination="vJd-Jw-eZg" appends="YES" id="cKl-2v-eBR"/>
@@ -387,29 +395,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q0t-2v-PWm">
-                                <rect key="frame" x="21" y="232" width="568" height="170"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="q0t-2v-PWm" secondAttribute="height" multiplier="39:10" id="gHX-6L-mSQ"/>
-                                    <constraint firstAttribute="height" constant="170" id="n8a-aW-z3v"/>
-                                </constraints>
-                                <state key="normal" title="Continue game" image="continue">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="gHX-6L-mSQ"/>
-                                        <exclude reference="n8a-aW-z3v"/>
-                                    </mask>
-                                </variation>
-                                <connections>
-                                    <action selector="continueAction:" destination="Pkl-37-KhO" eventType="touchUpInside" id="cRc-F1-oTm"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8PN-xx-QaZ">
-                                <rect key="frame" x="21" y="410" width="568" height="170"/>
+                                <rect key="frame" x="21" y="450" width="568" height="130"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="170" id="NjL-kg-Htm"/>
+                                    <constraint firstAttribute="height" constant="130" id="NjL-kg-Htm"/>
                                     <constraint firstAttribute="width" secondItem="8PN-xx-QaZ" secondAttribute="height" multiplier="65:17" id="byf-92-8y0"/>
                                 </constraints>
                                 <state key="normal" title="Restart game" image="restart">
@@ -450,13 +439,32 @@ Zestaw składa się z 54 kart z ręcznie wykonanymi ilustracjami, instrukcje w j
                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" enablesReturnKeyAutomatically="YES"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q0t-2v-PWm">
+                                <rect key="frame" x="21" y="312" width="568" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="q0t-2v-PWm" secondAttribute="height" multiplier="39:10" id="gHX-6L-mSQ"/>
+                                    <constraint firstAttribute="height" constant="170" id="n8a-aW-z3v"/>
+                                </constraints>
+                                <state key="normal" title="Continue game" image="continue">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="gHX-6L-mSQ"/>
+                                        <exclude reference="n8a-aW-z3v"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="continueAction:" destination="Pkl-37-KhO" eventType="touchUpInside" id="cRc-F1-oTm"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="8PN-xx-QaZ" firstAttribute="leading" secondItem="oIQ-Pj-h8F" secondAttribute="leadingMargin" constant="5" id="23o-aF-dBE"/>
                             <constraint firstItem="q0t-2v-PWm" firstAttribute="leading" secondItem="oIQ-Pj-h8F" secondAttribute="leadingMargin" constant="7" id="4TY-O1-Y8S"/>
-                            <constraint firstItem="8PN-xx-QaZ" firstAttribute="centerY" secondItem="oIQ-Pj-h8F" secondAttribute="centerY" constant="195" id="6Sd-qg-c1M"/>
+                            <constraint firstItem="8PN-xx-QaZ" firstAttribute="centerY" secondItem="oIQ-Pj-h8F" secondAttribute="centerY" constant="215" id="6Sd-qg-c1M"/>
                             <constraint firstItem="lH3-jk-SQ0" firstAttribute="top" secondItem="oIQ-Pj-h8F" secondAttribute="top" constant="42" id="7m8-1J-I1H"/>
                             <constraint firstItem="q0t-2v-PWm" firstAttribute="trailing" secondItem="8PN-xx-QaZ" secondAttribute="trailing" id="8Hj-k8-cML"/>
                             <constraint firstItem="8PN-xx-QaZ" firstAttribute="top" secondItem="q0t-2v-PWm" secondAttribute="bottom" constant="8" id="CwC-Qw-V8p"/>
@@ -464,17 +472,18 @@ Zestaw składa się z 54 kart z ręcznie wykonanymi ilustracjami, instrukcje w j
                             <constraint firstItem="q0t-2v-PWm" firstAttribute="leading" secondItem="8PN-xx-QaZ" secondAttribute="leading" id="VOA-6c-Bmq"/>
                             <constraint firstItem="q0t-2v-PWm" firstAttribute="top" secondItem="oIQ-Pj-h8F" secondAttribute="top" constant="20" symbolic="YES" id="Zjp-OL-Yzs"/>
                             <constraint firstItem="lH3-jk-SQ0" firstAttribute="leading" secondItem="oIQ-Pj-h8F" secondAttribute="leadingMargin" id="fo2-Ky-aOF"/>
-                            <constraint firstItem="q0t-2v-PWm" firstAttribute="top" secondItem="oIQ-Pj-h8F" secondAttribute="top" constant="232" id="gzD-eI-8qU"/>
+                            <constraint firstItem="q0t-2v-PWm" firstAttribute="top" secondItem="oIQ-Pj-h8F" secondAttribute="top" constant="312" id="gzD-eI-8qU"/>
                             <constraint firstItem="tnD-pg-g9L" firstAttribute="centerX" secondItem="lH3-jk-SQ0" secondAttribute="centerX" id="lrk-aw-ggs"/>
                             <constraint firstItem="tnD-pg-g9L" firstAttribute="top" secondItem="lH3-jk-SQ0" secondAttribute="bottom" constant="26" id="mUZ-sw-UJF"/>
                             <constraint firstItem="lH3-jk-SQ0" firstAttribute="trailing" secondItem="oIQ-Pj-h8F" secondAttribute="trailingMargin" id="nX4-CJ-dG4"/>
                             <constraint firstItem="8PN-xx-QaZ" firstAttribute="centerY" secondItem="oIQ-Pj-h8F" secondAttribute="centerY" id="otT-Ja-b2U"/>
                             <constraint firstAttribute="centerY" secondItem="q0t-2v-PWm" secondAttribute="centerY" constant="195" id="plV-4q-X0J"/>
+                            <constraint firstItem="q0t-2v-PWm" firstAttribute="height" secondItem="8PN-xx-QaZ" secondAttribute="height" id="qRM-bR-sco"/>
                             <constraint firstItem="tnD-pg-g9L" firstAttribute="top" secondItem="oIQ-Pj-h8F" secondAttribute="top" constant="194" id="vH9-MK-GFZ"/>
                             <constraint firstItem="8PN-xx-QaZ" firstAttribute="centerX" secondItem="q0t-2v-PWm" secondAttribute="centerX" id="w3y-0A-Ebi"/>
                             <constraint firstItem="8PN-xx-QaZ" firstAttribute="leading" secondItem="oIQ-Pj-h8F" secondAttribute="leadingMargin" constant="13" id="x99-jx-8W7"/>
                             <constraint firstItem="8PN-xx-QaZ" firstAttribute="top" secondItem="q0t-2v-PWm" secondAttribute="bottom" constant="25" id="xqY-nP-1oc"/>
-                            <constraint firstItem="q0t-2v-PWm" firstAttribute="top" secondItem="tnD-pg-g9L" secondAttribute="bottom" constant="8" id="y1l-5C-6nu"/>
+                            <constraint firstItem="q0t-2v-PWm" firstAttribute="top" secondItem="tnD-pg-g9L" secondAttribute="bottom" constant="88" id="y1l-5C-6nu"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -660,8 +669,8 @@ Zestaw składa się z 54 kart z ręcznie wykonanymi ilustracjami, instrukcje w j
         <image name="swipeToShuffle" width="249" height="66"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Bs7-Iq-X07"/>
-        <segue reference="6SY-e3-H7Z"/>
+        <segue reference="wP8-l2-ifS"/>
+        <segue reference="OG2-7B-Wpg"/>
         <segue reference="VkR-ph-e0R"/>
         <segue reference="fZB-2o-AoI"/>
     </inferredMetricsTieBreakers>

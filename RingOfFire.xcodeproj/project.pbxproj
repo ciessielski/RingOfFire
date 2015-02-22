@@ -233,11 +233,11 @@
 				TargetAttributes = {
 					1126F7B11A43735C000176F8 = {
 						CreatedOnToolsVersion = 6.1;
-						DevelopmentTeam = 4V9FNC79Z9;
+						DevelopmentTeam = PKHAF6RM9S;
 					};
 					1126F7C91A43735C000176F8 = {
 						CreatedOnToolsVersion = 6.1;
-						DevelopmentTeam = 4V9FNC79Z9;
+						DevelopmentTeam = PKHAF6RM9S;
 						TestTargetID = 1126F7B11A43735C000176F8;
 					};
 				};
