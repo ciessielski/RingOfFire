@@ -52,6 +52,7 @@
 		1126F7CA1A43735C000176F8 /* RingOfFireTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RingOfFireTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1126F7CF1A43735C000176F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1126F7D01A43735C000176F8 /* RingOfFireTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingOfFireTests.swift; sourceTree = "<group>"; };
+		1152EC311A9989220092ABF1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		1163C7521A60A14100F90168 /* PageItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageItemViewController.swift; sourceTree = "<group>"; };
 		116B7D131A68D14B0002143E /* FromTopVerticalSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FromTopVerticalSegue.swift; sourceTree = "<group>"; };
 		118156351A4A428A006F655D /* SwipeToShuffleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeToShuffleViewController.swift; sourceTree = "<group>"; };
@@ -67,7 +68,6 @@
 		11E55EC81A59EB8300F89D55 /* beat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = beat.wav; sourceTree = "<group>"; };
 		11E55ECA1A59EF1100F89D55 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		9F59BDDE1A5741C1005954A5 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
-		9F6F65141A99747B0048C499 /* Bohemian typewriter.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bohemian typewriter.ttf"; sourceTree = "<group>"; };
 		9FC977DC1A52411A001E8920 /* Gameplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gameplay.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,7 +93,6 @@
 		1126F7A91A43735C000176F8 = {
 			isa = PBXGroup;
 			children = (
-				9F6F65141A99747B0048C499 /* Bohemian typewriter.ttf */,
 				1126F7B41A43735C000176F8 /* RingOfFire */,
 				1126F7CD1A43735C000176F8 /* RingOfFireTests */,
 				1126F7B31A43735C000176F8 /* Products */,
@@ -330,6 +329,7 @@
 			children = (
 				1126F7BF1A43735C000176F8 /* Base */,
 				11C5C4711A5B134300737545 /* pl */,
+				1152EC311A9989220092ABF1 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

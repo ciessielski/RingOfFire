@@ -1,0 +1,30 @@
+
+/* Class = "IBUIButton"; normalTitle = "START PLAYING"; ObjectID = "0T3-av-Ruy"; */
+"0T3-av-Ruy.normalTitle" = "START PLAYING";
+
+/* Class = "IBUIButton"; normalTitle = "Restart game"; ObjectID = "8PN-xx-QaZ"; */
+"8PN-xx-QaZ.normalTitle" = "Restart game";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "GCi-o4-mRt"; */
+"GCi-o4-mRt.text" = "Label";
+
+/* Class = "IBUILabel"; text = "left: 52"; ObjectID = "RnQ-6I-OQ4"; */
+"RnQ-6I-OQ4.text" = "left: 52";
+
+/* Class = "IBUILabel"; text = "Card title"; ObjectID = "Ya4-x9-oly"; */
+"Ya4-x9-oly.text" = "Card title";
+
+/* Class = "IBUIButton"; normalTitle = "new game"; ObjectID = "cII-aM-EFJ"; */
+"cII-aM-EFJ.normalTitle" = "new game";
+
+/* Class = "IBUITextView"; text = "Each player takes it in turns to say one word from the sentence: „The Frog Jumped in the Pond!” Once the sentence has been completed, play continues around the circle in the same manner, except that each word of the sentence must be said twice, with each person still only saying one word. The game is then continued and repeating each word of the sentence thrice. Alternatively, you may wish to use your own sentence."; ObjectID = "ewj-on-nm7"; */
+"ewj-on-nm7.text" = "Each player takes it in turns to say one word from the sentence: „The Frog Jumped in the Pond!” Once the sentence has been completed, play continues around the circle in the same manner, except that each word of the sentence must be said twice, with each person still only saying one word. The game is then continued and repeating each word of the sentence thrice. Alternatively, you may wish to use your own sentence.";
+
+/* Class = "IBUIButton"; normalTitle = "Continue game"; ObjectID = "q0t-2v-PWm"; */
+"q0t-2v-PWm.normalTitle" = "Continue game";
+
+/* Class = "IBUILabel"; text = "←  swipe to shuffle  →"; ObjectID = "r1w-kO-UJk"; */
+"r1w-kO-UJk.text" = "←  swipe to shuffle  →";
+
+/* Class = "IBUIViewController"; title = "CardViewController"; ObjectID = "vXZ-lx-hvc"; */
+"vXZ-lx-hvc.title" = "CardViewController";

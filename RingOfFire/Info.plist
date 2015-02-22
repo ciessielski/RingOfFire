@@ -38,9 +38,5 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
-	<key>UIAppFonts</key>
-	<array>
-		<string>Bohemian typewriter.ttf</string>
-	</array>
 </dict>
 </plist>

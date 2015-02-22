@@ -37,6 +37,7 @@ class InstructionsViewController: UIViewController
         cardView.image = UIImage(named: activeCard.slug)
         cardInstructions.text = activeCard.instructions
         cardInstructions.textAlignment = .Center
+        cardInstructions.font = UIFont (name: "American Typewriter", size: 14.0)
     }
 
     override func didReceiveMemoryWarning()
