@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="m1W-BJ-Rai">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14D72i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="m1W-BJ-Rai">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
@@ -383,7 +383,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q0t-2v-PWm">
-                                <rect key="frame" x="16" y="252" width="568" height="170"/>
+                                <rect key="frame" x="21" y="190" width="568" height="170"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="q0t-2v-PWm" secondAttribute="height" multiplier="39:10" id="gHX-6L-mSQ"/>
                                     <constraint firstAttribute="height" constant="170" id="n8a-aW-z3v"/>
@@ -402,7 +402,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8PN-xx-QaZ">
-                                <rect key="frame" x="16" y="430" width="568" height="170"/>
+                                <rect key="frame" x="21" y="373" width="568" height="170"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="170" id="NjL-kg-Htm"/>
                                     <constraint firstAttribute="width" secondItem="8PN-xx-QaZ" secondAttribute="height" multiplier="65:17" id="byf-92-8y0"/>
@@ -419,19 +419,50 @@
                                     <action selector="restartAction:" destination="Pkl-37-KhO" eventType="touchUpInside" id="3aV-sF-EVN"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tnD-pg-g9L">
+                                <rect key="frame" x="457" y="121" width="127" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="127" id="iFC-EQ-Pju"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="Przejdź do sklepu">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goToStoreButton:" destination="Pkl-37-KhO" eventType="touchUpInside" id="8N9-Go-HuE"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lH3-jk-SQ0">
+                                <rect key="frame" x="16" y="20" width="568" height="93"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="93" id="V8U-qF-X9h"/>
+                                </constraints>
+                                <string key="text">Dołącz do elitarnego grona posiadaczy gry karcianej "Ring of Fire".
+
+Zestaw składa się z 54 kart z ręcznie wykonanymi ilustracjami, instrukcje w języku Polskim i Angielskim oraz hipsterskie pudełko zapakowane w folie, dzięki której idealnie nadaje się na prezent.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" enablesReturnKeyAutomatically="YES"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="8PN-xx-QaZ" firstAttribute="leading" secondItem="oIQ-Pj-h8F" secondAttribute="leadingMargin" id="23o-aF-dBE"/>
+                            <constraint firstItem="8PN-xx-QaZ" firstAttribute="leading" secondItem="oIQ-Pj-h8F" secondAttribute="leadingMargin" constant="5" id="23o-aF-dBE"/>
                             <constraint firstItem="q0t-2v-PWm" firstAttribute="leading" secondItem="oIQ-Pj-h8F" secondAttribute="leadingMargin" constant="7" id="4TY-O1-Y8S"/>
-                            <constraint firstItem="8PN-xx-QaZ" firstAttribute="centerY" secondItem="oIQ-Pj-h8F" secondAttribute="centerY" constant="215" id="6Sd-qg-c1M"/>
+                            <constraint firstItem="8PN-xx-QaZ" firstAttribute="centerY" secondItem="oIQ-Pj-h8F" secondAttribute="centerY" constant="158" id="6Sd-qg-c1M"/>
+                            <constraint firstItem="lH3-jk-SQ0" firstAttribute="top" secondItem="oIQ-Pj-h8F" secondAttribute="top" constant="20" symbolic="YES" id="7m8-1J-I1H"/>
                             <constraint firstItem="q0t-2v-PWm" firstAttribute="trailing" secondItem="8PN-xx-QaZ" secondAttribute="trailing" id="8Hj-k8-cML"/>
-                            <constraint firstItem="8PN-xx-QaZ" firstAttribute="top" secondItem="q0t-2v-PWm" secondAttribute="bottom" constant="8" id="CwC-Qw-V8p"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="8PN-xx-QaZ" secondAttribute="trailing" id="OoO-l1-D1r"/>
+                            <constraint firstItem="8PN-xx-QaZ" firstAttribute="top" secondItem="q0t-2v-PWm" secondAttribute="bottom" constant="13" id="CwC-Qw-V8p"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8PN-xx-QaZ" secondAttribute="trailing" constant="-5" id="OoO-l1-D1r"/>
                             <constraint firstItem="q0t-2v-PWm" firstAttribute="leading" secondItem="8PN-xx-QaZ" secondAttribute="leading" id="VOA-6c-Bmq"/>
                             <constraint firstItem="q0t-2v-PWm" firstAttribute="top" secondItem="oIQ-Pj-h8F" secondAttribute="top" constant="20" symbolic="YES" id="Zjp-OL-Yzs"/>
-                            <constraint firstItem="q0t-2v-PWm" firstAttribute="top" secondItem="oIQ-Pj-h8F" secondAttribute="top" constant="252" id="gzD-eI-8qU"/>
+                            <constraint firstItem="q0t-2v-PWm" firstAttribute="top" secondItem="tnD-pg-g9L" secondAttribute="bottom" constant="39" id="aqw-m7-ygi"/>
+                            <constraint firstItem="tnD-pg-g9L" firstAttribute="top" secondItem="lH3-jk-SQ0" secondAttribute="bottom" constant="8" symbolic="YES" id="f8g-Ea-cRE"/>
+                            <constraint firstItem="lH3-jk-SQ0" firstAttribute="leading" secondItem="oIQ-Pj-h8F" secondAttribute="leadingMargin" id="fo2-Ky-aOF"/>
+                            <constraint firstItem="q0t-2v-PWm" firstAttribute="top" secondItem="oIQ-Pj-h8F" secondAttribute="top" constant="190" id="gzD-eI-8qU"/>
+                            <constraint firstItem="lH3-jk-SQ0" firstAttribute="trailing" secondItem="tnD-pg-g9L" secondAttribute="trailing" id="ij4-up-Wl2"/>
+                            <constraint firstItem="lH3-jk-SQ0" firstAttribute="trailing" secondItem="oIQ-Pj-h8F" secondAttribute="trailingMargin" id="nX4-CJ-dG4"/>
                             <constraint firstItem="8PN-xx-QaZ" firstAttribute="centerY" secondItem="oIQ-Pj-h8F" secondAttribute="centerY" id="otT-Ja-b2U"/>
                             <constraint firstAttribute="centerY" secondItem="q0t-2v-PWm" secondAttribute="centerY" constant="195" id="plV-4q-X0J"/>
                             <constraint firstItem="8PN-xx-QaZ" firstAttribute="centerX" secondItem="q0t-2v-PWm" secondAttribute="centerX" id="w3y-0A-Ebi"/>
