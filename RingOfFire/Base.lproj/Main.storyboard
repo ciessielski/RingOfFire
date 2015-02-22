@@ -578,24 +578,33 @@ Zestaw składa się z 54 kart z ręcznie wykonanymi ilustracjami, instrukcje w j
                                     <rect key="frame" x="0.0" y="0.0" width="0.0" height="0.0"/>
                                 </variation>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swipe" translatesAutoresizingMaskIntoConstraints="NO" id="wXe-hR-2sr">
+                                <rect key="frame" x="206" y="510" width="188" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="Gcp-El-s9g"/>
+                                    <constraint firstAttribute="width" constant="188" id="nl7-rD-wVP"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="wXe-hR-2sr" secondAttribute="bottom" constant="20" symbolic="YES" id="44O-WW-D57"/>
                             <constraint firstItem="lMA-zj-57T" firstAttribute="leading" secondItem="236-hQ-Dyl" secondAttribute="leading" id="6gV-XE-qiU"/>
-                            <constraint firstItem="Ya4-x9-oly" firstAttribute="centerX" secondItem="ewj-on-nm7" secondAttribute="centerX" id="74d-Ni-yzi"/>
+                            <constraint firstItem="lMA-zj-57T" firstAttribute="top" secondItem="236-hQ-Dyl" secondAttribute="top" id="8oK-ut-HY8"/>
                             <constraint firstItem="lMA-zj-57T" firstAttribute="centerX" secondItem="Ya4-x9-oly" secondAttribute="centerX" id="9zv-V4-wUp"/>
-                            <constraint firstItem="0ur-WJ-JdG" firstAttribute="top" secondItem="ewj-on-nm7" secondAttribute="bottom" constant="61" id="AuZ-Rv-Std"/>
-                            <constraint firstItem="lMA-zj-57T" firstAttribute="bottom" secondItem="0ur-WJ-JdG" secondAttribute="top" id="Ci2-bc-gab"/>
-                            <constraint firstItem="lMA-zj-57T" firstAttribute="top" secondItem="236-hQ-Dyl" secondAttribute="top" id="DV1-G4-jFk"/>
+                            <constraint firstItem="0ur-WJ-JdG" firstAttribute="top" secondItem="ewj-on-nm7" secondAttribute="bottom" constant="61" id="BFe-QM-eFO"/>
+                            <constraint firstItem="ewj-on-nm7" firstAttribute="leading" secondItem="236-hQ-Dyl" secondAttribute="leadingMargin" constant="11" id="Bhd-LH-Noe"/>
                             <constraint firstItem="lMA-zj-57T" firstAttribute="top" secondItem="236-hQ-Dyl" secondAttribute="top" id="FgN-9H-60w"/>
-                            <constraint firstItem="ewj-on-nm7" firstAttribute="leading" secondItem="236-hQ-Dyl" secondAttribute="leadingMargin" constant="11" id="J8y-0x-GzO"/>
-                            <constraint firstItem="Ya4-x9-oly" firstAttribute="top" secondItem="iH6-lb-xYK" secondAttribute="bottom" constant="114" id="JEu-yb-26Q"/>
-                            <constraint firstItem="ewj-on-nm7" firstAttribute="top" secondItem="Ya4-x9-oly" secondAttribute="bottom" constant="30" id="fi6-hk-MxL"/>
-                            <constraint firstItem="lMA-zj-57T" firstAttribute="leading" secondItem="236-hQ-Dyl" secondAttribute="leading" id="oFx-dY-izM"/>
+                            <constraint firstAttribute="trailing" secondItem="lMA-zj-57T" secondAttribute="trailing" id="HFP-9O-G6L"/>
+                            <constraint firstItem="wXe-hR-2sr" firstAttribute="centerX" secondItem="lMA-zj-57T" secondAttribute="centerX" id="PcX-Vy-vKk"/>
+                            <constraint firstItem="wXe-hR-2sr" firstAttribute="centerX" secondItem="ewj-on-nm7" secondAttribute="centerX" id="STT-p6-6HA"/>
+                            <constraint firstItem="ewj-on-nm7" firstAttribute="centerX" secondItem="Ya4-x9-oly" secondAttribute="centerX" id="eCW-ZG-R8y"/>
+                            <constraint firstItem="lMA-zj-57T" firstAttribute="bottom" secondItem="0ur-WJ-JdG" secondAttribute="top" id="fbs-KO-rGT"/>
+                            <constraint firstItem="Ya4-x9-oly" firstAttribute="top" secondItem="iH6-lb-xYK" secondAttribute="bottom" constant="114" id="hx2-EW-pw9"/>
+                            <constraint firstItem="ewj-on-nm7" firstAttribute="top" secondItem="Ya4-x9-oly" secondAttribute="bottom" constant="30" id="jsp-6b-0rc"/>
+                            <constraint firstItem="lMA-zj-57T" firstAttribute="leading" secondItem="236-hQ-Dyl" secondAttribute="leading" id="nie-YL-ana"/>
                             <constraint firstItem="lMA-zj-57T" firstAttribute="bottom" secondItem="0ur-WJ-JdG" secondAttribute="top" id="rBf-ke-7C7"/>
-                            <constraint firstItem="Ya4-x9-oly" firstAttribute="centerX" secondItem="lMA-zj-57T" secondAttribute="centerX" id="rJI-TR-gVd"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="lMA-zj-57T" secondAttribute="trailing" constant="-16" id="sA0-zE-P9j"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -638,7 +647,7 @@ Zestaw składa się z 54 kart z ręcznie wykonanymi ilustracjami, instrukcje w j
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2619" y="-168.5"/>
+            <point key="canvasLocation" x="2619" y="-169"/>
         </scene>
     </scenes>
     <resources>
@@ -647,11 +656,12 @@ Zestaw składa się z 54 kart z ręcznie wykonanymi ilustracjami, instrukcje w j
         <image name="continue" width="540" height="237"/>
         <image name="restart" width="540" height="237"/>
         <image name="settings" width="1181" height="1181"/>
+        <image name="swipe" width="540" height="250"/>
         <image name="swipeToShuffle" width="249" height="66"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="wP8-l2-ifS"/>
         <segue reference="Bs7-Iq-X07"/>
+        <segue reference="6SY-e3-H7Z"/>
         <segue reference="VkR-ph-e0R"/>
         <segue reference="fZB-2o-AoI"/>
     </inferredMetricsTieBreakers>

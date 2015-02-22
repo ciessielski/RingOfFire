@@ -7,18 +7,18 @@
     {
       "idiom" : "iphone",
       "scale" : "2x",
-      "filename" : "swipeToShuffle-1.jpg"
+      "filename" : "swipeToShuffle-1.png"
     },
     {
       "idiom" : "iphone",
-      "filename" : "swipeToShuffle.jpg",
+      "filename" : "swipeToShuffle-2.png",
       "subtype" : "retina4",
       "scale" : "2x"
     },
     {
       "idiom" : "iphone",
       "scale" : "3x",
-      "filename" : "swipeToShuffle-2.jpg"
+      "filename" : "swipeToShuffle.png"
     }
   ],
   "info" : {
