@@ -11,6 +11,8 @@ import UIKit
 class EndOfTheGameViewController: UIViewController
 {
 
+    
+    @IBOutlet weak var endAnimationView: UIImageView!
     @IBAction func newGame(sender: AnyObject)
     {
         game = Gameplay()
@@ -20,6 +22,17 @@ class EndOfTheGameViewController: UIViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
+            
+            let images: NSMutableArray = []
+            for number in 1...18
+            {
+                var image = UIImage(named:"shuffle\(number)")
+                images.addObject(image!)
+            }
+            
+            endAnimationView.animationImages = images
+            endAnimationView.animationDuration = 1.8
+            endAnimationView.startAnimating()
     }
 
     override func didReceiveMemoryWarning()
