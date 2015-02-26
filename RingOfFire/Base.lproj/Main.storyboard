@@ -585,17 +585,17 @@ Zestaw składa się z 54 kart z ręcznie wykonanymi ilustracjami, instrukcje w j
                                 </variation>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swipe" translatesAutoresizingMaskIntoConstraints="NO" id="wXe-hR-2sr">
-                                <rect key="frame" x="206" y="510" width="188" height="70"/>
+                                <rect key="frame" x="108" y="428" width="384" height="143"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="Gcp-El-s9g"/>
-                                    <constraint firstAttribute="width" constant="188" id="nl7-rD-wVP"/>
+                                    <constraint firstAttribute="height" constant="143" id="Gcp-El-s9g"/>
+                                    <constraint firstAttribute="width" constant="384" id="nl7-rD-wVP"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="wXe-hR-2sr" secondAttribute="bottom" constant="20" symbolic="YES" id="44O-WW-D57"/>
+                            <constraint firstAttribute="bottom" secondItem="wXe-hR-2sr" secondAttribute="bottom" constant="29" id="44O-WW-D57"/>
                             <constraint firstItem="lMA-zj-57T" firstAttribute="leading" secondItem="236-hQ-Dyl" secondAttribute="leading" id="6gV-XE-qiU"/>
                             <constraint firstItem="lMA-zj-57T" firstAttribute="top" secondItem="236-hQ-Dyl" secondAttribute="top" id="8oK-ut-HY8"/>
                             <constraint firstItem="lMA-zj-57T" firstAttribute="centerX" secondItem="Ya4-x9-oly" secondAttribute="centerX" id="9zv-V4-wUp"/>
@@ -666,9 +666,9 @@ Zestaw składa się z 54 kart z ręcznie wykonanymi ilustracjami, instrukcje w j
         <image name="swipeToShuffle" width="249" height="66"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="wP8-l2-ifS"/>
-        <segue reference="OG2-7B-Wpg"/>
+        <segue reference="Bs7-Iq-X07"/>
         <segue reference="VkR-ph-e0R"/>
+        <segue reference="6SY-e3-H7Z"/>
         <segue reference="fZB-2o-AoI"/>
     </inferredMetricsTieBreakers>
 </document>
