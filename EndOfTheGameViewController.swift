@@ -12,6 +12,7 @@ class EndOfTheGameViewController: UIViewController
 {
 
     
+    @IBOutlet weak var newGameButton: UIButton!
     @IBOutlet weak var endAnimationView: UIImageView!
     @IBAction func newGame(sender: AnyObject)
     {
@@ -22,17 +23,20 @@ class EndOfTheGameViewController: UIViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
-            
-            let images: NSMutableArray = []
-            for number in 1...18
-            {
-                var image = UIImage(named:"shuffle\(number)")
-                images.addObject(image!)
-            }
-            
-            endAnimationView.animationImages = images
-            endAnimationView.animationDuration = 1.8
-            endAnimationView.startAnimating()
+        
+        let buttonString: String = NSLocalizedString("new game", comment: "new game")
+        newGameButton.setTitle(buttonString, forState: UIControlState.Normal)
+        
+        let images: NSMutableArray = []
+        for number in 1...18
+        {
+            var image = UIImage(named:"shuffle\(number)")
+            images.addObject(image!)
+        }
+        
+        endAnimationView.animationImages = images
+        endAnimationView.animationDuration = 1.8
+        endAnimationView.startAnimating()
     }
 
     override func didReceiveMemoryWarning()

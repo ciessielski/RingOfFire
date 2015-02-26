@@ -553,6 +553,7 @@ Zestaw składa się z 54 kart z ręcznie wykonanymi ilustracjami, instrukcje w j
                     </view>
                     <connections>
                         <outlet property="endAnimationView" destination="txR-Qh-PbJ" id="vYw-UW-8mT"/>
+                        <outlet property="newGameButton" destination="cII-aM-EFJ" id="acJ-Ht-QkJ"/>
                         <segue destination="m1W-BJ-Rai" kind="presentation" identifier="endToSwipe" id="TeZ-AY-rmC"/>
                     </connections>
                 </viewController>
