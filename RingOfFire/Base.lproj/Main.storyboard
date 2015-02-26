@@ -526,7 +526,7 @@ Zestaw składa się z 54 kart z ręcznie wykonanymi ilustracjami, instrukcje w j
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cII-aM-EFJ">
-                                <rect key="frame" x="235" y="497" width="130" height="30"/>
+                                <rect key="frame" x="260" y="486" width="81" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="130" id="1sK-yt-CqY"/>
                                 </constraints>
@@ -535,6 +535,11 @@ Zestaw składa się z 54 kart z ręcznie wykonanymi ilustracjami, instrukcje w j
                                     <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="1sK-yt-CqY"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <action selector="newGame:" destination="OgM-A6-Q7M" eventType="touchUpInside" id="OQ1-wA-tEh"/>
                                 </connections>
@@ -542,14 +547,23 @@ Zestaw składa się z 54 kart z ręcznie wykonanymi ilustracjami, instrukcje w j
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="3e5-2h-ID8" firstAttribute="top" secondItem="cII-aM-EFJ" secondAttribute="bottom" constant="82" id="RMX-1K-NJo"/>
+                            <constraint firstItem="txR-Qh-PbJ" firstAttribute="bottom" secondItem="3e5-2h-ID8" secondAttribute="top" id="ROa-Bs-AhE"/>
+                            <constraint firstItem="cII-aM-EFJ" firstAttribute="centerX" secondItem="txR-Qh-PbJ" secondAttribute="centerX" id="YlU-TQ-hfc"/>
                             <constraint firstItem="txR-Qh-PbJ" firstAttribute="leading" secondItem="GxK-eE-Q6m" secondAttribute="leading" id="Z0E-mn-9CY"/>
                             <constraint firstItem="cII-aM-EFJ" firstAttribute="centerX" secondItem="txR-Qh-PbJ" secondAttribute="centerX" id="bsr-I8-Tap"/>
                             <constraint firstAttribute="trailing" secondItem="txR-Qh-PbJ" secondAttribute="trailing" id="d7b-m9-fPe"/>
-                            <constraint firstItem="cII-aM-EFJ" firstAttribute="top" secondItem="mLo-dt-d03" secondAttribute="bottom" constant="477" id="g05-A8-IKm"/>
-                            <constraint firstItem="txR-Qh-PbJ" firstAttribute="bottom" secondItem="3e5-2h-ID8" secondAttribute="top" id="ipx-cD-vZ2"/>
+                            <constraint firstItem="cII-aM-EFJ" firstAttribute="top" secondItem="mLo-dt-d03" secondAttribute="bottom" constant="467" id="g05-A8-IKm"/>
                             <constraint firstItem="txR-Qh-PbJ" firstAttribute="top" secondItem="GxK-eE-Q6m" secondAttribute="top" id="nrv-s8-TWh"/>
-                            <constraint firstItem="3e5-2h-ID8" firstAttribute="top" secondItem="cII-aM-EFJ" secondAttribute="bottom" constant="73" id="tUf-8f-4Vl"/>
+                            <constraint firstItem="3e5-2h-ID8" firstAttribute="top" secondItem="cII-aM-EFJ" secondAttribute="bottom" constant="83" id="tUf-8f-4Vl"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="bsr-I8-Tap"/>
+                                <exclude reference="g05-A8-IKm"/>
+                                <exclude reference="tUf-8f-4Vl"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="endAnimationView" destination="txR-Qh-PbJ" id="vYw-UW-8mT"/>
@@ -559,7 +573,7 @@ Zestaw składa się z 54 kart z ręcznie wykonanymi ilustracjami, instrukcje w j
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Ka-v5-ii4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2692" y="727"/>
+            <point key="canvasLocation" x="2673" y="771"/>
         </scene>
         <!--Instructions View Controller-->
         <scene sceneID="ehC-gG-5I6">
