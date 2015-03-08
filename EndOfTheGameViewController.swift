@@ -29,10 +29,13 @@ class EndOfTheGameViewController: UIViewController
         newGameButton.setTitle(buttonString, forState: UIControlState.Normal)
         
         let images: NSMutableArray = []
-        for number in 1...18
+        for number in 6...28
         {
-            var image = UIImage(named:"shuffle\(number)")
-            images.addObject(image!)
+            if (number != 7)        // there was no image with the number 7
+            {
+                var image = UIImage(named:"Layer_\(number)")
+                images.addObject(image!)
+            }
         }
         
         endAnimationView.animationImages = images
