@@ -154,6 +154,9 @@
                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="15"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3En-kQ-92N">
+                                <rect key="frame" x="180" y="45" width="240" height="128"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -194,6 +197,7 @@
                     <nil key="simulatedStatusBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
+                        <outlet property="animationBuffor" destination="3En-kQ-92N" id="y8J-UC-lTX"/>
                         <outlet property="numberOfCardsLabel" destination="RnQ-6I-OQ4" id="zdp-F0-fzt"/>
                         <outlet property="swipeDownGesture" destination="UKN-i3-sNH" id="rGe-5m-CU5"/>
                         <outlet property="swipeToShuffle" destination="tFl-c8-pXl" id="Blh-pZ-4m7"/>

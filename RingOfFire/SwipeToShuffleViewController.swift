@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import AVFoundation
 
 var game = Gameplay()
 var activeCard : Card = game.deck[0]
 
 class SwipeToShuffleViewController: UIViewController
 {
+    @IBOutlet weak var animationBuffor: UIImageView!
     @IBOutlet weak var  swipeToShuffle: UIImageView!
     @IBOutlet var       swipeToShuffleLabel: UILabel!
     @IBOutlet var       swipeDownGesture: UISwipeGestureRecognizer!
@@ -27,12 +29,40 @@ class SwipeToShuffleViewController: UIViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        
+        animationBuffor.hidden = true
+        
+        let images: NSMutableArray = []
+        
+        for number in 1...19
+        {
+            var image = UIImage(named:"s\(number)")
+            images.addObject(image!)
+        }
+        
+        
+        for number in 6...28
+        {
+            if (number != 7)        // there was no image with the number 7
+            {
+                var image = UIImage(named:"Layer_\(number)")
+                images.addObject(image!)
+            }
+        }
+        animationBuffor.animationImages = images
+        animationBuffor.animationDuration = 1.8
+        animationBuffor.startAnimating()
+        
+        
         numberOfCardsLabel.text="left: \(game.deck.count-1)"
         
         if game.deck.count == 53
         {
             self.view.removeGestureRecognizer(swipeDownGesture)
         }
+        
+        
+        
     }
     
     override func didReceiveMemoryWarning()

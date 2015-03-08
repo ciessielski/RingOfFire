@@ -20,9 +20,10 @@ class ShuffleViewController: UIViewController
         super.viewDidLoad()
         
         let images: NSMutableArray = []
-        for number in 1...18
+        
+        for number in 1...19
         {
-            var image = UIImage(named:"shuffle\(number)")
+            var image = UIImage(named:"s\(number)")
                 images.addObject(image!)
         }
         
@@ -54,6 +55,3 @@ class ShuffleViewController: UIViewController
         super.didReceiveMemoryWarning()
     }
 }
-
-
-
