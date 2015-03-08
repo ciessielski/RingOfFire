@@ -13,10 +13,10 @@ var activeCard : Card = game.deck[0]
 
 class SwipeToShuffleViewController: UIViewController
 {
-    @IBOutlet weak var swipeToShuffle: UIImageView!
-    @IBOutlet var swipeToShuffleLabel: UILabel!
-    @IBOutlet var swipeDownGesture: UISwipeGestureRecognizer!
-    @IBOutlet weak var numberOfCardsLabel: UILabel!
+    @IBOutlet weak var  swipeToShuffle: UIImageView!
+    @IBOutlet var       swipeToShuffleLabel: UILabel!
+    @IBOutlet var       swipeDownGesture: UISwipeGestureRecognizer!
+    @IBOutlet weak var  numberOfCardsLabel: UILabel!
 
     override func viewDidAppear(animated: Bool)
     {

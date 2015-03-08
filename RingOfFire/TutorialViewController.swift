@@ -37,7 +37,7 @@ class TutorialViewController: UIViewController, UIPageViewControllerDataSource
         {
             let firstController = getItemController(0)!
             let startingViewControllers: NSArray = [firstController]
-            pageController.setViewControllers(startingViewControllers, direction: UIPageViewControllerNavigationDirection.Forward, animated: false, completion: nil)
+                pageController.setViewControllers(startingViewControllers, direction: UIPageViewControllerNavigationDirection.Forward, animated: false, completion: nil)
         }
         
         pageViewController = pageController
@@ -50,9 +50,9 @@ class TutorialViewController: UIViewController, UIPageViewControllerDataSource
     private func setupPageControl()
     {
         let appearance = UIPageControl.appearance()
-        appearance.pageIndicatorTintColor = UIColor.grayColor()
-        appearance.currentPageIndicatorTintColor = UIColor.blackColor()
-        appearance.backgroundColor = UIColor.whiteColor()
+            appearance.pageIndicatorTintColor = UIColor.grayColor()
+            appearance.currentPageIndicatorTintColor = UIColor.blackColor()
+            appearance.backgroundColor = UIColor.whiteColor()
     }
         
     func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController?

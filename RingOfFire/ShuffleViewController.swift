@@ -11,8 +11,8 @@ import AVFoundation
 
 class ShuffleViewController: UIViewController
 {
-    @IBOutlet weak var shuffleImageView: UIImageView!
-    var audioPlayer = AVAudioPlayer()
+    @IBOutlet weak var  shuffleImageView: UIImageView!
+    var                 audioPlayer = AVAudioPlayer()
     
 
     override func viewDidLoad()
@@ -23,7 +23,7 @@ class ShuffleViewController: UIViewController
         for number in 1...18
         {
             var image = UIImage(named:"shuffle\(number)")
-            images.addObject(image!)
+                images.addObject(image!)
         }
         
         shuffleImageView.animationImages = images
