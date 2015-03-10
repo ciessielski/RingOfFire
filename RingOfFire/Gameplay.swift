@@ -4,7 +4,7 @@
 //
 //  Created by Paweł Charatonik on 30.12.2014.
 //  Copyright (c) 2014 Michał Ciesielski. All rights reserved.
-//
+//  .
 
 import Foundation
 
