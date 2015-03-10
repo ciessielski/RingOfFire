@@ -662,7 +662,7 @@ Zestaw składa się z 54 kart z ręcznie wykonanymi ilustracjami, instrukcje w j
         <image name="continue" width="540" height="237"/>
         <image name="restart" width="540" height="237"/>
         <image name="settings" width="1181" height="1181"/>
-        <image name="swipe" width="540" height="250"/>
+        <image name="swipe" width="523" height="213"/>
         <image name="swipeToShuffle" width="249" height="66"/>
     </resources>
     <inferredMetricsTieBreakers>
