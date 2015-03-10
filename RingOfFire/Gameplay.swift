@@ -113,7 +113,7 @@ class Gameplay
     {
         var tempDeck : Array<Card> = []
        
-        for i in 0...1  //till the number of cards in deck
+        for i in 0...51  //till the number of cards in deck
         {
             let j = Int(arc4random_uniform(UInt32(deck.count-1)))            
             tempDeck.append(deck[j])
