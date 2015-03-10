@@ -29,7 +29,7 @@ class EndOfTheGameViewController: UIViewController
         newGameButton.setTitle(buttonString, forState: UIControlState.Normal)
         
         let images: NSMutableArray = []
-        for number in 6...28
+        for number in 6...26
         {
             if (number != 7)        // there was no image with the number 7
             {
