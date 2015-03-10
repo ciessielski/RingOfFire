@@ -30,8 +30,18 @@ class SwipeToShuffleViewController: UIViewController
     {
         super.viewDidLoad()
         
-        animationBuffor.hidden = true
+        loadAnimationsBeforeRunningThem()
+        numberOfCardsLabel.text="left: \(game.deck.count-1)"
         
+        if game.deck.count == 53
+        {
+            self.view.removeGestureRecognizer(swipeDownGesture)
+        }
+        
+    }
+    
+    func loadAnimationsBeforeRunningThem()
+    {
         let images: NSMutableArray = []
         
         for number in 1...19
@@ -39,7 +49,6 @@ class SwipeToShuffleViewController: UIViewController
             var image = UIImage(named:"s\(number)")
             images.addObject(image!)
         }
-        
         
         for number in 6...28
         {
@@ -49,20 +58,9 @@ class SwipeToShuffleViewController: UIViewController
                 images.addObject(image!)
             }
         }
+        
         animationBuffor.animationImages = images
-        animationBuffor.animationDuration = 1.8
         animationBuffor.startAnimating()
-        
-        
-        numberOfCardsLabel.text="left: \(game.deck.count-1)"
-        
-        if game.deck.count == 53
-        {
-            self.view.removeGestureRecognizer(swipeDownGesture)
-        }
-        
-        
-        
     }
     
     override func didReceiveMemoryWarning()

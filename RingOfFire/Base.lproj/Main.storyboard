@@ -526,6 +526,17 @@ Zestaw składa się z 54 kart z ręcznie wykonanymi ilustracjami, instrukcje w j
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7dy-ye-ydi">
+                                <rect key="frame" x="180" y="28" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="EbJ-ln-BQa"/>
+                                    <constraint firstAttribute="width" constant="240" id="LuF-ny-og1"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="txR-Qh-PbJ">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
@@ -551,15 +562,17 @@ Zestaw składa się z 54 kart z ręcznie wykonanymi ilustracjami, instrukcje w j
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="3e5-2h-ID8" firstAttribute="top" secondItem="cII-aM-EFJ" secondAttribute="bottom" constant="82" id="RMX-1K-NJo"/>
-                            <constraint firstItem="txR-Qh-PbJ" firstAttribute="bottom" secondItem="3e5-2h-ID8" secondAttribute="top" id="ROa-Bs-AhE"/>
-                            <constraint firstItem="cII-aM-EFJ" firstAttribute="centerX" secondItem="txR-Qh-PbJ" secondAttribute="centerX" id="YlU-TQ-hfc"/>
-                            <constraint firstItem="txR-Qh-PbJ" firstAttribute="leading" secondItem="GxK-eE-Q6m" secondAttribute="leading" id="Z0E-mn-9CY"/>
+                            <constraint firstItem="txR-Qh-PbJ" firstAttribute="bottom" secondItem="3e5-2h-ID8" secondAttribute="top" id="3jN-by-G9L"/>
+                            <constraint firstItem="txR-Qh-PbJ" firstAttribute="leading" secondItem="GxK-eE-Q6m" secondAttribute="leading" id="Adi-sK-exl"/>
+                            <constraint firstItem="3e5-2h-ID8" firstAttribute="top" secondItem="cII-aM-EFJ" secondAttribute="bottom" constant="82" id="aTq-AN-FrA"/>
                             <constraint firstItem="cII-aM-EFJ" firstAttribute="centerX" secondItem="txR-Qh-PbJ" secondAttribute="centerX" id="bsr-I8-Tap"/>
-                            <constraint firstAttribute="trailing" secondItem="txR-Qh-PbJ" secondAttribute="trailing" id="d7b-m9-fPe"/>
                             <constraint firstItem="cII-aM-EFJ" firstAttribute="top" secondItem="mLo-dt-d03" secondAttribute="bottom" constant="467" id="g05-A8-IKm"/>
-                            <constraint firstItem="txR-Qh-PbJ" firstAttribute="top" secondItem="GxK-eE-Q6m" secondAttribute="top" id="nrv-s8-TWh"/>
+                            <constraint firstItem="7dy-ye-ydi" firstAttribute="top" secondItem="mLo-dt-d03" secondAttribute="bottom" constant="8" symbolic="YES" id="gfi-Zq-ds5"/>
+                            <constraint firstItem="txR-Qh-PbJ" firstAttribute="centerX" secondItem="7dy-ye-ydi" secondAttribute="centerX" id="jQC-7r-dby"/>
                             <constraint firstItem="3e5-2h-ID8" firstAttribute="top" secondItem="cII-aM-EFJ" secondAttribute="bottom" constant="83" id="tUf-8f-4Vl"/>
+                            <constraint firstAttribute="trailing" secondItem="txR-Qh-PbJ" secondAttribute="trailing" id="twh-gG-fwO"/>
+                            <constraint firstItem="txR-Qh-PbJ" firstAttribute="top" secondItem="GxK-eE-Q6m" secondAttribute="top" id="u9H-Mv-DlN"/>
+                            <constraint firstItem="7dy-ye-ydi" firstAttribute="centerX" secondItem="cII-aM-EFJ" secondAttribute="centerX" id="ynC-wC-mCi"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
