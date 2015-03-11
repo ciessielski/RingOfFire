@@ -402,8 +402,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gzn-z5-RjO">
-                                <rect key="frame" x="113" y="413" width="375" height="160"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gzn-z5-RjO">
+                                <rect key="frame" x="140" y="413" width="320" height="160"/>
                                 <state key="normal" image="continue">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -411,8 +411,8 @@
                                     <action selector="continueAction:" destination="Pkl-37-KhO" eventType="touchUpInside" id="GB5-Fy-yci"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vi6-K1-Hbv">
-                                <rect key="frame" x="113" y="220" width="375" height="160"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vi6-K1-Hbv">
+                                <rect key="frame" x="140" y="220" width="320" height="160"/>
                                 <state key="normal" image="restart">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -421,7 +421,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZi-GE-odp">
-                                <rect key="frame" x="141" y="43" width="320" height="160"/>
+                                <rect key="frame" x="168" y="43" width="265" height="160"/>
                                 <color key="backgroundColor" red="0.90842366220000004" green="0.1208788354" blue="0.081431492359999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="goToStoreButton:" destination="Pkl-37-KhO" eventType="touchUpInside" id="eoz-gb-IS4"/>
@@ -433,11 +433,11 @@
                         <constraints>
                             <constraint firstItem="Vi6-K1-Hbv" firstAttribute="centerX" secondItem="oIQ-Pj-h8F" secondAttribute="centerX" id="2Qs-ta-kWQ"/>
                             <constraint firstItem="Gzn-z5-RjO" firstAttribute="trailing" secondItem="Vi6-K1-Hbv" secondAttribute="trailing" id="5lH-WA-2Hn"/>
-                            <constraint firstItem="Vi6-K1-Hbv" firstAttribute="trailing" secondItem="kZi-GE-odp" secondAttribute="trailing" id="CSL-Ly-NoF"/>
+                            <constraint firstItem="Vi6-K1-Hbv" firstAttribute="trailing" secondItem="kZi-GE-odp" secondAttribute="trailing" constant="27" id="CSL-Ly-NoF"/>
                             <constraint firstItem="Vi6-K1-Hbv" firstAttribute="centerY" secondItem="oIQ-Pj-h8F" secondAttribute="centerY" id="Kb6-uQ-oSx"/>
                             <constraint firstItem="xRe-u0-9H7" firstAttribute="top" secondItem="Gzn-z5-RjO" secondAttribute="bottom" constant="27" id="pXO-74-ecO"/>
                             <constraint firstItem="Vi6-K1-Hbv" firstAttribute="leading" secondItem="Gzn-z5-RjO" secondAttribute="leading" id="pYn-gm-gP6"/>
-                            <constraint firstItem="kZi-GE-odp" firstAttribute="leading" secondItem="Vi6-K1-Hbv" secondAttribute="leading" id="rrF-Hp-mRP"/>
+                            <constraint firstItem="kZi-GE-odp" firstAttribute="leading" secondItem="Vi6-K1-Hbv" secondAttribute="leading" constant="28" id="rrF-Hp-mRP"/>
                             <constraint firstItem="kZi-GE-odp" firstAttribute="top" secondItem="rzv-9W-Zf4" secondAttribute="bottom" constant="43" id="ttF-mL-9ig"/>
                             <constraint firstItem="Vi6-K1-Hbv" firstAttribute="top" secondItem="kZi-GE-odp" secondAttribute="bottom" constant="17" id="wmL-Cp-GHA"/>
                         </constraints>
@@ -640,7 +640,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="yxi-qg-uPl"/>
-        <segue reference="Bs7-Iq-X07"/>
+        <segue reference="OG2-7B-Wpg"/>
         <segue reference="KcM-EB-eAo"/>
         <segue reference="fZB-2o-AoI"/>
     </inferredMetricsTieBreakers>
