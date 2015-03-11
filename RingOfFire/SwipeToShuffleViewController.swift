@@ -42,25 +42,31 @@ class SwipeToShuffleViewController: UIViewController
     
     func loadAnimationsBeforeRunningThem()
     {
-        let images: NSMutableArray = []
         
-        for number in 1...19
+        if(NSUserDefaults.standardUserDefaults().stringForKey("firstOpen") == ("no"))
         {
-            var image = UIImage(named:"s\(number)")
-            images.addObject(image!)
-        }
-        
-        for number in 6...26
-        {
-            if (number != 7)        // there was no image with the number 7
+
+            let images: NSMutableArray = []
+            
+            for number in 1...19
             {
-                var image = UIImage(named:"Layer_\(number)")
+                var image = UIImage(named:"s\(number)")
                 images.addObject(image!)
             }
+            
+            for number in 6...26
+            {
+                if (number != 7)        // there was no image with the number 7
+                {
+                    var image = UIImage(named:"Layer_\(number)")
+                    images.addObject(image!)
+                }
+            }
+            
+            animationBuffor.animationImages = images
+            animationBuffor.startAnimating()
+            println("first")
         }
-        
-        animationBuffor.animationImages = images
-        animationBuffor.startAnimating()
     }
     
     override func didReceiveMemoryWarning()

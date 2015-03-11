@@ -20,11 +20,14 @@ class TutorialViewController: UIViewController, UIPageViewControllerDataSource
         NSUserDefaults.standardUserDefaults().synchronize()
     }
     
+
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
         createPageViewController()
         setupPageControl()
+//        loadBufforIfFirstLounched()
     }
     
     private func createPageViewController()
