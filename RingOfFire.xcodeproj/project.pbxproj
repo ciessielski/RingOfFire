@@ -15,6 +15,7 @@
 		1126F7C21A43735C000176F8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1126F7C11A43735C000176F8 /* Images.xcassets */; };
 		1126F7C51A43735C000176F8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1126F7C31A43735C000176F8 /* LaunchScreen.xib */; };
 		1126F7D11A43735C000176F8 /* RingOfFireTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1126F7D01A43735C000176F8 /* RingOfFireTests.swift */; };
+		113E1B821AB14A3C003D4DF8 /* Amelka.wav in Resources */ = {isa = PBXBuildFile; fileRef = 113E1B811AB14A3C003D4DF8 /* Amelka.wav */; };
 		1163C7531A60A14100F90168 /* PageItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1163C7521A60A14100F90168 /* PageItemViewController.swift */; };
 		116B7D141A68D14B0002143E /* FromTopVerticalSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116B7D131A68D14B0002143E /* FromTopVerticalSegue.swift */; };
 		118156361A4A428A006F655D /* SwipeToShuffleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118156351A4A428A006F655D /* SwipeToShuffleViewController.swift */; };
@@ -52,6 +53,7 @@
 		1126F7CA1A43735C000176F8 /* RingOfFireTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RingOfFireTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1126F7CF1A43735C000176F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1126F7D01A43735C000176F8 /* RingOfFireTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingOfFireTests.swift; sourceTree = "<group>"; };
+		113E1B811AB14A3C003D4DF8 /* Amelka.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Amelka.wav; sourceTree = "<group>"; };
 		1152EC311A9989220092ABF1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		1163C7521A60A14100F90168 /* PageItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageItemViewController.swift; sourceTree = "<group>"; };
 		116B7D131A68D14B0002143E /* FromTopVerticalSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FromTopVerticalSegue.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 				11C5C4771A5B13DA00737545 /* Localizable.strings */,
 				11E55ECA1A59EF1100F89D55 /* AVFoundation.framework */,
 				11E55EC81A59EB8300F89D55 /* beat.wav */,
+				113E1B811AB14A3C003D4DF8 /* Amelka.wav */,
 				1126F7B61A43735C000176F8 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -274,6 +277,7 @@
 				1126F7C01A43735C000176F8 /* Main.storyboard in Resources */,
 				1126F7C51A43735C000176F8 /* LaunchScreen.xib in Resources */,
 				1126F7C21A43735C000176F8 /* Images.xcassets in Resources */,
+				113E1B821AB14A3C003D4DF8 /* Amelka.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
