@@ -27,11 +27,12 @@ class InstructionsViewController: UIViewController
         }
     }
     
-    var animator: UIDynamicAnimator!
-    var gravity: UIGravityBehavior!
-    var gravityDirection: CGVector!
+    override func viewDidAppear(animated: Bool)
+    {
+        super.viewDidAppear(animated)
+        self.hint()
+    }
 
-    
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -41,10 +42,11 @@ class InstructionsViewController: UIViewController
         cardInstructions.text = activeCard.instructions
         cardInstructions.textAlignment = .Center
         cardInstructions.font = UIFont (name: "American Typewriter", size: 14.0)
-        
-        self.hint() 
     }
     
+    var animator: UIDynamicAnimator!
+    var gravity: UIGravityBehavior!
+    var gravityDirection: CGVector!
     
     func hint()
     {
@@ -54,8 +56,9 @@ class InstructionsViewController: UIViewController
         
         let swipeHint = UIImageView(frame: CGRect(x: self.view.frame.width/2-150 , y: self.view.frame.height-120, width: 300, height: 110))
         swipeHint.image = UIImage(named: "swipe")
-        swipeHint.alpha = 0.9
         view.addSubview(swipeHint)
+        
+        UIView.animateWithDuration(1.2, delay: 0, options: nil , animations: {swipeHint.alpha = 0}, completion: nil)
         
         animator = UIDynamicAnimator(referenceView: view)
         
@@ -64,7 +67,6 @@ class InstructionsViewController: UIViewController
         animator.addBehavior(gravity)
     }
         
-
     override func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()
