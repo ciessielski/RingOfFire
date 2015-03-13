@@ -31,6 +31,8 @@ class InstructionsViewController: UIViewController
     {
         super.viewDidAppear(animated)
         self.hint()
+        var timer = NSTimer()
+        timer = NSTimer.scheduledTimerWithTimeInterval(3, target:self, selector:("hint"), userInfo: nil, repeats: true)
     }
 
     override func viewDidLoad()
@@ -42,6 +44,7 @@ class InstructionsViewController: UIViewController
         cardInstructions.text = activeCard.instructions
         cardInstructions.textAlignment = .Center
         cardInstructions.font = UIFont (name: "American Typewriter", size: 14.0)
+
     }
     
     var animator: UIDynamicAnimator!
@@ -58,7 +61,7 @@ class InstructionsViewController: UIViewController
         swipeHint.image = UIImage(named: "swipe")
         view.addSubview(swipeHint)
         
-        UIView.animateWithDuration(1.2, delay: 0, options: nil , animations: {swipeHint.alpha = 0}, completion: nil)
+        UIView.animateWithDuration(0.9, delay: 0, options: nil , animations: {swipeHint.alpha = 0}, completion: nil)
         
         animator = UIDynamicAnimator(referenceView: view)
         
