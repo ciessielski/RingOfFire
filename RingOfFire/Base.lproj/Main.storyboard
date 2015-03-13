@@ -403,7 +403,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gzn-z5-RjO">
-                                <rect key="frame" x="140" y="413" width="320" height="160"/>
+                                <rect key="frame" x="113" y="413" width="375" height="160"/>
                                 <state key="normal" image="continue">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -412,8 +412,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vi6-K1-Hbv">
-                                <rect key="frame" x="140" y="220" width="320" height="160"/>
-                                <state key="normal" image="restart">
+                                <rect key="frame" x="113" y="220" width="375" height="160"/>
+                                <state key="normal" image="shop">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -421,8 +421,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZi-GE-odp">
-                                <rect key="frame" x="168" y="43" width="265" height="160"/>
-                                <color key="backgroundColor" red="0.90842366220000004" green="0.1208788354" blue="0.081431492359999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="141" y="43" width="320" height="160"/>
+                                <state key="normal" image="restart"/>
                                 <connections>
                                     <action selector="goToStoreButton:" destination="Pkl-37-KhO" eventType="touchUpInside" id="eoz-gb-IS4"/>
                                 </connections>
@@ -625,12 +625,13 @@
         <image name="continue" width="320" height="160"/>
         <image name="restart" width="320" height="160"/>
         <image name="settings" width="1181" height="1181"/>
+        <image name="shop" width="320" height="160"/>
         <image name="swipeToShuffle" width="249" height="66"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="6SY-e3-H7Z"/>
-        <segue reference="Bs7-Iq-X07"/>
+        <segue reference="wP8-l2-ifS"/>
         <segue reference="VkR-ph-e0R"/>
+        <segue reference="Bs7-Iq-X07"/>
         <segue reference="fZB-2o-AoI"/>
     </inferredMetricsTieBreakers>
 </document>
