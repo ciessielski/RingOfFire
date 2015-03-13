@@ -11,6 +11,7 @@ import UIKit
 
 class PageItemController: UIViewController
 {
+    @IBOutlet weak var buffor: UIImageView!
     
     var itemIndex: Int = 0
     var imageName: String = ""
@@ -26,9 +27,43 @@ class PageItemController: UIViewController
     
     @IBOutlet var contentImageView: UIImageView?
     
+    
+    func loadAnimationsBeforeRunningThem()
+    {
+            if(NSUserDefaults.standardUserDefaults().stringForKey("firstOpen") == ("no"))
+            {
+                println("not first");
+            }
+            else
+            {
+                let images: NSMutableArray = []
+                
+                for number in 1...19
+                {
+                    var image = UIImage(named:"s\(number)")
+                    images.addObject(image!)
+                }
+                
+                for number in 6...26
+                {
+                    if (number != 7)        // there was no image with the number 7
+                    {
+                        var image = UIImage(named:"Layer_\(number)")
+                        images.addObject(image!)
+                    }
+                }
+                
+                buffor.animationImages = images
+                buffor.startAnimating()
+                println("first")
+            }
+
+    }
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        loadAnimationsBeforeRunningThem()
         contentImageView!.image = UIImage(named: imageName)
     }
 }

@@ -18,7 +18,7 @@ class FromTopVerticalSegue: UIStoryboardSegue
         var sourceViewController = self.sourceViewController as UIViewController
         var destinationViewController = self.destinationViewController as UIViewController
         var duplicatedSourceView: UIView = sourceViewController.view.snapshotViewAfterScreenUpdates(false)
-        destinationViewController.view.addSubview(duplicatedSourceView)
+            destinationViewController.view.addSubview(duplicatedSourceView)
         
         sourceViewController.presentViewController(destinationViewController, animated: false, completion:
             {

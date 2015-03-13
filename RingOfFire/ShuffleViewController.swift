@@ -11,8 +11,8 @@ import AVFoundation
 
 class ShuffleViewController: UIViewController
 {
-    @IBOutlet weak var shuffleImageView: UIImageView!
-    var audioPlayer = AVAudioPlayer()
+    @IBOutlet weak var  shuffleImageView: UIImageView!
+    var                 audioPlayer = AVAudioPlayer()
     
 
     override func viewDidLoad()
@@ -20,14 +20,15 @@ class ShuffleViewController: UIViewController
         super.viewDidLoad()
         
         let images: NSMutableArray = []
-        for number in 1...18
+        
+        for number in 1...19
         {
-            var image = UIImage(named:"shuffle\(number)")
-            images.addObject(image!)
+            var image = UIImage(named:"s\(number)")
+                images.addObject(image!)
         }
         
         shuffleImageView.animationImages = images
-        shuffleImageView.animationDuration = 1.8
+        shuffleImageView.animationDuration = 1.9
         shuffleImageView.startAnimating()
 
         game.deck.removeAtIndex(0)
@@ -54,6 +55,3 @@ class ShuffleViewController: UIViewController
         super.didReceiveMemoryWarning()
     }
 }
-
-
-

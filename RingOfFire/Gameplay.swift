@@ -4,7 +4,7 @@
 //
 //  Created by Paweł Charatonik on 30.12.2014.
 //  Copyright (c) 2014 Michał Ciesielski. All rights reserved.
-//
+//  .
 
 import Foundation
 
@@ -113,7 +113,7 @@ class Gameplay
     {
         var tempDeck : Array<Card> = []
        
-        for i in 0...51
+        for i in 0...51  //till the number of cards in deck
         {
             let j = Int(arc4random_uniform(UInt32(deck.count-1)))            
             tempDeck.append(deck[j])
