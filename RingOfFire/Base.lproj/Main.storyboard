@@ -562,13 +562,13 @@ Zestaw składa się z 54 kart z ręcznie wykonanymi ilustracjami, instrukcje w j
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Card title" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ya4-x9-oly">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Card title" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ya4-x9-oly">
                                 <rect key="frame" x="259" y="134" width="82" height="21"/>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="DS" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ewj-on-nm7">
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" scrollEnabled="NO" editable="NO" text="DS" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ewj-on-nm7">
                                 <rect key="frame" x="27" y="185" width="547" height="354"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <accessibility key="accessibilityConfiguration">
@@ -584,18 +584,10 @@ Zestaw składa się z 54 kart z ręcznie wykonanymi ilustracjami, instrukcje w j
                                     <rect key="frame" x="0.0" y="0.0" width="0.0" height="0.0"/>
                                 </variation>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swipe" translatesAutoresizingMaskIntoConstraints="NO" id="wXe-hR-2sr">
-                                <rect key="frame" x="108" y="428" width="384" height="143"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="143" id="Gcp-El-s9g"/>
-                                    <constraint firstAttribute="width" constant="384" id="nl7-rD-wVP"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="wXe-hR-2sr" secondAttribute="bottom" constant="29" id="44O-WW-D57"/>
                             <constraint firstItem="lMA-zj-57T" firstAttribute="leading" secondItem="236-hQ-Dyl" secondAttribute="leading" id="6gV-XE-qiU"/>
                             <constraint firstItem="lMA-zj-57T" firstAttribute="top" secondItem="236-hQ-Dyl" secondAttribute="top" id="8oK-ut-HY8"/>
                             <constraint firstItem="lMA-zj-57T" firstAttribute="centerX" secondItem="Ya4-x9-oly" secondAttribute="centerX" id="9zv-V4-wUp"/>
@@ -603,8 +595,6 @@ Zestaw składa się z 54 kart z ręcznie wykonanymi ilustracjami, instrukcje w j
                             <constraint firstItem="ewj-on-nm7" firstAttribute="leading" secondItem="236-hQ-Dyl" secondAttribute="leadingMargin" constant="11" id="Bhd-LH-Noe"/>
                             <constraint firstItem="lMA-zj-57T" firstAttribute="top" secondItem="236-hQ-Dyl" secondAttribute="top" id="FgN-9H-60w"/>
                             <constraint firstAttribute="trailing" secondItem="lMA-zj-57T" secondAttribute="trailing" id="HFP-9O-G6L"/>
-                            <constraint firstItem="wXe-hR-2sr" firstAttribute="centerX" secondItem="lMA-zj-57T" secondAttribute="centerX" id="PcX-Vy-vKk"/>
-                            <constraint firstItem="wXe-hR-2sr" firstAttribute="centerX" secondItem="ewj-on-nm7" secondAttribute="centerX" id="STT-p6-6HA"/>
                             <constraint firstItem="ewj-on-nm7" firstAttribute="centerX" secondItem="Ya4-x9-oly" secondAttribute="centerX" id="eCW-ZG-R8y"/>
                             <constraint firstItem="lMA-zj-57T" firstAttribute="bottom" secondItem="0ur-WJ-JdG" secondAttribute="top" id="fbs-KO-rGT"/>
                             <constraint firstItem="Ya4-x9-oly" firstAttribute="top" secondItem="iH6-lb-xYK" secondAttribute="bottom" constant="114" id="hx2-EW-pw9"/>
@@ -662,7 +652,6 @@ Zestaw składa się z 54 kart z ręcznie wykonanymi ilustracjami, instrukcje w j
         <image name="continue" width="540" height="237"/>
         <image name="restart" width="540" height="237"/>
         <image name="settings" width="1181" height="1181"/>
-        <image name="swipe" width="523" height="213"/>
         <image name="swipeToShuffle" width="249" height="66"/>
     </resources>
     <inferredMetricsTieBreakers>
