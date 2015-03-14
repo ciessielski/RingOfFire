@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -11,20 +12,99 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tutorial2" translatesAutoresizingMaskIntoConstraints="NO" id="GTc-W1-0Db">
-                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Taking turns, each player swipes the screen to find out what's on around the table." textAlignment="right" translatesAutoresizingMaskIntoConstraints="NO" id="lv8-6t-UNv">
+                    <rect key="frame" x="348" y="71" width="240" height="53"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="240" id="cZX-PH-gom"/>
+                        <constraint firstAttribute="height" constant="53" id="iDd-Dz-7Ga"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="13"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="If the game gets out of control, simply swipe to the top. Then you will see the last mini-game randomized." textAlignment="right" translatesAutoresizingMaskIntoConstraints="NO" id="m5v-nh-wFa">
+                    <rect key="frame" x="325" y="224" width="263" height="59"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="263" id="2xK-kO-xr4"/>
+                        <constraint firstAttribute="height" constant="59" id="pR9-zO-P85"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="13"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="turns" translatesAutoresizingMaskIntoConstraints="NO" id="ta8-mH-58f">
+                    <rect key="frame" x="8" y="65" width="58" height="59"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="58" id="Gfy-sL-Ma8"/>
+                        <constraint firstAttribute="height" constant="59" id="iFY-8g-83S"/>
+                    </constraints>
                 </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="redCup" translatesAutoresizingMaskIntoConstraints="NO" id="c9z-Wg-GZf">
+                    <rect key="frame" x="519" y="138" width="69" height="61"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="69" id="YPK-ne-521"/>
+                        <constraint firstAttribute="height" constant="61" id="vPL-OH-Wax"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flame" translatesAutoresizingMaskIntoConstraints="NO" id="yn1-5G-J77">
+                    <rect key="frame" x="8" y="218" width="51" height="72"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="51" id="dMQ-8i-8Vl"/>
+                        <constraint firstAttribute="height" constant="72" id="zBn-iH-Ish"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mates2" translatesAutoresizingMaskIntoConstraints="NO" id="0qq-6L-Ynt">
+                    <rect key="frame" x="0.0" y="298" width="600" height="302"/>
+                </imageView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Click on the illustrations to find descriptions of mini-games. Remember, whoever loses has to drink!" translatesAutoresizingMaskIntoConstraints="NO" id="pHH-ZO-bga">
+                    <rect key="frame" x="8" y="132" width="198" height="74"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="198" id="Azg-WB-C6b"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="13"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How to play" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pf1-fA-KvL">
+                    <rect key="frame" x="186" y="8" width="228" height="43"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="228" id="GCl-E2-BCY"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="20"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="GTc-W1-0Db" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="G5S-NJ-hfw"/>
-                <constraint firstItem="GTc-W1-0Db" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="LfJ-Sk-eSp"/>
-                <constraint firstAttribute="bottom" secondItem="GTc-W1-0Db" secondAttribute="bottom" id="Oq2-Eo-syL"/>
-                <constraint firstAttribute="trailing" secondItem="GTc-W1-0Db" secondAttribute="trailing" id="lXO-an-fMy"/>
+                <constraint firstItem="lv8-6t-UNv" firstAttribute="top" secondItem="Pf1-fA-KvL" secondAttribute="bottom" constant="20" id="3D3-rL-g9E"/>
+                <constraint firstItem="lv8-6t-UNv" firstAttribute="trailing" secondItem="c9z-Wg-GZf" secondAttribute="trailing" id="5eS-dk-J7B"/>
+                <constraint firstItem="ta8-mH-58f" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" id="6fb-9O-rEZ"/>
+                <constraint firstItem="yn1-5G-J77" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="218" id="Fvn-QU-REm"/>
+                <constraint firstItem="yn1-5G-J77" firstAttribute="top" secondItem="pHH-ZO-bga" secondAttribute="bottom" constant="12" id="HCm-6q-65r"/>
+                <constraint firstItem="0qq-6L-Ynt" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottomMargin" constant="8" id="LbJ-oP-669"/>
+                <constraint firstItem="lv8-6t-UNv" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="71" id="T57-iE-8i2"/>
+                <constraint firstItem="0qq-6L-Ynt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="VA1-7J-YhO"/>
+                <constraint firstItem="Pf1-fA-KvL" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="topMargin" id="Y6N-8k-Ozt"/>
+                <constraint firstItem="ta8-mH-58f" firstAttribute="leading" secondItem="yn1-5G-J77" secondAttribute="leading" id="cXR-J4-HCP"/>
+                <constraint firstItem="ta8-mH-58f" firstAttribute="leading" secondItem="pHH-ZO-bga" secondAttribute="leading" id="h3C-LP-cU5"/>
+                <constraint firstAttribute="trailing" secondItem="0qq-6L-Ynt" secondAttribute="trailing" id="hX9-Ab-ZBy"/>
+                <constraint firstItem="yn1-5G-J77" firstAttribute="bottom" secondItem="m5v-nh-wFa" secondAttribute="bottom" constant="7" id="nHq-Eh-ShX"/>
+                <constraint firstItem="0qq-6L-Ynt" firstAttribute="top" secondItem="yn1-5G-J77" secondAttribute="bottom" constant="8" id="qGh-ax-kpK"/>
+                <constraint firstItem="c9z-Wg-GZf" firstAttribute="top" secondItem="lv8-6t-UNv" secondAttribute="bottom" constant="14" id="toU-Wf-dCR"/>
+                <constraint firstItem="lv8-6t-UNv" firstAttribute="trailing" secondItem="m5v-nh-wFa" secondAttribute="trailing" id="w3r-J7-we9"/>
+                <constraint firstAttribute="trailing" secondItem="lv8-6t-UNv" secondAttribute="trailing" constant="12" id="xCl-IS-mZB"/>
+                <constraint firstItem="pHH-ZO-bga" firstAttribute="top" secondItem="ta8-mH-58f" secondAttribute="bottom" constant="8" id="y6f-sD-ATg"/>
+                <constraint firstItem="lv8-6t-UNv" firstAttribute="bottom" secondItem="ta8-mH-58f" secondAttribute="bottom" id="yad-J7-DtO"/>
+                <constraint firstItem="Pf1-fA-KvL" firstAttribute="centerX" secondItem="0qq-6L-Ynt" secondAttribute="centerX" id="zGM-Tx-D3i"/>
             </constraints>
+            <point key="canvasLocation" x="475" y="335"/>
         </view>
     </objects>
     <resources>
-        <image name="tutorial2" width="320" height="413"/>
+        <image name="flame" width="74" height="119"/>
+        <image name="mates2" width="537" height="336"/>
+        <image name="redCup" width="99" height="79"/>
+        <image name="turns" width="114" height="109"/>
     </resources>
 </document>
