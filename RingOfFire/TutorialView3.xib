@@ -12,9 +12,9 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mates3" translatesAutoresizingMaskIntoConstraints="NO" id="dHh-Yw-rwB">
-                    <rect key="frame" x="0.0" y="443" width="600" height="157"/>
+                    <rect key="frame" x="0.0" y="466" width="600" height="134"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="157" id="DMf-Vx-ZYT"/>
+                        <constraint firstAttribute="height" constant="134" id="DMf-Vx-ZYT"/>
                     </constraints>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bottle" translatesAutoresizingMaskIntoConstraints="NO" id="NmW-Qg-TJG">
@@ -53,7 +53,7 @@ Respect and fun are fundamental principles of the game.</string>
                 <constraint firstItem="dHh-Yw-rwB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="dWB-Cx-aqI"/>
                 <constraint firstItem="NmW-Qg-TJG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="mbA-zw-YWx"/>
                 <constraint firstItem="CPU-k0-PU4" firstAttribute="centerX" secondItem="ME3-QI-rNn" secondAttribute="centerX" id="vFD-G2-Khv"/>
-                <constraint firstItem="dHh-Yw-rwB" firstAttribute="top" secondItem="CPU-k0-PU4" secondAttribute="bottom" constant="8" id="w6H-0t-zHQ"/>
+                <constraint firstItem="dHh-Yw-rwB" firstAttribute="top" secondItem="CPU-k0-PU4" secondAttribute="bottom" constant="31" id="w6H-0t-zHQ"/>
                 <constraint firstAttribute="trailing" secondItem="dHh-Yw-rwB" secondAttribute="trailing" id="zz5-Ro-3kT"/>
             </constraints>
             <point key="canvasLocation" x="313" y="398"/>

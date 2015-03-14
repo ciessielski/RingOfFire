@@ -12,7 +12,7 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="A phone with the Ring of Fire app installed and ready to play." translatesAutoresizingMaskIntoConstraints="NO" id="QZS-Ow-TBY">
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="A phone with the Ring of Fire app installed and ready to play." selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QZS-Ow-TBY">
                     <rect key="frame" x="8" y="83" width="228" height="63"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
@@ -22,22 +22,22 @@
                     <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="An empty cup or bowl to put in the middle of the table." textAlignment="right" translatesAutoresizingMaskIntoConstraints="NO" id="Hbq-pF-iQl">
-                    <rect key="frame" x="365" y="178" width="227" height="41"/>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="An empty cup or bowl to put in the middle of the table." textAlignment="right" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hbq-pF-iQl">
+                    <rect key="frame" x="365" y="178" width="227" height="49"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="227" id="Zt4-Tx-18B"/>
-                        <constraint firstAttribute="height" constant="41" id="yxp-YZ-3b5"/>
+                        <constraint firstAttribute="height" constant="49" id="yxp-YZ-3b5"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="13"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="A group of friends who are willing to have the best night ever!" translatesAutoresizingMaskIntoConstraints="NO" id="4yG-g5-9if">
-                    <rect key="frame" x="8" y="253" width="237" height="43"/>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="A group of friends who are willing to have the best night ever!" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4yG-g5-9if">
+                    <rect key="frame" x="8" y="253" width="237" height="56"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="237" id="3f3-b4-UlW"/>
-                        <constraint firstAttribute="height" constant="43" id="7ED-vh-DYw"/>
+                        <constraint firstAttribute="height" constant="56" id="7ED-vh-DYw"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="13"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -82,7 +82,7 @@
                 <constraint firstItem="QZS-Ow-TBY" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" id="LbP-zS-6kM"/>
                 <constraint firstAttribute="bottom" secondItem="Exh-hs-C8S" secondAttribute="bottom" id="Mru-PM-5Ru"/>
                 <constraint firstItem="4yG-g5-9if" firstAttribute="top" secondItem="QZS-Ow-TBY" secondAttribute="bottom" constant="107" id="W8U-MG-lJ8"/>
-                <constraint firstItem="Exh-hs-C8S" firstAttribute="top" secondItem="4yG-g5-9if" secondAttribute="bottom" constant="8" id="c2r-jc-JY8"/>
+                <constraint firstItem="Exh-hs-C8S" firstAttribute="top" secondItem="4yG-g5-9if" secondAttribute="bottom" constant="-5" id="c2r-jc-JY8"/>
                 <constraint firstItem="Hbq-pF-iQl" firstAttribute="top" secondItem="7Kf-bG-rHp" secondAttribute="bottom" constant="20" id="dfk-wI-90H"/>
                 <constraint firstItem="Exh-hs-C8S" firstAttribute="leading" secondItem="4yG-g5-9if" secondAttribute="trailing" constant="-245" id="iqc-fy-r1z"/>
                 <constraint firstItem="Hbq-pF-iQl" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailingMargin" id="mWp-Oa-4WF"/>
