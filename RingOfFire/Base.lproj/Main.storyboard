@@ -144,8 +144,11 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swipeToShuffle" translatesAutoresizingMaskIntoConstraints="NO" id="tFl-c8-pXl">
                                 <rect key="frame" x="176" y="478" width="249" height="66"/>
                             </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3En-kQ-92N">
+                                <rect key="frame" x="180" y="45" width="240" height="128"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="left: 52" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RnQ-6I-OQ4">
-                                <rect key="frame" x="532" y="8" width="59" height="21"/>
+                                <rect key="frame" x="525" y="8" width="59" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="1ww-OU-4A5"/>
                                     <constraint firstAttribute="width" constant="59" id="ALm-mr-Bvc"/>
@@ -153,9 +156,6 @@
                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="15"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3En-kQ-92N">
-                                <rect key="frame" x="180" y="45" width="240" height="128"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -166,11 +166,13 @@
                             <constraint firstAttribute="centerX" secondItem="tFl-c8-pXl" secondAttribute="centerX" id="8GK-p6-Sck"/>
                             <constraint firstItem="r1w-kO-UJk" firstAttribute="top" secondItem="GCi-o4-mRt" secondAttribute="top" id="8Qa-7j-i4E"/>
                             <constraint firstItem="L2a-mt-Ngm" firstAttribute="top" secondItem="a6Q-GF-GJ5" secondAttribute="top" id="98K-Cv-YV5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="RnQ-6I-OQ4" secondAttribute="trailing" id="9ER-2Z-y43"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="RnQ-6I-OQ4" secondAttribute="trailing" constant="-7" id="9Lz-hh-3mB"/>
                             <constraint firstItem="z8H-0o-zSq" firstAttribute="top" secondItem="GCi-o4-mRt" secondAttribute="bottom" constant="79" id="NZe-lA-RaB"/>
                             <constraint firstItem="z8H-0o-zSq" firstAttribute="top" secondItem="a6Q-GF-GJ5" secondAttribute="bottom" constant="8" symbolic="YES" id="Qgo-BA-Fs7"/>
                             <constraint firstItem="RnQ-6I-OQ4" firstAttribute="top" secondItem="3ya-M3-3DX" secondAttribute="bottom" constant="8" symbolic="YES" id="UsN-yO-VFS"/>
                             <constraint firstItem="r1w-kO-UJk" firstAttribute="leading" secondItem="cOi-22-dcw" secondAttribute="leading" id="XT6-qw-WYZ"/>
-                            <constraint firstItem="L2a-mt-Ngm" firstAttribute="trailing" secondItem="RnQ-6I-OQ4" secondAttribute="trailing" id="a4R-1s-MkO"/>
+                            <constraint firstItem="L2a-mt-Ngm" firstAttribute="trailing" secondItem="RnQ-6I-OQ4" secondAttribute="trailing" constant="7" id="a4R-1s-MkO"/>
                             <constraint firstItem="RnQ-6I-OQ4" firstAttribute="trailing" secondItem="JM7-UK-vi3" secondAttribute="trailingMargin" constant="7" id="aZw-Ga-sBQ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="RnQ-6I-OQ4" secondAttribute="trailing" constant="8" id="azc-3m-ON5"/>
                             <constraint firstItem="a6Q-GF-GJ5" firstAttribute="leading" secondItem="JM7-UK-vi3" secondAttribute="leadingMargin" constant="-7" id="dNC-II-qxJ"/>
@@ -183,8 +185,10 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="9Lz-hh-3mB"/>
                                 <exclude reference="aZw-Ga-sBQ"/>
                                 <exclude reference="azc-3m-ON5"/>
+                                <exclude reference="di7-xV-f5Z"/>
                             </mask>
                         </variation>
                         <connections>
@@ -630,8 +634,8 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="wP8-l2-ifS"/>
+        <segue reference="OG2-7B-Wpg"/>
         <segue reference="VkR-ph-e0R"/>
-        <segue reference="Bs7-Iq-X07"/>
         <segue reference="fZB-2o-AoI"/>
     </inferredMetricsTieBreakers>
 </document>
