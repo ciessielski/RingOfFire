@@ -27,6 +27,9 @@
 		11E55ECB1A59EF1100F89D55 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11E55ECA1A59EF1100F89D55 /* AVFoundation.framework */; };
 		9F59BDDF1A5741C1005954A5 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F59BDDE1A5741C1005954A5 /* Card.swift */; };
 		9FC977DD1A52411A001E8920 /* Gameplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC977DC1A52411A001E8920 /* Gameplay.swift */; };
+		EE8E746D1AB3D77500CBC92C /* TutorialView1.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE8E746C1AB3D77500CBC92C /* TutorialView1.xib */; };
+		EE8E746F1AB3D7F600CBC92C /* TutorialView2.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE8E746E1AB3D7F600CBC92C /* TutorialView2.xib */; };
+		EE8E74711AB3D80C00CBC92C /* TutorialView3.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE8E74701AB3D80C00CBC92C /* TutorialView3.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +72,9 @@
 		11E55ECA1A59EF1100F89D55 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		9F59BDDE1A5741C1005954A5 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		9FC977DC1A52411A001E8920 /* Gameplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gameplay.swift; sourceTree = "<group>"; };
+		EE8E746C1AB3D77500CBC92C /* TutorialView1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TutorialView1.xib; sourceTree = "<group>"; };
+		EE8E746E1AB3D7F600CBC92C /* TutorialView2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TutorialView2.xib; sourceTree = "<group>"; };
+		EE8E74701AB3D80C00CBC92C /* TutorialView3.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TutorialView3.xib; sourceTree = "<group>"; };
 		EEFF51B71AA8ACB300BCBDAF /* RofPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = RofPlayground.playground; path = ../RofPlayground.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -114,6 +120,7 @@
 			children = (
 				1126F7B71A43735C000176F8 /* AppDelegate.swift */,
 				11F7CD601A5A079800330CFB /* Model */,
+				EE8E74721AB3D81B00CBC92C /* Tutorials */,
 				118156391A4A44A9006F655D /* ViewControllers */,
 				116B7D151A68D4100002143E /* Segues */,
 				1126F7BE1A43735C000176F8 /* Main.storyboard */,
@@ -184,6 +191,16 @@
 				9F59BDDE1A5741C1005954A5 /* Card.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		EE8E74721AB3D81B00CBC92C /* Tutorials */ = {
+			isa = PBXGroup;
+			children = (
+				EE8E746C1AB3D77500CBC92C /* TutorialView1.xib */,
+				EE8E746E1AB3D7F600CBC92C /* TutorialView2.xib */,
+				EE8E74701AB3D80C00CBC92C /* TutorialView3.xib */,
+			);
+			name = Tutorials;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,8 +286,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE8E746D1AB3D77500CBC92C /* TutorialView1.xib in Resources */,
+				EE8E746F1AB3D7F600CBC92C /* TutorialView2.xib in Resources */,
 				11C5C4751A5B13DA00737545 /* Localizable.strings in Resources */,
 				11E55EC91A59EB8300F89D55 /* beat.wav in Resources */,
+				EE8E74711AB3D80C00CBC92C /* TutorialView3.xib in Resources */,
 				1126F7C01A43735C000176F8 /* Main.storyboard in Resources */,
 				1126F7C51A43735C000176F8 /* LaunchScreen.xib in Resources */,
 				1126F7C21A43735C000176F8 /* Images.xcassets in Resources */,

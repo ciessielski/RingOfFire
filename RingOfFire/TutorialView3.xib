@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tutorial3" translatesAutoresizingMaskIntoConstraints="NO" id="i0M-aY-ijh">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="i0M-aY-ijh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Aly-zu-E0h"/>
+                <constraint firstAttribute="bottom" secondItem="i0M-aY-ijh" secondAttribute="bottom" id="D90-tx-vbH"/>
+                <constraint firstAttribute="trailing" secondItem="i0M-aY-ijh" secondAttribute="trailing" id="K85-aE-hMN"/>
+                <constraint firstItem="i0M-aY-ijh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="zCD-ba-lie"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="tutorial3" width="320" height="413"/>
+    </resources>
+</document>
