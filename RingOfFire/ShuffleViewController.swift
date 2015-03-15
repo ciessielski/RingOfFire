@@ -33,6 +33,10 @@ class ShuffleViewController: UIViewController
 
         game.deck.removeAtIndex(0)
         activeCard = game.deck[0]
+        if activeCard.slug == "king"
+        {
+            game.kingCounter++
+        }
         
         var alertSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("beat", ofType: "wav")!)
         var error:NSError?

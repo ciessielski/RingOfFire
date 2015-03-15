@@ -11,6 +11,7 @@ import Foundation
 class Gameplay
 {
     var deck: Array<Card> = []
+    var kingCounter = 0
     var titlesDictionary =
         [ "castle"     : "King of the Castle"
         , "categories" : "Categories"
