@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mates3" translatesAutoresizingMaskIntoConstraints="NO" id="dHh-Yw-rwB">
+                    <rect key="frame" x="0.0" y="466" width="600" height="134"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="134" id="DMf-Vx-ZYT"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bottle" translatesAutoresizingMaskIntoConstraints="NO" id="NmW-Qg-TJG">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="94"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="94" id="i4d-pJ-mG5"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NOTES:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ME3-QI-rNn">
+                    <rect key="frame" x="261" y="81" width="79" height="25"/>
+                    <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="20"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CPU-k0-PU4">
+                    <rect key="frame" x="8" y="114" width="584" height="321"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <string key="text">This game doas not encourage alcohol consumption. 
+
+Please be careful upon playing to ensure the safety of you or anyone else. Don't peer pressure anyone into drinking or doing anything extremaly inappropriate against their own will.
+
+Respect and fun are fundamental principles of the game.</string>
+                    <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="13"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="CPU-k0-PU4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="0Uk-4K-OzG"/>
+                <constraint firstAttribute="bottom" secondItem="dHh-Yw-rwB" secondAttribute="bottom" id="F0E-X1-zhm"/>
+                <constraint firstItem="NmW-Qg-TJG" firstAttribute="trailing" secondItem="dHh-Yw-rwB" secondAttribute="trailing" id="HwC-UH-Ilv"/>
+                <constraint firstItem="NmW-Qg-TJG" firstAttribute="leading" secondItem="dHh-Yw-rwB" secondAttribute="leading" id="Ifq-5e-D5F"/>
+                <constraint firstItem="dHh-Yw-rwB" firstAttribute="centerX" secondItem="ME3-QI-rNn" secondAttribute="centerX" id="MED-1Y-05r"/>
+                <constraint firstItem="CPU-k0-PU4" firstAttribute="top" secondItem="ME3-QI-rNn" secondAttribute="bottom" constant="8" id="VN3-fN-s6x"/>
+                <constraint firstItem="ME3-QI-rNn" firstAttribute="top" secondItem="NmW-Qg-TJG" secondAttribute="bottom" constant="-13" id="ZdJ-Yf-BU8"/>
+                <constraint firstItem="dHh-Yw-rwB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="dWB-Cx-aqI"/>
+                <constraint firstItem="NmW-Qg-TJG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="mbA-zw-YWx"/>
+                <constraint firstItem="CPU-k0-PU4" firstAttribute="centerX" secondItem="ME3-QI-rNn" secondAttribute="centerX" id="vFD-G2-Khv"/>
+                <constraint firstItem="dHh-Yw-rwB" firstAttribute="top" secondItem="CPU-k0-PU4" secondAttribute="bottom" constant="31" id="w6H-0t-zHQ"/>
+                <constraint firstAttribute="trailing" secondItem="dHh-Yw-rwB" secondAttribute="trailing" id="zz5-Ro-3kT"/>
+            </constraints>
+            <point key="canvasLocation" x="313" y="398"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bottle" width="537" height="170"/>
+        <image name="mates3" width="530" height="357"/>
+    </resources>
+</document>

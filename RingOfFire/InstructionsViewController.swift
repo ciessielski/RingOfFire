@@ -27,17 +27,48 @@ class InstructionsViewController: UIViewController
         }
     }
     
+    override func viewDidAppear(animated: Bool)
+    {
+        super.viewDidAppear(animated)
+        self.hint()
+        var timer = NSTimer()
+        timer = NSTimer.scheduledTimerWithTimeInterval(3, target:self, selector:("hint"), userInfo: nil, repeats: true)
+    }
+
     override func viewDidLoad()
     {
         super.viewDidLoad()
         
-        cardTitle.text                  = activeCard.title
-        cardView.image                  = UIImage(named: activeCard.slug)
-        cardInstructions.text           = activeCard.instructions
-        cardInstructions.textAlignment  = .Center
-        cardInstructions.font           = UIFont (name: "American Typewriter", size: 14.0)
+        cardTitle.text = activeCard.title
+        cardView.image = UIImage(named: activeCard.slug)
+        cardInstructions.text = activeCard.instructions
+        cardInstructions.textAlignment = .Center
+        cardInstructions.font = UIFont (name: "American Typewriter", size: 14.0)
     }
-
+    
+    var animator: UIDynamicAnimator!
+    var gravity: UIGravityBehavior!
+    var gravityDirection: CGVector!
+    
+    func hint()
+    {
+        let swipeHintStatic = UIImageView(frame: CGRect(x: self.view.frame.width/2-150 , y: self.view.frame.height-120, width: 300, height: 110))
+        swipeHintStatic.image = UIImage(named: "swipe")
+        view.addSubview(swipeHintStatic)
+        
+        let swipeHint = UIImageView(frame: CGRect(x: self.view.frame.width/2-150 , y: self.view.frame.height-120, width: 300, height: 110))
+        swipeHint.image = UIImage(named: "swipe")
+        view.addSubview(swipeHint)
+        
+        UIView.animateWithDuration(0.9, delay: 0, options: nil , animations: {swipeHint.alpha = 0}, completion: nil)
+        
+        animator = UIDynamicAnimator(referenceView: view)
+        
+        gravity = UIGravityBehavior(items: [swipeHint])
+        gravity.gravityDirection = CGVectorMake(0.0, -1.0)
+        animator.addBehavior(gravity)
+    }
+        
     override func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()

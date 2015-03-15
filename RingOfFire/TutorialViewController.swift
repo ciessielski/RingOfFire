@@ -8,11 +8,12 @@
 
 import UIKit
 
+
 class TutorialViewController: UIViewController, UIPageViewControllerDataSource
 {
     
     private var pageViewController: UIPageViewController?
-    private let contentImages = ["tutorial1", "tutorial2", "tutorial3"]
+    private let contentImages = ["TutorialView1", "TutorialView2", "TutorialView3"]
     
     @IBAction func startPlayingButtonPressed(sender: AnyObject)
     {
@@ -21,6 +22,8 @@ class TutorialViewController: UIViewController, UIPageViewControllerDataSource
     }
     
 
+    
+    
     
     override func viewDidLoad()
     {
@@ -84,6 +87,7 @@ class TutorialViewController: UIViewController, UIPageViewControllerDataSource
         return nil
     }
     
+    
     private func getItemController(itemIndex: Int) -> PageItemController?
     {
         
@@ -92,6 +96,7 @@ class TutorialViewController: UIViewController, UIPageViewControllerDataSource
             let pageItemController = self.storyboard!.instantiateViewControllerWithIdentifier("ItemController") as PageItemController
                 pageItemController.itemIndex = itemIndex
                 pageItemController.imageName = contentImages[itemIndex]
+                pageItemController.view = NSBundle.mainBundle().loadNibNamed(contentImages[itemIndex], owner: self, options: nil)[0] as? UIView
          return pageItemController
         }
         

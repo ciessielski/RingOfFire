@@ -14,7 +14,7 @@ var activeCard : Card = game.deck[0]
 
 class SwipeToShuffleViewController: UIViewController
 {
-    @IBOutlet weak var animationBuffor: UIImageView!
+    @IBOutlet weak var  animationBuffor: UIImageView!
     @IBOutlet weak var  swipeToShuffle: UIImageView!
     @IBOutlet var       swipeToShuffleLabel: UILabel!
     @IBOutlet var       swipeDownGesture: UISwipeGestureRecognizer!
