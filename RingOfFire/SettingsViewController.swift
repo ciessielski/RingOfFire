@@ -22,6 +22,21 @@ class SettingsViewController: UIViewController
 
     @IBAction func restartAction(sender: AnyObject)
     {
+        let alertController = UIAlertController(title: "Restart game", message: "Are you sure?", preferredStyle: .Alert)
+        
+        let cancelAction = UIAlertAction(title: "Nope", style: .Cancel)
+        {(action) in}
+        alertController.addAction(cancelAction)
+        
+        let OKAction = UIAlertAction(title: "Restart", style: .Default)
+        {(action) in self.restartGame()}
+        alertController.addAction(OKAction)
+        
+        self.presentViewController(alertController, animated: true){}
+    }
+    
+    func restartGame()
+    {
         game = Gameplay()
         performSegueWithIdentifier("backToGame", sender: self)
     }
