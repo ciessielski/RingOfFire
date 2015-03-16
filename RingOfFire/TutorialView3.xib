@@ -39,13 +39,13 @@ Respect and fun are fundamental principles of the game.</string>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mates3" translatesAutoresizingMaskIntoConstraints="NO" id="Nly-kz-jYC">
-                    <rect key="frame" x="0.0" y="326" width="600" height="274"/>
+                    <rect key="frame" x="0.0" y="281" width="600" height="319"/>
                 </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="Nly-kz-jYC" firstAttribute="top" secondItem="tuC-HM-fcc" secondAttribute="bottom" constant="8" id="63t-g0-T1b"/>
-                <constraint firstItem="Nly-kz-jYC" firstAttribute="top" secondItem="tuC-HM-fcc" secondAttribute="bottom" constant="8" symbolic="YES" id="7yR-6L-Ats"/>
+                <constraint firstItem="Nly-kz-jYC" firstAttribute="top" secondItem="tuC-HM-fcc" secondAttribute="bottom" constant="-37" id="63t-g0-T1b"/>
+                <constraint firstItem="Nly-kz-jYC" firstAttribute="top" secondItem="tuC-HM-fcc" secondAttribute="bottom" constant="-37" id="7yR-6L-Ats"/>
                 <constraint firstItem="Nly-kz-jYC" firstAttribute="leading" secondItem="NmW-Qg-TJG" secondAttribute="leading" id="8xf-7u-jrM"/>
                 <constraint firstItem="ME3-QI-rNn" firstAttribute="centerX" secondItem="NmW-Qg-TJG" secondAttribute="centerX" id="Gjn-hI-izQ"/>
                 <constraint firstItem="ME3-QI-rNn" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="81" id="KDA-wy-16N"/>
