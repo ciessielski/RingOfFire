@@ -118,15 +118,13 @@
 		1126F7B41A43735C000176F8 /* RingOfFire */ = {
 			isa = PBXGroup;
 			children = (
-				1126F7B71A43735C000176F8 /* AppDelegate.swift */,
 				11F7CD601A5A079800330CFB /* Model */,
 				EE8E74721AB3D81B00CBC92C /* Tutorials */,
 				118156391A4A44A9006F655D /* ViewControllers */,
 				116B7D151A68D4100002143E /* Segues */,
 				1126F7BE1A43735C000176F8 /* Main.storyboard */,
-				1126F7C11A43735C000176F8 /* Images.xcassets */,
-				1126F7B91A43735C000176F8 /* RingOfFire.xcdatamodeld */,
 				1126F7B51A43735C000176F8 /* Supporting Files */,
+				1126F7C11A43735C000176F8 /* Images.xcassets */,
 			);
 			path = RingOfFire;
 			sourceTree = "<group>";
@@ -134,6 +132,8 @@
 		1126F7B51A43735C000176F8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1126F7B91A43735C000176F8 /* RingOfFire.xcdatamodeld */,
+				1126F7B71A43735C000176F8 /* AppDelegate.swift */,
 				1126F7C31A43735C000176F8 /* LaunchScreen.xib */,
 				11C5C4771A5B13DA00737545 /* Localizable.strings */,
 				11E55ECA1A59EF1100F89D55 /* AVFoundation.framework */,
