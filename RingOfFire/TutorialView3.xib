@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -11,50 +12,50 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mates3" translatesAutoresizingMaskIntoConstraints="NO" id="dHh-Yw-rwB">
-                    <rect key="frame" x="0.0" y="466" width="600" height="134"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="134" id="DMf-Vx-ZYT"/>
-                    </constraints>
-                </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bottle" translatesAutoresizingMaskIntoConstraints="NO" id="NmW-Qg-TJG">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="94"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="94" id="i4d-pJ-mG5"/>
+                        <constraint firstAttribute="height" constant="94" id="k7A-9F-zgN"/>
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NOTES:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ME3-QI-rNn">
                     <rect key="frame" x="261" y="81" width="79" height="25"/>
                     <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="20"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CPU-k0-PU4">
-                    <rect key="frame" x="8" y="114" width="584" height="321"/>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tuC-HM-fcc">
+                    <rect key="frame" x="8" y="102" width="584" height="216"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="216" id="Phm-bM-YA7"/>
+                    </constraints>
                     <string key="text">This game doas not encourage alcohol consumption. 
 
 Please be careful upon playing to ensure the safety of you or anyone else. Don't peer pressure anyone into drinking or doing anything extremaly inappropriate against their own will.
 
 Respect and fun are fundamental principles of the game.</string>
-                    <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="13"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mates3" translatesAutoresizingMaskIntoConstraints="NO" id="Nly-kz-jYC">
+                    <rect key="frame" x="0.0" y="326" width="600" height="274"/>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="CPU-k0-PU4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="0Uk-4K-OzG"/>
-                <constraint firstAttribute="bottom" secondItem="dHh-Yw-rwB" secondAttribute="bottom" id="F0E-X1-zhm"/>
-                <constraint firstItem="NmW-Qg-TJG" firstAttribute="trailing" secondItem="dHh-Yw-rwB" secondAttribute="trailing" id="HwC-UH-Ilv"/>
-                <constraint firstItem="NmW-Qg-TJG" firstAttribute="leading" secondItem="dHh-Yw-rwB" secondAttribute="leading" id="Ifq-5e-D5F"/>
-                <constraint firstItem="dHh-Yw-rwB" firstAttribute="centerX" secondItem="ME3-QI-rNn" secondAttribute="centerX" id="MED-1Y-05r"/>
-                <constraint firstItem="CPU-k0-PU4" firstAttribute="top" secondItem="ME3-QI-rNn" secondAttribute="bottom" constant="8" id="VN3-fN-s6x"/>
-                <constraint firstItem="ME3-QI-rNn" firstAttribute="top" secondItem="NmW-Qg-TJG" secondAttribute="bottom" constant="-13" id="ZdJ-Yf-BU8"/>
-                <constraint firstItem="dHh-Yw-rwB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="dWB-Cx-aqI"/>
-                <constraint firstItem="NmW-Qg-TJG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="mbA-zw-YWx"/>
-                <constraint firstItem="CPU-k0-PU4" firstAttribute="centerX" secondItem="ME3-QI-rNn" secondAttribute="centerX" id="vFD-G2-Khv"/>
-                <constraint firstItem="dHh-Yw-rwB" firstAttribute="top" secondItem="CPU-k0-PU4" secondAttribute="bottom" constant="31" id="w6H-0t-zHQ"/>
-                <constraint firstAttribute="trailing" secondItem="dHh-Yw-rwB" secondAttribute="trailing" id="zz5-Ro-3kT"/>
+                <constraint firstItem="Nly-kz-jYC" firstAttribute="top" secondItem="tuC-HM-fcc" secondAttribute="bottom" constant="8" symbolic="YES" id="7yR-6L-Ats"/>
+                <constraint firstItem="Nly-kz-jYC" firstAttribute="leading" secondItem="NmW-Qg-TJG" secondAttribute="leading" id="8xf-7u-jrM"/>
+                <constraint firstItem="ME3-QI-rNn" firstAttribute="centerX" secondItem="NmW-Qg-TJG" secondAttribute="centerX" id="Gjn-hI-izQ"/>
+                <constraint firstItem="ME3-QI-rNn" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="81" id="KDA-wy-16N"/>
+                <constraint firstItem="tuC-HM-fcc" firstAttribute="top" secondItem="NmW-Qg-TJG" secondAttribute="bottom" constant="8" symbolic="YES" id="ODe-Dx-zGP"/>
+                <constraint firstItem="tuC-HM-fcc" firstAttribute="centerX" secondItem="ME3-QI-rNn" secondAttribute="centerX" id="UEI-LB-w80"/>
+                <constraint firstAttribute="trailing" secondItem="NmW-Qg-TJG" secondAttribute="trailing" id="V0p-QG-jiw"/>
+                <constraint firstItem="NmW-Qg-TJG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="fpx-Ut-Dds"/>
+                <constraint firstItem="Nly-kz-jYC" firstAttribute="trailing" secondItem="NmW-Qg-TJG" secondAttribute="trailing" id="lxB-oe-ZTc"/>
+                <constraint firstAttribute="bottom" secondItem="Nly-kz-jYC" secondAttribute="bottom" id="srN-Rv-wjR"/>
+                <constraint firstItem="NmW-Qg-TJG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="tjf-Uk-295"/>
+                <constraint firstItem="tuC-HM-fcc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" id="xth-KN-566"/>
             </constraints>
             <point key="canvasLocation" x="313" y="398"/>
         </view>
