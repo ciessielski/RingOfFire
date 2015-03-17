@@ -18,9 +18,11 @@ class TutorialView2: UIView
     
     override func drawRect(rect: CGRect)
     {
-        self.textView1.text = NSLocalizedString("Taking turns, each player swipes the screen to find out what's on around the table.", comment: "tutorialView2text1")
-        self.textView2.text = NSLocalizedString("Click on the illustrations to find descriptions of mini-games. Remember, whoever loses has to drink!", comment: "tutorialView2text2")
-        self.textView3.text = NSLocalizedString("If the game gets out of control, simply swipe to the top. Then you will see the last mini-game randomized.", comment: "tutorialView2text3")
+        let attrs = [NSFontAttributeName : UIFont(name: "American typewriter", size: 13.0) ?? UIFont.systemFontOfSize(13.0)]
+        
+        self.textView1.attributedText = NSAttributedString(string: NSLocalizedString("Taking turns, each player swipes the screen to find out what's on around the table.", comment: "tutorialView2text1"), attributes: attrs)
+        self.textView2.attributedText = NSAttributedString(string: NSLocalizedString("Click on the illustrations to find descriptions of mini-games. Remember, whoever loses has to drink!", comment: "tutorialView2text2"), attributes: attrs)
+        self.textView3.attributedText = NSAttributedString(string: NSLocalizedString("If the game gets out of control, simply swipe to the top. Then you will see the last mini-game randomized.", comment: "tutorialView2text3"), attributes: attrs)
     }
 
 

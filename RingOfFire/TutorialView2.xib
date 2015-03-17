@@ -12,7 +12,7 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Taking turns, each player swipes the screen to find out what's on around the table." textAlignment="right" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lv8-6t-UNv">
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="right" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lv8-6t-UNv">
                     <rect key="frame" x="348" y="71" width="240" height="53"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
@@ -22,7 +22,7 @@
                     <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="13"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="If the game gets out of control, simply swipe to the top. Then you will see the last mini-game randomized." textAlignment="right" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m5v-nh-wFa">
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="right" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m5v-nh-wFa">
                     <rect key="frame" x="325" y="224" width="263" height="59"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
@@ -56,7 +56,7 @@
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mates2" translatesAutoresizingMaskIntoConstraints="NO" id="0qq-6L-Ynt">
                     <rect key="frame" x="0.0" y="298" width="600" height="302"/>
                 </imageView>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Click on the illustrations to find descriptions of mini-games. Remember, whoever loses has to drink!" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pHH-ZO-bga">
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pHH-ZO-bga">
                     <rect key="frame" x="8" y="132" width="198" height="74"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>

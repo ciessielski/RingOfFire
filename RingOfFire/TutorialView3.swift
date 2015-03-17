@@ -14,8 +14,9 @@ class TutorialView3: UIView
 
     override func drawRect(rect: CGRect)
     {
-        self.textView1.text = NSLocalizedString("This game doas not encourage alcohol consumption. Please be careful upon playing to ensure the safety of you or anyone else. Don't peer pressure anyone into drinking or doing anything extremaly inappropriate against their own will. Respect and fun are fundamental principles of the game.", comment: "tutorialView3text1")
-    }
+        let attrs = [NSFontAttributeName : UIFont(name: "American typewriter", size: 13.0) ?? UIFont.systemFontOfSize(13.0)]
 
+        self.textView1.attributedText = NSAttributedString(string: NSLocalizedString("This game doas not encourage alcohol consumption. Please be careful upon playing to ensure the safety of you or anyone else. Don't peer pressure anyone into drinking or doing anything extremaly inappropriate against their own will. Respect and fun are fundamental principles of the game.", comment: "tutorialView3text1"), attributes: attrs)
+    }
 
 }
