@@ -6,6 +6,19 @@
   Copyright (c) 2015 Michał Ciesielski. All rights reserved.
 */
 
+//tutorial1
+"A phone with the Ring of Fire app installed and ready to play." = "A phone with the Ring of Fire app installed and ready to play.";
+"An empty cup or bowl to put in the middle of the table." = "An empty cup or bowl to put in the middle of the table.";
+"A group of friends who are willing to have the best night ever!" = "A group of friends who are willing to have the best night ever!";
+//tutorial2
+"Taking turns, each player swipes the screen to find out what's on around the table." = "Taking turns, each player swipes the screen to find out what's on around the table.";
+"Click on the illustrations to find descriptions of mini-games. Remember, whoever loses has to drink!" = "Click on the illustrations to find descriptions of mini-games. Remember, whoever loses has to drink!";
+"If the game gets out of control, simply swipe to the top. Then you will see the last mini-game randomized." = "If the game gets out of control, simply swipe to the top. Then you will see the last mini-game randomized.";
+//tutorial3
+"This game doas not encourage alcohol consumption. Please be careful upon playing to ensure the safety of you or anyone else. Don't peer pressure anyone into drinking or doing anything extremaly inappropriate against their own will. Respect and fun are fundamental principles of the game." = "This game doas not encourage alcohol consumption. Please be careful upon playing to ensure the safety of you or anyone else. Don't peer pressure anyone into drinking or doing anything extremaly inappropriate against their own will. Respect and fun are fundamental principles of the game.";
+
+
+
 "You can make up any rule that everyone has to follow, for example players can only drink with their right hand or players cannot use word “drink”. Everyone (including you) must follow this rule for the whole entire game and if you disobey you must drink." = "You can make up any rule that everyone has to follow, for example players can only drink with their right hand or players cannot use word “drink”. Everyone (including you) must follow this rule for the whole entire game and if you disobey you must drink.";
 
 "Pick a category (such as Countries) and you go in a circle and everyone has to say a word that fits with chosen category such as: Lithuania, England, Egypt and so on." = "Pick a category (such as Countries) and you go in a circle and everyone has to say a word that fits with chosen category such as: Lithuania, England, Egypt and so on.";
