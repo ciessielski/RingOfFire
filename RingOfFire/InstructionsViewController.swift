@@ -45,7 +45,7 @@ class InstructionsViewController: UIViewController
         
         if activeCard.slug == "king"
         {
-            cardTitle.text = " \(activeCard.title!) # \(game.kingCounter)"
+            cardTitle.text = " \(activeCard.title!) #\(game.kingCounter)"
             if game.kingCounter == 4
             {
                 cardInstructions.text = "Uups.. You know what to do."
