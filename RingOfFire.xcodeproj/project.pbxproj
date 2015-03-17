@@ -25,6 +25,9 @@
 		11C5C4751A5B13DA00737545 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 11C5C4771A5B13DA00737545 /* Localizable.strings */; };
 		11E55EC91A59EB8300F89D55 /* beat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 11E55EC81A59EB8300F89D55 /* beat.wav */; };
 		11E55ECB1A59EF1100F89D55 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11E55ECA1A59EF1100F89D55 /* AVFoundation.framework */; };
+		11F4CCF81AB8871900B72338 /* TutorialView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F4CCF71AB8871900B72338 /* TutorialView1.swift */; };
+		11F4CCFA1AB88C3700B72338 /* TutorialView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F4CCF91AB88C3700B72338 /* TutorialView2.swift */; };
+		11F4CCFE1AB88DE400B72338 /* TutorialView3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F4CCFD1AB88DE400B72338 /* TutorialView3.swift */; };
 		9F59BDDF1A5741C1005954A5 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F59BDDE1A5741C1005954A5 /* Card.swift */; };
 		9FC977DD1A52411A001E8920 /* Gameplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC977DC1A52411A001E8920 /* Gameplay.swift */; };
 		EE8E746D1AB3D77500CBC92C /* TutorialView1.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE8E746C1AB3D77500CBC92C /* TutorialView1.xib */; };
@@ -70,6 +73,9 @@
 		11C5C4791A5B13DD00737545 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
 		11E55EC81A59EB8300F89D55 /* beat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = beat.wav; sourceTree = "<group>"; };
 		11E55ECA1A59EF1100F89D55 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		11F4CCF71AB8871900B72338 /* TutorialView1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialView1.swift; sourceTree = "<group>"; };
+		11F4CCF91AB88C3700B72338 /* TutorialView2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialView2.swift; sourceTree = "<group>"; };
+		11F4CCFD1AB88DE400B72338 /* TutorialView3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialView3.swift; sourceTree = "<group>"; };
 		9F59BDDE1A5741C1005954A5 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		9FC977DC1A52411A001E8920 /* Gameplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gameplay.swift; sourceTree = "<group>"; };
 		EE8E746C1AB3D77500CBC92C /* TutorialView1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TutorialView1.xib; sourceTree = "<group>"; };
@@ -197,8 +203,11 @@
 			isa = PBXGroup;
 			children = (
 				EE8E746C1AB3D77500CBC92C /* TutorialView1.xib */,
+				11F4CCF71AB8871900B72338 /* TutorialView1.swift */,
 				EE8E746E1AB3D7F600CBC92C /* TutorialView2.xib */,
+				11F4CCF91AB88C3700B72338 /* TutorialView2.swift */,
 				EE8E74701AB3D80C00CBC92C /* TutorialView3.xib */,
+				11F4CCFD1AB88DE400B72338 /* TutorialView3.swift */,
 			);
 			name = Tutorials;
 			sourceTree = "<group>";
@@ -311,16 +320,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11F4CCFE1AB88DE400B72338 /* TutorialView3.swift in Sources */,
 				118156361A4A428A006F655D /* SwipeToShuffleViewController.swift in Sources */,
 				9FC977DD1A52411A001E8920 /* Gameplay.swift in Sources */,
 				116B7D141A68D14B0002143E /* FromTopVerticalSegue.swift in Sources */,
 				1163C7531A60A14100F90168 /* PageItemViewController.swift in Sources */,
 				118423E11A5FE86C006E8755 /* TutorialViewController.swift in Sources */,
 				1126F7BD1A43735C000176F8 /* ShuffleViewController.swift in Sources */,
+				11F4CCFA1AB88C3700B72338 /* TutorialView2.swift in Sources */,
 				1181563D1A4A464C006F655D /* SettingsViewController.swift in Sources */,
 				1126F7BB1A43735C000176F8 /* RingOfFire.xcdatamodeld in Sources */,
 				1181563B1A4A4503006F655D /* InstructionsViewController.swift in Sources */,
 				1103DD701A7991F100B1BB0C /* EndOfTheGameViewController.swift in Sources */,
+				11F4CCF81AB8871900B72338 /* TutorialView1.swift in Sources */,
 				118156381A4A4469006F655D /* CardViewController.swift in Sources */,
 				9F59BDDF1A5741C1005954A5 /* Card.swift in Sources */,
 				1126F7B81A43735C000176F8 /* AppDelegate.swift in Sources */,
