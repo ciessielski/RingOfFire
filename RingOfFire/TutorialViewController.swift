@@ -20,17 +20,12 @@ class TutorialViewController: UIViewController, UIPageViewControllerDataSource
         NSUserDefaults.standardUserDefaults().setObject("no", forKey: "firstOpen")
         NSUserDefaults.standardUserDefaults().synchronize()
     }
-    
-
-    
-    
-    
+     
     override func viewDidLoad()
     {
         super.viewDidLoad()
         createPageViewController()
         setupPageControl()
-//        loadBufforIfFirstLounched()
     }
     
     private func createPageViewController()
