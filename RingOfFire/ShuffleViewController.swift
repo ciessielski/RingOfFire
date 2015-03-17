@@ -24,7 +24,7 @@ class ShuffleViewController: UIViewController
         for number in 1...19
         {
             var image = UIImage(named:"s\(number)")
-                images.addObject(image!)
+            images.addObject(image!)
         }
         
         shuffleImageView.animationImages = images
