@@ -129,7 +129,6 @@
 				116B7D151A68D4100002143E /* Segues */,
 				1126F7BE1A43735C000176F8 /* Main.storyboard */,
 				1126F7B51A43735C000176F8 /* Supporting Files */,
-				1126F7C11A43735C000176F8 /* Images.xcassets */,
 			);
 			path = RingOfFire;
 			sourceTree = "<group>";
@@ -137,6 +136,7 @@
 		1126F7B51A43735C000176F8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1126F7C11A43735C000176F8 /* Images.xcassets */,
 				116398CA1ABB869C00A6F5DD /* LaunchScreen.xib */,
 				1126F7B91A43735C000176F8 /* RingOfFire.xcdatamodeld */,
 				1126F7B71A43735C000176F8 /* AppDelegate.swift */,
