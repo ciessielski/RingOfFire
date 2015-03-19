@@ -27,7 +27,7 @@
     {
       "size" : "40x40",
       "idiom" : "iphone",
-      "filename" : "Icon-40@3x.png",
+      "filename" : "Icon@3x-kopia-2.png",
       "scale" : "3x"
     },
     {
@@ -43,7 +43,7 @@
     {
       "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "Icon-60@2x.png",
+      "filename" : "Icon@3x-kopia-1.png",
       "scale" : "2x"
     },
     {
@@ -109,45 +109,9 @@
       "scale" : "2x"
     },
     {
-      "size" : "120x120",
       "idiom" : "car",
-      "filename" : "Icon-60@2x-1.png",
+      "size" : "120x120",
       "scale" : "1x"
-    },
-    {
-      "scale" : "2x",
-      "size" : "29x29",
-      "unassigned" : true
-    },
-    {
-      "scale" : "3x",
-      "size" : "29x29",
-      "unassigned" : true
-    },
-    {
-      "scale" : "2x",
-      "size" : "40x40",
-      "unassigned" : true
-    },
-    {
-      "scale" : "2x",
-      "unassigned" : true
-    },
-    {
-      "scale" : "2x",
-      "unassigned" : true
-    },
-    {
-      "scale" : "2x",
-      "unassigned" : true
-    },
-    {
-      "scale" : "2x",
-      "unassigned" : true
-    },
-    {
-      "scale" : "2x",
-      "unassigned" : true
     }
   ],
   "info" : {
