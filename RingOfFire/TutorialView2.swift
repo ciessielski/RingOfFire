@@ -22,15 +22,15 @@ class TutorialView2: UIView
         self.titleLabel.text = NSLocalizedString("How to play:", comment: "tutorialTitle2")
         self.titleLabel.backgroundColor = UIColor.clearColor()
 
-        self.textView1.attributedText = NSAttributedString(string: NSLocalizedString("Taking turns, each player swipes the screen to find out what's on around the table.", comment: "tutorialView2text1"), attributes: attrs)
+        self.textView1.attributedText = NSAttributedString(string: NSLocalizedString("Swipe the screen to draw the card.", comment: "tutorialView2text1"), attributes: attrs)
         self.textView1.textAlignment = NSTextAlignment.Right;
         self.textView1.backgroundColor = UIColor.clearColor()
         
-        self.textView2.attributedText = NSAttributedString(string: NSLocalizedString("Tap on the illustrations to find descriptions of mini-games. Remember, whoever loses has to drink!", comment: "tutorialView2text2"), attributes: attrs)
+        self.textView2.attributedText = NSAttributedString(string: NSLocalizedString("Tap the screen to see descriptions of the card.", comment: "tutorialView2text2"), attributes: attrs)
         self.textView2.textAlignment = NSTextAlignment.Left;
         self.textView2.backgroundColor = UIColor.clearColor()
         
-        self.textView3.attributedText = NSAttributedString(string: NSLocalizedString("If the game gets out of control, simply swipe to the top. Then you will see the last mini-game randomized.", comment: "tutorialView2text3"), attributes: attrs)
+        self.textView3.attributedText = NSAttributedString(string: NSLocalizedString("Swipe to the top and pass the phone to the next person.", comment: "tutorialView2text3"), attributes: attrs)
         self.textView3.textAlignment = NSTextAlignment.Right;
         self.textView3.backgroundColor = UIColor.clearColor()
     }
