@@ -57,6 +57,7 @@
                 </textView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How to play" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pf1-fA-KvL">
                     <rect key="frame" x="186" y="8" width="228" height="43"/>
+                    <color key="backgroundColor" red="0.90842366220000004" green="0.1208788354" blue="0.081431492359999996" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="228" id="GCl-E2-BCY"/>
                     </constraints>
@@ -102,6 +103,7 @@
                 <outlet property="textView1" destination="lv8-6t-UNv" id="sdb-Kt-wuk"/>
                 <outlet property="textView2" destination="pHH-ZO-bga" id="aKZ-am-tgO"/>
                 <outlet property="textView3" destination="m5v-nh-wFa" id="RcX-hY-xcb"/>
+                <outlet property="titleLabel" destination="Pf1-fA-KvL" id="qv1-hX-qIK"/>
             </connections>
             <point key="canvasLocation" x="475" y="335"/>
         </view>

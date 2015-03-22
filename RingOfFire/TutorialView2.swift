@@ -10,15 +10,16 @@ import UIKit
 
 class TutorialView2: UIView
 {
-
+    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var textView1: UITextView!
     @IBOutlet weak var textView2: UITextView!
     @IBOutlet weak var textView3: UITextView!
     
-    
     override func drawRect(rect: CGRect)
     {
         let attrs = [NSFontAttributeName : UIFont(name: "American typewriter", size: 13.0) ?? UIFont.systemFontOfSize(13.0)]
+        
+        self.titleLabel.text = NSLocalizedString("How to play:", comment: "tutorialTitle2")
         
         self.textView1.attributedText = NSAttributedString(string: NSLocalizedString("Taking turns, each player swipes the screen to find out what's on around the table.", comment: "tutorialView2text1"), attributes: attrs)
         self.textView1.textAlignment = NSTextAlignment.Right;

@@ -45,8 +45,9 @@
                         <constraint firstAttribute="width" constant="73" id="p8M-Pa-fGi"/>
                     </constraints>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Things you'll need:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fx4-4F-qZO">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fx4-4F-qZO">
                     <rect key="frame" x="171" y="8" width="258" height="43"/>
+                    <color key="backgroundColor" red="0.90842366220000004" green="0.1208788354" blue="0.081431492359999996" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="258" id="K36-Ce-Jis"/>
                         <constraint firstAttribute="height" constant="43" id="KhW-g0-abL"/>
@@ -95,6 +96,7 @@
                 <outlet property="textView1" destination="QZS-Ow-TBY" id="SHe-5N-G1n"/>
                 <outlet property="textView2" destination="Hbq-pF-iQl" id="DDM-tJ-eDi"/>
                 <outlet property="textView3" destination="4yG-g5-9if" id="QTk-7Y-Bq4"/>
+                <outlet property="titleLabel" destination="fx4-4F-qZO" id="Ozn-GZ-ysg"/>
             </connections>
         </view>
     </objects>

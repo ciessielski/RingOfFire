@@ -20,6 +20,7 @@
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NOTES:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ME3-QI-rNn">
                     <rect key="frame" x="261" y="81" width="79" height="25"/>
+                    <color key="backgroundColor" red="0.90842366220000004" green="0.1208788354" blue="0.081431492359999996" alpha="1" colorSpace="calibratedRGB"/>
                     <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="20"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
@@ -57,6 +58,7 @@
             </constraints>
             <connections>
                 <outlet property="textView1" destination="tuC-HM-fcc" id="gKc-3P-sqT"/>
+                <outlet property="titleLabel" destination="ME3-QI-rNn" id="xTm-dc-oF8"/>
             </connections>
             <point key="canvasLocation" x="313" y="398"/>
         </view>

@@ -11,6 +11,7 @@ import UIKit
 class TutorialView1: UIView
 {
 
+    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var textView1: UITextView!
     @IBOutlet weak var textView2: UITextView!
     @IBOutlet weak var textView3: UITextView!
@@ -18,6 +19,9 @@ class TutorialView1: UIView
     override func drawRect(rect: CGRect)
     {
         let attrs = [NSFontAttributeName : UIFont(name: "American typewriter", size: 13.0) ?? UIFont.systemFontOfSize(13.0)]
+
+        
+        self.titleLabel.text = NSLocalizedString("Things you'll need:", comment: "tutorialTitle1")
         
         self.textView1.attributedText = NSAttributedString(string: NSLocalizedString("A phone with the Ring of Fire app installed and ready to play.", comment: "tutorialView1text1"), attributes: attrs)
         self.textView1.textAlignment = NSTextAlignment.Left;
