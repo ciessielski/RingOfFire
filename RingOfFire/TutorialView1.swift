@@ -22,7 +22,8 @@ class TutorialView1: UIView
 
         
         self.titleLabel.text = NSLocalizedString("Things you'll need:", comment: "tutorialTitle1")
-        
+        self.titleLabel.backgroundColor = UIColor.clearColor()
+
         self.textView1.attributedText = NSAttributedString(string: NSLocalizedString("A phone with the Ring of Fire app installed and ready to play.", comment: "tutorialView1text1"), attributes: attrs)
         self.textView1.textAlignment = NSTextAlignment.Left;
         self.textView1.backgroundColor = UIColor.clearColor()

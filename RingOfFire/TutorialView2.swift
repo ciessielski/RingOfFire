@@ -20,7 +20,8 @@ class TutorialView2: UIView
         let attrs = [NSFontAttributeName : UIFont(name: "American typewriter", size: 13.0) ?? UIFont.systemFontOfSize(13.0)]
         
         self.titleLabel.text = NSLocalizedString("How to play:", comment: "tutorialTitle2")
-        
+        self.titleLabel.backgroundColor = UIColor.clearColor()
+
         self.textView1.attributedText = NSAttributedString(string: NSLocalizedString("Taking turns, each player swipes the screen to find out what's on around the table.", comment: "tutorialView2text1"), attributes: attrs)
         self.textView1.textAlignment = NSTextAlignment.Right;
         self.textView1.backgroundColor = UIColor.clearColor()
