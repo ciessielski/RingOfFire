@@ -17,7 +17,7 @@ class SettingsViewController: UIViewController
     
     @IBAction func goToStoreButton(sender: UIButton)
     {
-        UIApplication.sharedApplication().openURL(NSURL(string: "http://rudypijegin.pl/shop/ring-of-fire-karty-gry/")!)
+        UIApplication.sharedApplication().openURL(NSURL(string:  NSLocalizedString("http://rudypijegin.pl/en/shop/ring-of-fire-cards", comment: "url"))!)
     }
 
     @IBAction func restartAction(sender: AnyObject)
