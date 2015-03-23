@@ -23,7 +23,7 @@ class SettingsViewController: UIViewController
     @IBAction func restartAction(sender: AnyObject)
     {
         let alertController = UIAlertController(title: NSLocalizedString("Restart game", comment: "alert"), message:NSLocalizedString("Are you sure?", comment: "alertDetail") , preferredStyle: .Alert)
-        
+
         let cancelAction = UIAlertAction(title: NSLocalizedString("Nope", comment: "n"), style: .Cancel)
         {(action) in}
         alertController.addAction(cancelAction)
