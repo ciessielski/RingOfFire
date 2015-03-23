@@ -48,7 +48,7 @@ class Gameplay
         , comment: "instructionHeaven")
         , "fis"        : NSLocalizedString("Starting with the player who draws, players take it in turns to count up from a chosen number. Any number with 5 in it or that is a multiple of 5 is replaced with the word ‘FIS’. Any number with 7 in it or that is a multiple of 7 is replaced with the word ‚BAS’. Not to make it too easy, every time the word „BAS” is used, the direction of the play switches."
         , comment: "instructionFis")
-        , "story"      : NSLocalizedString("Starting from the person who picked up this card, everyone adds a word to a story repeating what  has been said earlier."
+        , "story"      : NSLocalizedString("Starting from the person who picked up this card, everyone adds a word to a story repeating what has been said earlier."
         , comment: "instructionStory")
         , "snake"      : NSLocalizedString("After picking this card, whoever looks into your eyes must drink. This lasts until the next Snake Eyes card is drawn by a different player."
         , comment: "instructionSnake")
@@ -56,7 +56,7 @@ class Gameplay
         , comment: "instructionKing")
         , "rhyme"      : NSLocalizedString("You say a word (or a sentence), and the person to your left has to say a word that rhymes with it. This continues around the table until someone can't think of a word and they must drink. The same word cannot be used twice."
         , comment: "instructionRhyme")
-        , "tale"       : NSLocalizedString("Each player takes it in turns to say one word from the sentence: „The Frog Jumped in the Pond!” Once the sentence has been completed, the play continues around the circle in the same manner, except that each word of the sentence must be said twice, with each person still only saying one word. The game is then continued by  repeating each word of the sentence thrice. Alternatively, you may wish to use your own sentence."
+        , "tale"       : NSLocalizedString("Each player takes it in turns to say one word from the sentence: „The Frog Jumped in the Pond!” Once the sentence has been completed, the play continues around the circle in the same manner, except that each word of the sentence must be said twice, with each person still only saying one word. The game is then continued by repeating each word of the sentence thrice. Alternatively, you may wish to use your own sentence."
         , comment: "instructionTale")
         , "smoke"      : NSLocalizedString("This card allows you to make break. Roll a doubie and chill out with the homies ;>"
         , comment: "instructionSmoke")]

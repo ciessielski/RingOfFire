@@ -39,7 +39,6 @@ class InstructionsViewController: UIViewController
     {
         super.viewDidLoad()
         
-        
         cardView.image = UIImage(named: activeCard.slug)
         cardInstructions.text = activeCard.instructions
         
@@ -48,7 +47,7 @@ class InstructionsViewController: UIViewController
             cardTitle.text = " \(activeCard.title!) #\(game.kingCounter)"
             if game.kingCounter == 4
             {
-                cardInstructions.text = "Uups.. You know what to do."
+                cardInstructions.text = NSLocalizedString("Uups.. You know what to do. Don't forget about your mates.", comment: "4th king")
             }
         }
         else
