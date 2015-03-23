@@ -38,7 +38,7 @@ class ShuffleViewController: UIViewController
             game.kingCounter++
         }
         
-        var alertSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("beat", ofType: "wav")!)
+        var alertSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("sound1", ofType: "wav")!)
         var error:NSError?
         
         audioPlayer = AVAudioPlayer(contentsOfURL: alertSound, error: &error)
