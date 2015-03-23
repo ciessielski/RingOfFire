@@ -6,44 +6,75 @@
   Copyright (c) 2015 Michał Ciesielski. All rights reserved.
 */
 
+//url
+"http://rudypijegin.pl/en/shop/ring-of-fire-cards" = "http://rudypijegin.pl/pl/shop/ring-of-fire-cards";
+
+//alert
+"Restart game" = "Graj od nowa";
+"Are you sure?" = "Jesteś pewny/a?";
+"Nope" = "Nie";
+"Restart" = "Restart";
+
 //tutorial1
-"A phone with the Ring of Fire app installed and ready to play." = "sdas";
-"An empty cup or bowl to put in the middle of the table." = "Agfgfd";
-"A group of friends who are willing to have the best night ever!" = "gfadg";
+"Things you'll need:" = "Potrzebujsz:";
+"A phone with the Ring of Fire app installed and ready to play." = "Telefon z apkę Ring of Fire \n(to już masz).";
+"An empty cup or bowl to put in the middle of the table." = "Spore naczynie na środku stołu.";
+"A group of friends who are willing to have the best night ever!" = "Grupę pozytywnych znajomych z lekkim ogarem.";
+
 //tutorial2
-"Taking turns, each player swipes the screen to find out what's on around the table." = "gfdsa";
-"Click on the illustrations to find descriptions of mini-games. Remember, whoever loses has to drink!" = "gfdahgf";
-"If the game gets out of control, simply swipe to the top. Then you will see the last mini-game randomized." = "gfgdfagd";
+"How to play:" = "Jak grać:";
+"Swipe the screen to draw the card." = "Swipnij ekran horyzontalnie aby wylosować kartę.";
+"Tap the screen to see descriptions of the card." = "Pyknij w ekran aby odczytać zadanie.";
+"Swipe to the top and pass the phone to the next person." = "Po wykonanym zadaniu swipnij w górę i podaj telefon dalej.";
+
 //tutorial3
-"This game doas not encourage alcohol consumption. Please be careful upon playing to ensure the safety of you or anyone else. Don't peer pressure anyone into drinking or doing anything extremaly inappropriate against their own will. Respect and fun are fundamental principles of the game." = "Tgfdagdafb";
+"NOTES:" = "UWAGA!";
+"This game does not encourage alcohol consumption. \n \n Please be careful upon playing to ensure the safety of you or anyone else. Don't peer pressure anyone into drinking or doing anything extremaly inappropriate against their own will. \n \n Respect and fun are fundamental principles of the game." = "Ta gra nie zachęca do spożywania alkoholu.\n\n Szczególnie nie podawajcie go osobom niepełnoletnim bo jak was złapią to pójdziecie do więzienia.\n\n Uważajcie podczas zabavy i nie zmuszajcie nikogo do picia wbrew jego woli.";
 
-
+//castle
 "You can make up any rule that everyone has to follow, for example players can only drink with their right hand or players cannot use word “drink”. Everyone (including you) must follow this rule for the whole entire game and if you disobey you must drink." = "Losujący wymyśla zasadę, która od tej pory będzie funkcjonowała przy stole do zakończenia melanżu. Złamanie jej karane jest konsumpcją alkoholu. Przykład: „Nie można używać słowa pijesz”";
 
-"Pick a category (such as Countries) and you go in a circle and everyone has to say a word that fits with chosen category such as: Lithuania, England, Egypt and so on." = "Osoba losująca wymyśla kategorię, do której kolejne osoby muszą dopasować skojarzenia. Przykład: Osoba rozpoczynająca wybiera kategorię „rodzaje alkoholi” i podaje pierwszy przykład „wódka”, kolejne osoby „whiskey”, „piwo”, „rum” itd. Osoba, która się powtórzy lub czas odpowiedzi będzie za długi, Pije!";
+//categories
+"Pick a category (such as Countries) and you go in a circle and everyone has to say a word that matches the chosen category such as: Lithuania, England, Egypt and so on." = "Osoba losująca wymyśla kategorię, do której kolejne osoby muszą dopasować skojarzenia. Przykład: Osoba rozpoczynająca wybiera kategorię „rodzaje alkoholi” i podaje pierwszy przykład „wódka”, kolejne osoby „whiskey”, „piwo”, „rum” itd. Osoba, która się powtórzy lub czas odpowiedzi będzie za długi, Pije!";
 
+//chics
 "All girls drink." = "Wszystkie kobiety piją.";
 
+//you
 "You must drink." = "Pijesz porcję alkoholu.";
 
+//choose
 "You can choose someone to drink." = "Typujesz osobę do picia.";
 
+//dicks
 "All guys drink." = "Wszyscy faceci piją.";
 
+//mate
 "Choose someone to drink with you. Whenever you are forced to drink, the chosen person needs to do the same." = "Wybierasz osobę, z którą od tej pory będziesz razem konsumował alkohol do końca imprezy.";
 
-"Player that draws this card can point finger at the sky at any point during the game. When this happens all other players must race to point their finger to the sky and whoever is last must drink." = "Posiadacz karty może w dowolnym momencie gry podnieść rękę do góry. Reszta graczy powtarza gest – jak najszybciej podnosi dłoń ku niebiosom. Najwolniejsza osoba Pije!";
+//heaven
+"The player who draws this card can point their finger at the sky at any point during the game. When this happens, all other players must race to point their finger to the sky and whoever is last must drink." = "Posiadacz karty może w dowolnym momencie gry podnieść rękę do góry. Reszta graczy powtarza gest – jak najszybciej podnosi dłoń ku niebiosom. Najwolniejsza osoba Pije!";
 
-"Starting with the player who draws, players take it in turns to count up from a chosen number. Any number with 5 in it or that is a multiple of 5 is replaced with the word ‘FIS’. Any number with 7 in it or that is a multiple of 7 is replaced with the word ‚BAS’. Not to make it too easy, every time word „BAS” is used the direction of play switches." = "Osoba, która wylosowała kartę zaczyna grę wyznaczając kierunek kolejki wraz z dowolną liczbą. Osoby odliczają kolejno o jeden, zastępując wielokrotność liczby 5 słowem „FIS” oraz wielokrotność liczby 7 słowem „BAS” – Uwaga! słowo „BAS” odwraca bieg kolejki. Analogicznie wielokrotność 5 i 7 to „FISBAS” Przykład: „W moją prawą 3”, kolejna osoba mówi „4”, następna „FIS” itd.";
+//fis
+"Starting with the player who draws, players take it in turns to count up from a chosen number. Any number with 5 in it or that is a multiple of 5 is replaced with the word ‘FIS’. Any number with 7 in it or that is a multiple of 7 is replaced with the word ‚BAS’. Not to make it too easy, every time the word „BAS” is used, the direction of the play switches." = "Osoba, która wylosowała kartę zaczyna grę wyznaczając kierunek kolejki wraz z dowolną liczbą. Osoby odliczają kolejno o jeden, zastępując wielokrotność liczby 5 słowem „FIS” oraz wielokrotność liczby 7 słowem „BAS” – Uwaga! słowo „BAS” odwraca bieg kolejki. Analogicznie wielokrotność 5 i 7 to „FISBAS” Przykład: „W moją prawą 3”, kolejna osoba mówi „4”, następna „FIS” itd.";
 
-"Starting from the person who picked up this card everyone add a word to a story repeating what was said already." = "Losujący rozpoczyna historię jednym słowem. Każdy kolejny gracz dodaje wyraz zaczynając od powtórzenia ułożonego do tej pory zdania. Przykład: „rudy”, następna osoba – „rudy pije”, kolejna – „rudy pije gin” itd. Osoba, która zmieni kolejność, zapomni o jakimś wyrazie Pije!";
+//story
+"Starting from the person who picked up this card, everyone adds a word to a story repeating what has been said earlier." = "Losujący rozpoczyna historię jednym słowem. Każdy kolejny gracz dodaje wyraz zaczynając od powtórzenia ułożonego do tej pory zdania. Przykład: „rudy”, następna osoba – „rudy pije”, kolejna – „rudy pije gin” itd. Osoba, która zmieni kolejność, zapomni o jakimś wyrazie Pije!";
 
-"After picking this card, whoever looks in to your eyes must drink. This lasts until the next Snake Eyes card is drawn by a different player." = "Od tej pory każde spojrzenie w oczy osobie posiadającej tą kartę kończy się piciem. Gdy kolejna karta „Snake Eyes” zostanie wylosowana poprzednie przestają działać – przy stole jest tylko jeden wąż. Zasada nie obowiązuje podczas trwania gier.";
+//snake
+"After picking this card, whoever looks into your eyes must drink. This lasts until the next Snake Eyes card is drawn by a different player." = "Od tej pory każde spojrzenie w oczy osobie posiadającej tą kartę kończy się piciem. Gdy kolejna karta „Snake Eyes” zostanie wylosowana poprzednie przestają działać – przy stole jest tylko jeden wąż. Zasada nie obowiązuje podczas trwania gier.";
 
-"You must pour a little of your drink into the cup that is in the middle of the table. Whoever picks up the FORTH card must drink the whole cup, which could be filled with different drinks, so who knows how bad it could taste!" = "Zlewka! Każdy musi odlać odrobinę swojego alkoholu do pustego kubka na stole. Osoba, która wyciągnie czwartą kartę „Drink like a King”, musi wypić zawartość naczynia - kto wie jak to smakuje...";
+//king
+"You must pour a little of your drink into the cup that stands in the middle of the table. Whoever picks up the FORTH card must drink the whole cup, which could be filled with different drinks, so who knows how bad it could taste!" = "Zlewka! Każdy musi odlać odrobinę swojego alkoholu do pustego kubka na stole. Osoba, która wyciągnie czwartą kartę „Drink like a King”, musi wypić zawartość naczynia - kto wie jak to smakuje...";
 
-"You say a word (or sentence), and the person to your left has to say a word that rhymes. This continues around the table until someone can't think of a word and this person must drink. The same word cannot be used twice." = "Losujący wybiera jedno lub kilka słów, a kolejna osoba musi ułożyć rym do wyrazów poprzednika. Osoba, która udaremni dobrą poezję, Pije!";
+//4th king
+"Uups.. You know what to do. Don't forget about your mates." = "Zerujesz naczynie ze środka stołu, pamiętaj o swoich mejtach.";
 
-"Each player takes it in turns to say one word from the sentence: „The Frog Jumped in the Pond!” Once the sentence has been completed, play continues around the circle in the same manner, except that each word of the sentence must be said twice, with each person still only saying one word. The game is then continued and repeating each word of the sentence thrice. Alternatively, you may wish to use your own sentence." = "Przytocz ciekawą frazę, powiedzenie - propozycja: „tak samo jak ty”. Każdy uczestnik wypowiada zawsze tylko po jednym wyrazie cytatu. Po zakończeniu wyrazy powtarzają się dwa razy, potem trzy itd. Przykład: pierwsza kolejka: „tak”; „samo”; „jak”; „ty”, druga kolejka – „tak”; „tak”; „samo”; „samo”... Osoba, która pomyli kolejność Pije!";
+//rhyme
+"You say a word (or a sentence), and the person to your left has to say a word that rhymes with it. This continues around the table until someone can't think of a word and they must drink. The same word cannot be used twice." = "Losujący wybiera jedno lub kilka słów, a kolejna osoba musi ułożyć rym do wyrazów poprzednika. Osoba, która udaremni dobrą poezję, Pije!";
 
+//tale
+"Each player takes it in turns to say one word from the sentence: „The Frog Jumped in the Pond!” Once the sentence has been completed, the play continues around the circle in the same manner, except that each word of the sentence must be said twice, with each person still only saying one word. The game is then continued by repeating each word of the sentence thrice. Alternatively, you may wish to use your own sentence." = "Przytocz ciekawą frazę, powiedzenie - propozycja: „tak samo jak ty”. Każdy uczestnik wypowiada zawsze tylko po jednym wyrazie cytatu. Po zakończeniu wyrazy powtarzają się dwa razy, potem trzy itd. Przykład: pierwsza kolejka: „tak”; „samo”; „jak”; „ty”, druga kolejka – „tak”; „tak”; „samo”; „samo”... Osoba, która pomyli kolejność Pije!";
+
+//smoke
 "This card allows you to make break. Roll a doubie and chill out with the homies ;>" = "Karta upoważnia do tymczasowego przerwania rozgrywki. Zakładamy zielone sweterki :>";
