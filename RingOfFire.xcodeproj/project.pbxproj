@@ -28,9 +28,9 @@
 		11F4CCF81AB8871900B72338 /* TutorialView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F4CCF71AB8871900B72338 /* TutorialView1.swift */; };
 		11F4CCFA1AB88C3700B72338 /* TutorialView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F4CCF91AB88C3700B72338 /* TutorialView2.swift */; };
 		11F4CCFE1AB88DE400B72338 /* TutorialView3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F4CCFD1AB88DE400B72338 /* TutorialView3.swift */; };
+		11FEB0931AC0CD1E00DB02B3 /* sound1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 11FEB0921AC0CD1E00DB02B3 /* sound1.wav */; };
 		9F59BDDF1A5741C1005954A5 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F59BDDE1A5741C1005954A5 /* Card.swift */; };
 		9FC977DD1A52411A001E8920 /* Gameplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC977DC1A52411A001E8920 /* Gameplay.swift */; };
-		EE472D6F1AC0BDCF00BDF842 /* sound 1.wav in Resources */ = {isa = PBXBuildFile; fileRef = EE472D6E1AC0BDCF00BDF842 /* sound 1.wav */; };
 		EE8E746D1AB3D77500CBC92C /* TutorialView1.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE8E746C1AB3D77500CBC92C /* TutorialView1.xib */; };
 		EE8E746F1AB3D7F600CBC92C /* TutorialView2.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE8E746E1AB3D7F600CBC92C /* TutorialView2.xib */; };
 		EE8E74711AB3D80C00CBC92C /* TutorialView3.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE8E74701AB3D80C00CBC92C /* TutorialView3.xib */; };
@@ -77,9 +77,9 @@
 		11F4CCF71AB8871900B72338 /* TutorialView1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialView1.swift; sourceTree = "<group>"; };
 		11F4CCF91AB88C3700B72338 /* TutorialView2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialView2.swift; sourceTree = "<group>"; };
 		11F4CCFD1AB88DE400B72338 /* TutorialView3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialView3.swift; sourceTree = "<group>"; };
+		11FEB0921AC0CD1E00DB02B3 /* sound1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sound1.wav; sourceTree = "<group>"; };
 		9F59BDDE1A5741C1005954A5 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		9FC977DC1A52411A001E8920 /* Gameplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gameplay.swift; sourceTree = "<group>"; };
-		EE472D6E1AC0BDCF00BDF842 /* sound 1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "sound 1.wav"; sourceTree = "<group>"; };
 		EE8E746C1AB3D77500CBC92C /* TutorialView1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TutorialView1.xib; sourceTree = "<group>"; };
 		EE8E746E1AB3D7F600CBC92C /* TutorialView2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TutorialView2.xib; sourceTree = "<group>"; };
 		EE8E74701AB3D80C00CBC92C /* TutorialView3.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TutorialView3.xib; sourceTree = "<group>"; };
