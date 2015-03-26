@@ -16,14 +16,14 @@ class TutorialView1: UIView
     @IBOutlet weak var textView2: UITextView!
     @IBOutlet weak var textView3: UITextView!
     
-    override func drawRect(rect: CGRect)
+    override func awakeFromNib()
     {
         let attrs = [NSFontAttributeName : UIFont(name: "American typewriter", size: 13.0) ?? UIFont.systemFontOfSize(13.0)]
-
+        
         
         self.titleLabel.text = NSLocalizedString("Things you'll need:", comment: "tutorialTitle1")
         self.titleLabel.backgroundColor = UIColor.clearColor()
-
+        
         self.textView1.attributedText = NSAttributedString(string: NSLocalizedString("A phone with the Ring of Fire app installed and ready to play.", comment: "tutorialView1text1"), attributes: attrs)
         self.textView1.textAlignment = NSTextAlignment.Left;
         self.textView1.backgroundColor = UIColor.clearColor()
@@ -36,5 +36,9 @@ class TutorialView1: UIView
         self.textView3.textAlignment = NSTextAlignment.Left;
         self.textView3.backgroundColor = UIColor.clearColor()
     }
+    
+    
+    
+
 
 }
