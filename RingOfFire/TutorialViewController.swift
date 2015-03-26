@@ -82,6 +82,7 @@ class TutorialViewController: UIViewController, UIPageViewControllerDataSource
         return nil
     }
     
+
     
     private func getItemController(itemIndex: Int) -> PageItemController?
     {
@@ -89,10 +90,14 @@ class TutorialViewController: UIViewController, UIPageViewControllerDataSource
         if itemIndex < contentImages.count
         {
             let pageItemController = self.storyboard!.instantiateViewControllerWithIdentifier("ItemController") as PageItemController
-                pageItemController.itemIndex = itemIndex
-                pageItemController.imageName = contentImages[itemIndex]
-                pageItemController.view = NSBundle.mainBundle().loadNibNamed(contentImages[itemIndex], owner: self, options: nil)[0] as? UIView
-         return pageItemController
+            pageItemController.itemIndex = itemIndex
+            pageItemController.imageName = contentImages[itemIndex]
+            let view = NSBundle.mainBundle().loadNibNamed(contentImages[itemIndex], owner: self, options: nil)[0] as? UIView
+            view?.frame = pageItemController.view.bounds
+            view?.autoresizingMask = UIViewAutoresizing.FlexibleWidth | UIViewAutoresizing.FlexibleHeight
+            pageItemController.view.addSubview(view!)
+            
+            return pageItemController
         }
         
         return nil
