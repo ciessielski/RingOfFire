@@ -8,6 +8,9 @@
 
 import UIKit
 import CoreData
+import Fabric
+import Crashlytics
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate
 {
@@ -35,6 +38,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate
         self.window?.rootViewController = initialViewController
         self.window?.makeKeyAndVisible()
         
+        Fabric.with([Crashlytics()])
         return true
     }
 
