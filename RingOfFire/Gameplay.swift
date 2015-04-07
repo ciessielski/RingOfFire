@@ -74,7 +74,7 @@ class Gameplay
 
         for i in 0...1
         {
-            deck.append(Card(slug: "smoke"))
+            //deck.append(Card(slug: "smoke"))      added later
             deck.append(Card(slug: "castle"))
         }
      
@@ -84,11 +84,12 @@ class Gameplay
             deck.append(Card(slug: "dicks"))
             deck.append(Card(slug: "chicks"))
             deck.append(Card(slug: "mate"))
+            deck.append(Card(slug: "king"))
         }
 
         for i in 0...3
         {
-            deck.append(Card(slug: "king"))
+
             deck.append(Card(slug: "story"))
             deck.append(Card(slug: "categories"))
             deck.append(Card(slug: "tale"))
@@ -114,15 +115,22 @@ class Gameplay
     {
         var tempDeck : Array<Card> = []
        
-        for i in 0...51  //till the number of cards in deck
+        for i in 0...48  //till the number of cards in deck - smoke braek and one king
         {
             let j = Int(arc4random_uniform(UInt32(deck.count-1)))            
             tempDeck.append(deck[j])
             deck.removeAtIndex(j)
         }
+        let placeForSmoke1 = Int(arc4random_uniform(UInt32(10)))+10
+        let placeForSmoke2 = Int(arc4random_uniform(UInt32(10)))+30
+        let placeForKing4 = Int(arc4random_uniform(UInt32(3)))+48
         
         deck = tempDeck
         deck.insert(Card(slug:"king"), atIndex: 0)
+        deck.insert((Card(slug:"smoke")), atIndex: placeForSmoke1)
+        deck.insert((Card(slug:"smoke")), atIndex: placeForSmoke2)
+        deck.insert((Card(slug:"king")), atIndex: placeForKing4)
+        println("no of cards : \(deck.count)")
     }
     
     func resetGame()
