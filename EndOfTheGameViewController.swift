@@ -17,7 +17,7 @@ class EndOfTheGameViewController: UIViewController
     @IBAction func newGame(sender: AnyObject)
     {
         println("new game clicked")
-        game = Gameplay()
+        game.resetGame()
         performSegueWithIdentifier("endToSwipe", sender: self)
     }
 

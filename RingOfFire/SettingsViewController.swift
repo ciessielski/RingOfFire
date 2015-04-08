@@ -37,7 +37,7 @@ class SettingsViewController: UIViewController
     
     func restartGame()
     {
-        game = Gameplay()
+        game.resetGame()
         performSegueWithIdentifier("backToGame", sender: self)
     }
     

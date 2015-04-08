@@ -14,7 +14,7 @@ class Gameplay
     var deck: Array<Card> = []
     var kingCounter = 0
     var titlesDictionary =
-    [ "castle"     : "King of the Castle"
+        [ "castle"     : "King of the Castle"
         , "categories" : "Categories"
         , "chicks"     : "Chicks"
         , "you"        : "You Drink"
@@ -138,7 +138,8 @@ class Gameplay
     {
         deck=[]
         createDeck()
-        assignAttributes()
         shuffle()
+        assignAttributes()
+        kingCounter=0
     }
 }
