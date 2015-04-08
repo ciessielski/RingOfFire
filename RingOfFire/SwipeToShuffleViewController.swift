@@ -33,6 +33,12 @@ class SwipeToShuffleViewController: UIViewController
         loadAnimationsBeforeRunningThem()
         numberOfCardsLabel.text="left: \(game.deck.count-1)"
         
+        for card in 0...game.deck.count-1
+        {
+            println("nr \(card) -> \(game.deck[card].slug)")
+        }
+        println("liczba kart: \(game.deck.count)")
+        
         if game.deck.count == 53
         {
             self.view.removeGestureRecognizer(swipeDownGesture)

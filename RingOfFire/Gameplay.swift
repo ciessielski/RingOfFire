@@ -5,6 +5,7 @@
 //  Created by Paweł Charatonik on 30.12.2014.
 //  Copyright (c) 2014 Michał Ciesielski. All rights reserved.
 //  .
+// to do: fix last fis, descriptions for smoke and king
 
 import Foundation
 
@@ -13,7 +14,7 @@ class Gameplay
     var deck: Array<Card> = []
     var kingCounter = 0
     var titlesDictionary =
-        [ "castle"     : "King of the Castle"
+    [ "castle"     : "King of the Castle"
         , "categories" : "Categories"
         , "chicks"     : "Chicks"
         , "you"        : "You Drink"
@@ -28,57 +29,57 @@ class Gameplay
         , "rhyme"      : "Rhyme"
         , "tale"       : "Tale"
         , "smoke"      : "Smoke Break"]
-
-     var instructionsDictionary =
-        ["castle"      : NSLocalizedString("You can make up any rule that everyone has to follow, for example players can only drink with their right hand or players cannot use word “drink”. Everyone (including you) must follow this rule for the whole entire game and if you disobey you must drink."
+    
+    var instructionsDictionary =
+    ["castle"      : NSLocalizedString("You can make up any rule that everyone has to follow, for example players can only drink with their right hand or players cannot use word “drink”. Everyone (including you) must follow this rule for the whole entire game and if you disobey you must drink."
         , comment: "instructionCastle")
         , "categories" : NSLocalizedString("Pick a category (such as Countries) and you go in a circle and everyone has to say a word that matches the chosen category such as: Lithuania, England, Egypt and so on."
-        , comment: "instructionCategories")
+            , comment: "instructionCategories")
         , "chicks"     : NSLocalizedString("All girls drink."
-        , comment: "instructionChicks")
+            , comment: "instructionChicks")
         , "you"        : NSLocalizedString("You must drink."
-        , comment: "instructionYou")
+            , comment: "instructionYou")
         , "choose"     : NSLocalizedString("You can choose someone to drink."
-        , comment: "instructionChoose")
+            , comment: "instructionChoose")
         , "dicks"      : NSLocalizedString("All guys drink."
-        , comment: "instructionDics")
+            , comment: "instructionDics")
         , "mate"       : NSLocalizedString("Choose someone to drink with you. Whenever you are forced to drink, the chosen person needs to do the same."
-        , comment: "instructionMate")
+            , comment: "instructionMate")
         , "heaven"     : NSLocalizedString("The player who draws this card can point their finger at the sky at any point during the game. When this happens, all other players must race to point their finger to the sky and whoever is last must drink."
-        , comment: "instructionHeaven")
+            , comment: "instructionHeaven")
         , "fis"        : NSLocalizedString("Starting with the player who draws, players take it in turns to count up from a chosen number. Any number with 5 in it or that is a multiple of 5 is replaced with the word ‘FIS’. Any number with 7 in it or that is a multiple of 7 is replaced with the word ‚BAS’. Not to make it too easy, every time the word „BAS” is used, the direction of the play switches."
-        , comment: "instructionFis")
+            , comment: "instructionFis")
         , "story"      : NSLocalizedString("Starting from the person who picked up this card, everyone adds a word to a story repeating what has been said earlier."
-        , comment: "instructionStory")
+            , comment: "instructionStory")
         , "snake"      : NSLocalizedString("After picking this card, whoever looks into your eyes must drink. This lasts until the next Snake Eyes card is drawn by a different player."
-        , comment: "instructionSnake")
+            , comment: "instructionSnake")
         , "king"       : NSLocalizedString("You must pour a little of your drink into the cup that stands in the middle of the table. Whoever picks up the FORTH card must drink the whole cup, which could be filled with different drinks, so who knows how bad it could taste!"
-        , comment: "instructionKing")
+            , comment: "instructionKing")
         , "rhyme"      : NSLocalizedString("You say a word (or a sentence), and the person to your left has to say a word that rhymes with it. This continues around the table until someone can't think of a word and they must drink. The same word cannot be used twice."
-        , comment: "instructionRhyme")
+            , comment: "instructionRhyme")
         , "tale"       : NSLocalizedString("Each player takes it in turns to say one word from the sentence: „The Frog Jumped in the Pond!” Once the sentence has been completed, the play continues around the circle in the same manner, except that each word of the sentence must be said twice, with each person still only saying one word. The game is then continued by repeating each word of the sentence thrice. Alternatively, you may wish to use your own sentence."
-        , comment: "instructionTale")
+            , comment: "instructionTale")
         , "smoke"      : NSLocalizedString("This card allows you to make break. Roll a doubie and chill out with the homies ;>"
-        , comment: "instructionSmoke")]
+            , comment: "instructionSmoke")]
     
     
     init()
     {
         createDeck()
-        assignAttributes()
         shuffle()
+        assignAttributes()
     }
     
     func createDeck()
     {
-
-        for i in 0...1
+        
+        for i in 1...2
         {
             //deck.append(Card(slug: "smoke"))      added later
             deck.append(Card(slug: "castle"))
         }
-     
-        for i in 0...2
+        
+        for i in 1...3
         {
             deck.append(Card(slug: "snake"))
             deck.append(Card(slug: "dicks"))
@@ -86,10 +87,10 @@ class Gameplay
             deck.append(Card(slug: "mate"))
             deck.append(Card(slug: "king"))
         }
-
-        for i in 0...3
+        
+        for i in 1...4
         {
-
+            
             deck.append(Card(slug: "story"))
             deck.append(Card(slug: "categories"))
             deck.append(Card(slug: "tale"))
@@ -99,7 +100,7 @@ class Gameplay
             deck.append(Card(slug: "rhyme"))
             deck.append(Card(slug: "fis"))
         }
-
+        
     }
     
     func assignAttributes()
@@ -114,10 +115,10 @@ class Gameplay
     func shuffle()
     {
         var tempDeck : Array<Card> = []
-       
-        for i in 0...48  //till the number of cards in deck - smoke braek and one king
+        
+        for i in 1...49  //till the number of cards in deck - smoke braek and one king
         {
-            let j = Int(arc4random_uniform(UInt32(deck.count-1)))            
+            let j = Int(arc4random_uniform(UInt32(deck.count)))
             tempDeck.append(deck[j])
             deck.removeAtIndex(j)
         }
@@ -141,5 +142,3 @@ class Gameplay
         shuffle()
     }
 }
-
-
