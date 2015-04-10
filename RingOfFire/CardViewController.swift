@@ -45,17 +45,18 @@ class CardViewController: UIViewController
     }
     
     override func viewDidAppear(animated: Bool) {
+
+        //fade-in animation
         UIView.animateWithDuration(0.4, animations: { () -> Void in
             self.cardView.alpha = 1;
            
         })
         
-        self.imageToSuperBottom.constant = -100
-        self.imageToSuperTop.constant = -100
-        
+
+        //distortion animation
         UIView.animateWithDuration(1, delay: 0.4, usingSpringWithDamping: 0.5, initialSpringVelocity: 1, options: nil, animations: { () -> Void in
             
-            self.view.layoutIfNeeded()
+
 
         }, completion: nil)
         
