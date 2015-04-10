@@ -71,7 +71,6 @@ class SwipeToShuffleViewController: UIViewController
             
             animationBuffor.animationImages = images
             animationBuffor.startAnimating()
-            println("first")
         }
     }
     

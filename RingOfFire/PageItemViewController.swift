@@ -32,7 +32,7 @@ class PageItemController: UIViewController
     {
             if(NSUserDefaults.standardUserDefaults().stringForKey("firstOpen") == ("no"))
             {
-                println("not first");
+                
             }
             else
             {
@@ -55,7 +55,6 @@ class PageItemController: UIViewController
                 
                 buffor.animationImages = images
                 buffor.startAnimating()
-                println("first")
             }
 
     }

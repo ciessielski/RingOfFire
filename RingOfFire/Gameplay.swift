@@ -131,7 +131,6 @@ class Gameplay
         deck.insert((Card(slug:"smoke")), atIndex: placeForSmoke1)
         deck.insert((Card(slug:"smoke")), atIndex: placeForSmoke2)
         deck.insert((Card(slug:"king")), atIndex: placeForKing4)
-        println("no of cards : \(deck.count)")
     }
     
     func resetGame()

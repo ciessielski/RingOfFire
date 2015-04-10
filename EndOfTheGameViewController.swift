@@ -16,7 +16,6 @@ class EndOfTheGameViewController: UIViewController
     @IBOutlet weak var endAnimationView: UIImageView!
     @IBAction func newGame(sender: AnyObject)
     {
-        println("new game clicked")
         game.resetGame()
         performSegueWithIdentifier("endToSwipe", sender: self)
     }

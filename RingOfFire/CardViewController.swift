@@ -30,13 +30,11 @@ class CardViewController: UIViewController
     
     @IBAction func swipeLeft(sender: UISwipeGestureRecognizer)
     {
-        println("swipe left")
         self.nextCard()
     }
     
     @IBAction func swipeRight(sender: UISwipeGestureRecognizer)
     {
-        println("swipe right")
         self.nextCard()
     }
     
