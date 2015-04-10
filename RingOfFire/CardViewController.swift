@@ -28,6 +28,26 @@ class CardViewController: UIViewController
         }
     }
     
+    @IBAction func swipeLeft(sender: UISwipeGestureRecognizer)
+    {
+        println("swipe left")
+        self.nextCard()
+    }
+    
+    @IBAction func swipeRight(sender: UISwipeGestureRecognizer)
+    {
+        println("swipe right")
+        self.nextCard()
+    }
+    
+    func nextCard()
+    {
+        if game.deck.count < 49
+        {
+            performSegueWithIdentifier("cardToShuffle", sender: self)
+        }
+    }
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()

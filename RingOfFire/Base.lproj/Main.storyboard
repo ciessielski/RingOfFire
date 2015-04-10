@@ -21,6 +21,7 @@
                             <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vBW-Qc-E5o">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
                                 <variation key="heightClass=regular" fixedFrame="YES">
                                     <rect key="frame" x="180" y="336" width="240" height="128"/>
                                 </variation>
@@ -37,6 +38,8 @@
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="HuP-5M-VTj" appends="YES" id="Fee-ZG-OQJ"/>
                             <outletCollection property="gestureRecognizers" destination="CtG-aD-Okz" appends="YES" id="2UQ-Ob-F8Y"/>
+                            <outletCollection property="gestureRecognizers" destination="6hF-db-KGB" appends="YES" id="VWx-VI-l0y"/>
+                            <outletCollection property="gestureRecognizers" destination="QG3-dj-4Ll" appends="YES" id="sJ7-6h-bJs"/>
                         </connections>
                     </view>
                     <connections>
@@ -47,6 +50,7 @@
                         <outlet property="imageToSuperTrailing" destination="70h-oj-NrF" id="W2k-x1-get"/>
                         <segue destination="m1W-BJ-Rai" kind="presentation" identifier="cardToSwipe" id="yxi-qg-uPl"/>
                         <segue destination="OgM-A6-Q7M" kind="presentation" identifier="cardToEnd" id="KcM-EB-eAo"/>
+                        <segue destination="e15-nk-I4h" kind="presentation" identifier="cardToShuffle" modalTransitionStyle="crossDissolve" id="APA-0o-Cco"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -60,6 +64,16 @@
                         <segue destination="F3t-ZI-Ki9" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="1tZ-3e-WQ0"/>
                     </connections>
                 </tapGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="6hF-db-KGB" userLabel="Swipe Left Gesture Recognizer">
+                    <connections>
+                        <action selector="swipeLeft:" destination="vXZ-lx-hvc" id="pBE-zW-o3B"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="QG3-dj-4Ll" userLabel="Swipe Right Gesture Recognizer">
+                    <connections>
+                        <action selector="swipeRight:" destination="vXZ-lx-hvc" id="R7x-e8-bRI"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1648" y="-277"/>
         </scene>
@@ -605,9 +619,9 @@
         <image name="swipeToShuffle" width="249" height="66"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Bs7-Iq-X07"/>
         <segue reference="yxi-qg-uPl"/>
+        <segue reference="Bs7-Iq-X07"/>
+        <segue reference="APA-0o-Cco"/>
         <segue reference="KcM-EB-eAo"/>
-        <segue reference="fZB-2o-AoI"/>
     </inferredMetricsTieBreakers>
 </document>
