@@ -36,4 +36,11 @@ class CardViewController: UIViewController
     {
         super.didReceiveMemoryWarning()
     }
+    
+    override func viewDidAppear(animated: Bool) {
+        UIView.animateWithDuration(0.4, animations: { () -> Void in
+            self.cardView.alpha = 1;
+        })
+        
+    }
 }
