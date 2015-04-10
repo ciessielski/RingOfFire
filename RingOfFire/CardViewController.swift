@@ -12,11 +12,8 @@ class CardViewController: UIViewController
 {
     @IBOutlet weak var cardView: UIImageView!
     @IBOutlet weak var imageToSuperTrailing: NSLayoutConstraint!
-    
     @IBOutlet weak var imageToSuperTop: NSLayoutConstraint!
-
     @IBOutlet weak var imageToSuperLeading: NSLayoutConstraint!
-    
     @IBOutlet weak var imageToSuperBottom: NSLayoutConstraint!
     
     @IBAction func throwCardAway(sender: UISwipeGestureRecognizer)
@@ -44,21 +41,26 @@ class CardViewController: UIViewController
         super.didReceiveMemoryWarning()
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(animated: Bool)
+    {
 
         //fade-in animation
-        UIView.animateWithDuration(0.4, animations: { () -> Void in
-            self.cardView.alpha = 1;
-           
-        })
-        
+        UIView.animateWithDuration(0.4,
+                                animations:
+                                           { () -> Void in
+                                                self.cardView.alpha = 1.0;
+                                           })
 
         //distortion animation
-        UIView.animateWithDuration(1, delay: 0.4, usingSpringWithDamping: 0.5, initialSpringVelocity: 1, options: nil, animations: { () -> Void in
-            
-
-
-        }, completion: nil)
+        UIView.animateWithDuration(1, delay: 0.4,
+                     usingSpringWithDamping: 0.5,
+                      initialSpringVelocity: 1.0,
+                                    options: nil,
+                                 animations:
+                                            { () -> Void in
+                                                
+                                            },
+                                 completion: nil)
         
     }
 }
