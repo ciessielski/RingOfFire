@@ -11,6 +11,7 @@ import UIKit
 class CardViewController: UIViewController
 {
     @IBOutlet weak var cardView: UIImageView!
+    
     @IBOutlet weak var imageToSuperTrailing: NSLayoutConstraint!
     
     @IBOutlet weak var imageToSuperTop: NSLayoutConstraint!
@@ -52,11 +53,16 @@ class CardViewController: UIViewController
            
         })
         
+        imageToSuperTop.constant = 0
+        imageToSuperLeading.constant = 0
+        imageToSuperTrailing.constant = 0
+        imageToSuperBottom.constant = 0
 
         //distortion animation
-        UIView.animateWithDuration(1, delay: 0.4, usingSpringWithDamping: 0.5, initialSpringVelocity: 1, options: nil, animations: { () -> Void in
+        UIView.animateWithDuration(0.5, delay: 0.1, usingSpringWithDamping: 0.4, initialSpringVelocity: 10, options:nil, animations: { () -> Void in
             
-
+            self.view.layoutIfNeeded()
+            
 
         }, completion: nil)
         
