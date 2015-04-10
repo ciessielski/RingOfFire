@@ -11,6 +11,13 @@ import UIKit
 class CardViewController: UIViewController
 {
     @IBOutlet weak var cardView: UIImageView!
+    @IBOutlet weak var imageToSuperTrailing: NSLayoutConstraint!
+    
+    @IBOutlet weak var imageToSuperTop: NSLayoutConstraint!
+
+    @IBOutlet weak var imageToSuperLeading: NSLayoutConstraint!
+    
+    @IBOutlet weak var imageToSuperBottom: NSLayoutConstraint!
     
     @IBAction func throwCardAway(sender: UISwipeGestureRecognizer)
     {
@@ -40,7 +47,17 @@ class CardViewController: UIViewController
     override func viewDidAppear(animated: Bool) {
         UIView.animateWithDuration(0.4, animations: { () -> Void in
             self.cardView.alpha = 1;
+           
         })
+        
+        self.imageToSuperBottom.constant = -100
+        self.imageToSuperTop.constant = -100
+        
+        UIView.animateWithDuration(1, delay: 0.4, usingSpringWithDamping: 0.5, initialSpringVelocity: 1, options: nil, animations: { () -> Void in
+            
+            self.view.layoutIfNeeded()
+
+        }, completion: nil)
         
     }
 }

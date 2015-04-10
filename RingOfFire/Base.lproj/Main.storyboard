@@ -41,6 +41,10 @@
                     </view>
                     <connections>
                         <outlet property="cardView" destination="vBW-Qc-E5o" id="gHr-rw-3gS"/>
+                        <outlet property="imageToSuperBottom" destination="mI0-nX-TVa" id="9xs-3C-WXB"/>
+                        <outlet property="imageToSuperLeading" destination="kOe-Wm-ztm" id="5in-wI-KNQ"/>
+                        <outlet property="imageToSuperTop" destination="KEu-MC-53k" id="bFQ-4K-liH"/>
+                        <outlet property="imageToSuperTrailing" destination="70h-oj-NrF" id="W2k-x1-get"/>
                         <segue destination="m1W-BJ-Rai" kind="presentation" identifier="cardToSwipe" id="yxi-qg-uPl"/>
                         <segue destination="OgM-A6-Q7M" kind="presentation" identifier="cardToEnd" id="KcM-EB-eAo"/>
                     </connections>
