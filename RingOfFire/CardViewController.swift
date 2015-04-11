@@ -20,6 +20,9 @@ class CardViewController: UIViewController
     
     @IBOutlet weak var imageToSuperBottom: NSLayoutConstraint!
     
+    
+    
+    
     @IBAction func throwCardAway(sender: UISwipeGestureRecognizer)
     {
         if (game.deck.count == 1)
@@ -35,9 +38,10 @@ class CardViewController: UIViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        
+        print("VDL card")
         var activeCard = game.deck[0]
         cardView.image = UIImage(named: activeCard.slug)
+        
     }
     
     override func didReceiveMemoryWarning()
@@ -46,25 +50,43 @@ class CardViewController: UIViewController
     }
     
     override func viewDidAppear(animated: Bool) {
-
-        //fade-in animation
-        UIView.animateWithDuration(0.4, animations: { () -> Void in
-            self.cardView.alpha = 1;
-           
-        })
+        presentCardAnimated(game.willPickNewCard)
+        print("VDA card, flag \(game.willPickNewCard)")
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
         
-        imageToSuperTop.constant = 0
-        imageToSuperLeading.constant = 0
-        imageToSuperTrailing.constant = 0
-        imageToSuperBottom.constant = 0
+        game.willPickNewCard = false
+        
+        print("view will disappear, flag \(game.willPickNewCard)")
 
-        //distortion animation
-        UIView.animateWithDuration(0.5, delay: 0.1, usingSpringWithDamping: 0.4, initialSpringVelocity: 10, options:nil, animations: { () -> Void in
+    }
+    
+    func presentCardAnimated(animated: Bool) {
+        
+        if (animated) {
+            //fade-in animation
+            UIView.animateWithDuration(0.3, animations: { () -> Void in
+                self.cardView.alpha = 1;
+            })
             
-            self.view.layoutIfNeeded()
+            //slide-in animation
+            //to animate constraints, set them to desired values first (here) and then have them updated in animation block
+            imageToSuperTop.constant = 0
+            imageToSuperBottom.constant = 0
             
-
-        }, completion: nil)
+            UIView.animateWithDuration(0.4, delay: 0.0, usingSpringWithDamping: 0.5, initialSpringVelocity: 7, options:.CurveEaseInOut, animations: { () -> Void in
+                //update constraints
+                self.view.layoutIfNeeded()
+                }, completion: nil)
+        } else {
+            cardView.alpha = 1
+            imageToSuperTop.constant = 0
+            imageToSuperBottom.constant = 0
+            view.layoutIfNeeded()
+        }
+        
         
     }
+    
 }

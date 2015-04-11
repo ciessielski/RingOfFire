@@ -63,12 +63,17 @@ class Gameplay
             , comment: "instructionSmoke")]
     
     
+    var willPickNewCard = true
+    
+    
     init()
     {
         createDeck()
         shuffle()
         assignAttributes()
     }
+    
+    
     
     func createDeck()
     {
