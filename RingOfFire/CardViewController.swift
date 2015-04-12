@@ -42,6 +42,7 @@ class CardViewController: UIViewController
     {
         if game.deck.count < 49
         {
+            game.willPickNewCard = true
             performSegueWithIdentifier("cardToShuffle", sender: self)
         }
     }
@@ -51,7 +52,6 @@ class CardViewController: UIViewController
         super.viewDidLoad()
         var activeCard = game.deck[0]
         cardView.image = UIImage(named: activeCard.slug)
-        
     }
     
     override func didReceiveMemoryWarning()
@@ -59,9 +59,19 @@ class CardViewController: UIViewController
         super.didReceiveMemoryWarning()
     }
     
+    override func viewWillAppear(animated: Bool) {
+        //if not picking new card, present the card without animation *early*
+        if (!game.willPickNewCard) {
+            presentCardAnimated(game.willPickNewCard)
+        }
+    }
+    
     override func viewDidAppear(animated: Bool)
-	{
-        presentCardAnimated(game.willPickNewCard)
+    {
+        //if picking new card, present it with animation *later*
+        if (game.willPickNewCard) {
+            presentCardAnimated(game.willPickNewCard)
+        }
     }
     
     override func viewWillDisappear(animated: Bool)
@@ -72,7 +82,8 @@ class CardViewController: UIViewController
     func presentCardAnimated(animated: Bool)
 	{
         
-        if (animated) {
+        if (animated)
+        {
             //fade-in animation
             UIView.animateWithDuration(0.3,
 									animations:
@@ -94,7 +105,9 @@ class CardViewController: UIViewController
                 									     self.view.layoutIfNeeded()
                									   },
 									  completion: nil)
-        } else {
+        }
+        else
+        {
             cardView.alpha = 1
             imageToSuperTop.constant = 0
             imageToSuperBottom.constant = 0

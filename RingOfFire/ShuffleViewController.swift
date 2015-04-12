@@ -43,9 +43,9 @@ class ShuffleViewController: UIViewController
         var alertSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("beat", ofType: "wav")!)
         var error:NSError?
         
-//        audioPlayer = AVAudioPlayer(contentsOfURL: alertSound, error: &error)
-//        audioPlayer.prepareToPlay()
-//        audioPlayer.play()
+        audioPlayer = AVAudioPlayer(contentsOfURL: alertSound, error: &error)
+        audioPlayer.prepareToPlay()
+        audioPlayer.play()
 
         NSTimer.scheduledTimerWithTimeInterval(1.8, target: self, selector:Selector("performSegue"), userInfo: nil, repeats: false)
     }
