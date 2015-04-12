@@ -61,7 +61,8 @@ class CardViewController: UIViewController
     
     override func viewWillAppear(animated: Bool) {
         //if not picking new card, present the card without animation *early*
-        if (!game.willPickNewCard) {
+        if (!game.willPickNewCard)
+        {
             presentCardAnimated(game.willPickNewCard)
         }
     }
@@ -69,7 +70,8 @@ class CardViewController: UIViewController
     override func viewDidAppear(animated: Bool)
     {
         //if picking new card, present it with animation *later*
-        if (game.willPickNewCard) {
+        if (game.willPickNewCard)
+        {
             presentCardAnimated(game.willPickNewCard)
         }
     }
