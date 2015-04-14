@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
@@ -13,13 +13,18 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="right" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m5v-nh-wFa">
-                    <rect key="frame" x="348" y="224" width="240" height="59"/>
+                    <rect key="frame" x="69" y="224" width="519" height="59"/>
                     <color key="backgroundColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="240" id="hRR-u7-003"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="13"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="hRR-u7-003"/>
+                        </mask>
+                    </variation>
                 </textView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="turns" translatesAutoresizingMaskIntoConstraints="NO" id="ta8-mH-58f">
                     <rect key="frame" x="8" y="65" width="58" height="59"/>
@@ -56,7 +61,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="right" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lv8-6t-UNv">
-                    <rect key="frame" x="348" y="71" width="240" height="53"/>
+                    <rect key="frame" x="76" y="71" width="512" height="53"/>
                     <color key="backgroundColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="240" id="cZX-PH-gom"/>
@@ -64,15 +69,25 @@
                     </constraints>
                     <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="13"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="cZX-PH-gom"/>
+                        </mask>
+                    </variation>
                 </textView>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pHH-ZO-bga">
-                    <rect key="frame" x="8" y="145" width="217" height="54"/>
+                    <rect key="frame" x="8" y="145" width="501" height="54"/>
                     <color key="backgroundColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="217" id="Azg-WB-C6b"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="13"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Azg-WB-C6b"/>
+                        </mask>
+                    </variation>
                 </textView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -80,6 +95,7 @@
                 <constraint firstItem="lv8-6t-UNv" firstAttribute="top" secondItem="Pf1-fA-KvL" secondAttribute="bottom" constant="20" id="3D3-rL-g9E"/>
                 <constraint firstItem="lv8-6t-UNv" firstAttribute="trailing" secondItem="c9z-Wg-GZf" secondAttribute="trailing" id="5eS-dk-J7B"/>
                 <constraint firstItem="ta8-mH-58f" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" id="6fb-9O-rEZ"/>
+                <constraint firstItem="m5v-nh-wFa" firstAttribute="leading" secondItem="yn1-5G-J77" secondAttribute="trailing" constant="10" id="7t8-PP-IbJ"/>
                 <constraint firstItem="yn1-5G-J77" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="218" id="Fvn-QU-REm"/>
                 <constraint firstItem="yn1-5G-J77" firstAttribute="top" secondItem="pHH-ZO-bga" secondAttribute="bottom" constant="19" id="HCm-6q-65r"/>
                 <constraint firstItem="0qq-6L-Ynt" firstAttribute="top" secondItem="m5v-nh-wFa" secondAttribute="bottom" constant="15" id="L9q-M2-DqI"/>
@@ -90,6 +106,7 @@
                 <constraint firstItem="Pf1-fA-KvL" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="topMargin" id="Y6N-8k-Ozt"/>
                 <constraint firstItem="ta8-mH-58f" firstAttribute="leading" secondItem="yn1-5G-J77" secondAttribute="leading" id="cXR-J4-HCP"/>
                 <constraint firstItem="m5v-nh-wFa" firstAttribute="top" secondItem="c9z-Wg-GZf" secondAttribute="bottom" constant="25" id="efY-M8-8Hx"/>
+                <constraint firstItem="c9z-Wg-GZf" firstAttribute="leading" secondItem="pHH-ZO-bga" secondAttribute="trailing" constant="10" id="gPI-8p-RiZ"/>
                 <constraint firstItem="ta8-mH-58f" firstAttribute="leading" secondItem="pHH-ZO-bga" secondAttribute="leading" id="h3C-LP-cU5"/>
                 <constraint firstAttribute="trailing" secondItem="0qq-6L-Ynt" secondAttribute="trailing" id="hX9-Ab-ZBy"/>
                 <constraint firstItem="0qq-6L-Ynt" firstAttribute="top" secondItem="yn1-5G-J77" secondAttribute="bottom" constant="8" id="qGh-ax-kpK"/>
@@ -98,6 +115,7 @@
                 <constraint firstItem="pHH-ZO-bga" firstAttribute="top" secondItem="ta8-mH-58f" secondAttribute="bottom" constant="21" id="y6f-sD-ATg"/>
                 <constraint firstItem="lv8-6t-UNv" firstAttribute="bottom" secondItem="ta8-mH-58f" secondAttribute="bottom" id="yad-J7-DtO"/>
                 <constraint firstItem="Pf1-fA-KvL" firstAttribute="centerX" secondItem="0qq-6L-Ynt" secondAttribute="centerX" id="zGM-Tx-D3i"/>
+                <constraint firstItem="lv8-6t-UNv" firstAttribute="leading" secondItem="ta8-mH-58f" secondAttribute="trailing" constant="10" id="zZI-VP-d1r"/>
             </constraints>
             <connections>
                 <outlet property="textView1" destination="lv8-6t-UNv" id="sdb-Kt-wuk"/>

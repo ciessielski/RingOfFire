@@ -19,8 +19,7 @@ class TutorialView1: UIView
     override func awakeFromNib()
     {
         let attrs = [NSFontAttributeName : UIFont(name: "American typewriter", size: 13.0) ?? UIFont.systemFontOfSize(13.0)]
-        
-        
+ 
         self.titleLabel.text = NSLocalizedString("Things you'll need:", comment: "tutorialTitle1")
         self.titleLabel.backgroundColor = UIColor.clearColor()
         
