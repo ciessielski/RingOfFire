@@ -59,7 +59,8 @@ class CardViewController: UIViewController
         super.didReceiveMemoryWarning()
     }
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(animated: Bool)
+    {
         //if not picking new card, present the card without animation *early*
         if (!game.willPickNewCard)
         {
