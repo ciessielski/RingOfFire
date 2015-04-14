@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
@@ -13,20 +13,18 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="right" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hbq-pF-iQl">
-                    <rect key="frame" x="365" y="178" width="227" height="49"/>
+                    <rect key="frame" x="86" y="178" width="506" height="49"/>
                     <color key="backgroundColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="227" id="Zt4-Tx-18B"/>
                         <constraint firstAttribute="height" constant="49" id="yxp-YZ-3b5"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="13"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" scrollEnabled="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4yG-g5-9if">
-                    <rect key="frame" x="8" y="253" width="237" height="50"/>
+                    <rect key="frame" x="8" y="253" width="501" height="50"/>
                     <color key="backgroundColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="237" id="3f3-b4-UlW"/>
                         <constraint firstAttribute="height" constant="50" id="7ED-vh-DYw"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="13"/>
@@ -53,28 +51,28 @@
                         <constraint firstAttribute="height" constant="43" id="KhW-g0-abL"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="20"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QZS-Ow-TBY">
-                    <rect key="frame" x="8" y="83" width="228" height="63"/>
-                    <color key="backgroundColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="228" id="Voc-aH-1H7"/>
-                        <constraint firstAttribute="height" constant="63" id="y63-CE-oBH"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="13"/>
-                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                </textView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cup" translatesAutoresizingMaskIntoConstraints="NO" id="8sy-SC-A1L">
                     <rect key="frame" x="8" y="154" width="68" height="89"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="68" id="k1b-qt-Cjf"/>
                     </constraints>
                 </imageView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QZS-Ow-TBY">
+                    <rect key="frame" x="8" y="83" width="521" height="63"/>
+                    <color key="backgroundColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="63" id="y63-CE-oBH"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="13"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="Hbq-pF-iQl" firstAttribute="leading" secondItem="8sy-SC-A1L" secondAttribute="trailing" constant="10" id="0Nk-Yp-EEA"/>
                 <constraint firstItem="Lig-E6-7SP" firstAttribute="trailing" secondItem="Hbq-pF-iQl" secondAttribute="trailing" id="1T4-nk-Ljr"/>
                 <constraint firstItem="Lig-E6-7SP" firstAttribute="top" secondItem="4yG-g5-9if" secondAttribute="top" constant="-25" id="5og-1f-sPp"/>
                 <constraint firstAttribute="trailing" secondItem="7Kf-bG-rHp" secondAttribute="trailing" constant="8" id="7LF-vQ-Opi"/>
@@ -86,13 +84,15 @@
                 <constraint firstItem="Exh-hs-C8S" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="FL2-I4-EXn"/>
                 <constraint firstItem="QZS-Ow-TBY" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" id="LbP-zS-6kM"/>
                 <constraint firstAttribute="bottom" secondItem="Exh-hs-C8S" secondAttribute="bottom" id="Mru-PM-5Ru"/>
+                <constraint firstItem="7Kf-bG-rHp" firstAttribute="leading" secondItem="QZS-Ow-TBY" secondAttribute="trailing" constant="10" id="SgQ-7F-K9Z"/>
                 <constraint firstItem="4yG-g5-9if" firstAttribute="top" secondItem="QZS-Ow-TBY" secondAttribute="bottom" constant="107" id="W8U-MG-lJ8"/>
                 <constraint firstItem="Exh-hs-C8S" firstAttribute="top" secondItem="4yG-g5-9if" secondAttribute="bottom" constant="1" id="c2r-jc-JY8"/>
                 <constraint firstItem="Hbq-pF-iQl" firstAttribute="top" secondItem="7Kf-bG-rHp" secondAttribute="bottom" constant="20" id="dfk-wI-90H"/>
-                <constraint firstItem="Exh-hs-C8S" firstAttribute="leading" secondItem="4yG-g5-9if" secondAttribute="trailing" constant="-245" id="iqc-fy-r1z"/>
+                <constraint firstItem="Lig-E6-7SP" firstAttribute="leading" secondItem="4yG-g5-9if" secondAttribute="trailing" constant="10" id="gFI-yJ-51T"/>
                 <constraint firstItem="Hbq-pF-iQl" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailingMargin" id="mWp-Oa-4WF"/>
                 <constraint firstItem="8sy-SC-A1L" firstAttribute="top" secondItem="QZS-Ow-TBY" secondAttribute="bottom" constant="8" symbolic="YES" id="ogd-1r-tP7"/>
                 <constraint firstItem="7Kf-bG-rHp" firstAttribute="centerY" secondItem="QZS-Ow-TBY" secondAttribute="centerY" id="ok5-xp-oOd"/>
+                <constraint firstAttribute="trailing" secondItem="Lig-E6-7SP" secondAttribute="trailing" constant="8" id="oxh-Fo-R25"/>
                 <constraint firstItem="QZS-Ow-TBY" firstAttribute="top" secondItem="fx4-4F-qZO" secondAttribute="bottom" constant="32" id="q7S-kH-jbu"/>
                 <constraint firstItem="4yG-g5-9if" firstAttribute="top" secondItem="8sy-SC-A1L" secondAttribute="bottom" constant="10" id="vYu-gw-N91"/>
                 <constraint firstItem="fx4-4F-qZO" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="z6A-cu-2ir"/>
