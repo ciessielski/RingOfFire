@@ -23,7 +23,7 @@ class TutorialView2: UIView
         self.titleLabel.text = NSLocalizedString("How to play:", comment: "tutorialTitle2")
         self.titleLabel.backgroundColor = UIColor.clearColor()
         
-        self.textView1.attributedText = NSAttributedString(string: NSLocalizedString("Swipe the screen tight or left to draw the card.", comment: "tutorialView2text1"), attributes: attrs)
+        self.textView1.attributedText = NSAttributedString(string: NSLocalizedString("Swipe the screen right or left to draw the card.", comment: "tutorialView2text1"), attributes: attrs)
         self.textView1.textAlignment = NSTextAlignment.Right;
         self.textView1.backgroundColor = UIColor.clearColor()
         
