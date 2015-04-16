@@ -18,24 +18,24 @@
 //tutorial1
 "Things you'll need:" = "Things you'll need:";
 "A phone with the Ring of Fire app installed and ready to play." = "A phone with the Ring of Fire app installed and ready to play.";
-"An empty cup or bowl to put in the middle of the table." = "An empty cup or bowl to put in the middle of the table.";
-"A group of friends who are willing to have the best night ever!" = "A group of friends who are willing to have the best night ever!";
+"A big empty cup or bowl to put in the middle of the table." = "A big empty cup or bowl to put in the middle of the table.";
+"A group of friends willing to have the best night ever!" = "A group of friends willing to have the best night ever!";
 
 //tutorial2
 "How to play:" = "How to play:";
-"Swipe the screen tight or left to draw the card." = "Swipe the screen right or left to draw the card.";
-"Tap the screen to see descriptions of the card." = "Tap the screen to see descriptions of the card.";
+"Swipe the screen right or left to draw a card." = "Swipe the screen right or left to draw a card.";
+"Tap the screen to see instructions for the card." = "Tap the screen to see instructions for the card.";
 "Swipe to the top and pass the phone to the next person." = "Swipe to the top and pass the phone to the next person.";
 
 //tutorial3
 "NOTES:" = "NOTES:";
-"This game doas not encourage alcohol consumption. Please be careful upon playing to ensure the safety of you or anyone else. Don't peer pressure anyone into drinking or doing anything extremaly inappropriate against their own will. Respect and fun are fundamental principles of the game." = "This game doas not encourage alcohol consumption. Please be careful upon playing to ensure the safety of you or anyone else. Don't peer pressure anyone into drinking or doing anything extremaly inappropriate against their own will. Respect and fun are fundamental principles of the game.";
+"This game does not encourage excess alcohol consumption. Please be careful while playing and don't pressure anyone into drinking against their own will. Respect and fun are fundamental principles of the game." = "This game does not encourage excess alcohol consumption. Please be careful while playing and don't pressure anyone into drinking against their own will. Respect and fun are fundamental principles of the game.";
 
 //castle
-"You can make up any rule that everyone has to follow, for example players can only drink with their right hand or players cannot use word “drink”. Everyone (including you) must follow this rule for the whole entire game and if you disobey you must drink." = "You can make up any rule that everyone has to follow, for example players can only drink with their right hand or players cannot use word “drink”. Everyone (including you) must follow this rule for the whole entire game and if you disobey you must drink.";
+"Make a new rule. For example: players can only drink with their right hand, or players cannot use the word “drink”. Everyone (including you) must follow this rule for the entire game and should anyone fail - they drink." = "Make a new rule. For example: players can only drink with their right hand, or players cannot use the word “drink”. Everyone (including you) must follow this rule for the entire game and should anyone fail - they drink.";
 
 //categories
-"Pick a category (such as Countries) and you go in a circle and everyone has to say a word that matches the chosen category such as: Lithuania, England, Egypt and so on." = "Pick a category (such as Countries) and you go in a circle and everyone has to say a word that matches the chosen category such as: Lithuania, England, Egypt and so on.";
+"Pick a category (such as Countries). Then you go in a circle and everyone has to say a word that matches the chosen category - such as Lithuania, England, Egypt and so on." = "Pick a category (such as Countries). Then you go in a circle and everyone has to say a word that matches the chosen category - such as Lithuania, England, Egypt and so on.";
 
 //chics
 "All girls drink." = "All girls drink.";
@@ -44,38 +44,38 @@
 "You must drink." = "You must drink.";
 
 //choose
-"You can choose someone to drink." = "You can choose someone to drink.";
+"You have to choose someone to drink." = "You have to choose someone to drink.";
 
 //dicks
 "All guys drink." = "All guys drink.";
 
 //mate
-"Choose someone to drink with you. Whenever you are forced to drink, the chosen person needs to do the same." = "Choose someone to drink with you. Whenever you are forced to drink, the chosen person needs to do the same.";
+"Choose someone to drink with you. From now, whenever you drink, they drink too - and vice versa." = "Choose someone to drink with you. From now, whenever you drink, they drink too - and vice versa.";
 
 //heaven
-"The player who draws this card can point their finger at the sky at any point during the game. When this happens, all other players must race to point their finger to the sky and whoever is last must drink." = "The player who draws this card can point their finger at the sky at any point during the game. When this happens, all other players must race to point their finger to the sky and whoever is last must drink.";
+"The player who draws this card can point their finger at the sky at any time during the game. When this happens, all other players must race to point their finger to the sky - whoever is last, drinks." = "The player who draws this card can point their finger at the sky at any time during the game. When this happens, all other players must race to point their finger to the sky - whoever is last, drinks.";
 
 //fis
-"Starting with the player who draws, players take it in turns to count up from a chosen number. Any number with 5 in it or that is a multiple of 5 is replaced with the word ‘FIS’. Any number with 7 in it or that is a multiple of 7 is replaced with the word ‚BAS’. Not to make it too easy, every time the word „BAS” is used, the direction of the play switches." = "Starting with the player who draws, players take it in turns to count up from a chosen number. Any number with 5 in it or that is a multiple of 5 is replaced with the word ‘FIS’. Any number with 7 in it or that is a multiple of 7 is replaced with the word ‚BAS’. Not to make it too easy, every time the word „BAS” is used, the direction of the play switches.";
+"Pick a number and direction. One after another, players count up from the chosen number. Any number that is a multiple of 5 has to be replaced with the word ‘FIS’. Any number with a 7 in it or that is a multiple of 7 has to be replaced with the word ‚BAS’. Just so it's not too easy, every time the word „BAS” is used, the direction of the play changes." = "Pick a number and direction. One after another, players count up from the chosen number. Any number that is a multiple of 5 has to be replaced with the word ‘FIS’. Any number with a 7 in it or that is a multiple of 7 has to be replaced with the word ‚BAS’. Just so it's not too easy, every time the word „BAS” is used, the direction of the play changes.";
 
 //story
-"Starting from the person who picked up this card, everyone adds a word to a story repeating what has been said earlier." = "Starting from the person who picked up this card, everyone adds a word to a story repeating what has been said earlier.";
+"Begin a story by saying a word. Every player has to repeat everything that's been said earlier and add a word from themselves" = "Begin a story by saying a word. Every player has to repeat everything that's been said earlier and add a word from themselves";
 
 //snake
-"After picking this card, whoever looks into your eyes must drink. This lasts until the next Snake Eyes card is drawn by a different player." = "After picking this card, whoever looks into your eyes must drink. This lasts until the next Snake Eyes card is drawn by a different player.";
+"From the moment you draw this card, whoever looks into your eyes must drink. This lasts until the next Snake Eyes card is drawn by a different player." = "From the moment you draw this card, whoever looks into your eyes must drink. This lasts until the next Snake Eyes card is drawn by a different player.";
 
 //king
-"You must pour a little of your drink into the cup that stands in the middle of the table. Whoever picks up the FORTH card must drink the whole cup, which could be filled with different drinks, so who knows how bad it could taste!" = "You must pour a little of your drink into the cup that stands in the middle of the table. Whoever picks up the FORTH card must drink the whole cup, which could be filled with different drinks, so who knows how bad it could taste!";
+"Everyone pours a little of their drink into the cup that stands in the middle of the table. Whoever picks up the FOURTH card must drink the whole cup, now filled with everyone's booze and best wishes!" = "Everyone pours a little of their drink into the cup that stands in the middle of the table. Whoever picks up the FOURTH card must drink the whole cup, now filled with everyone's booze and best wishes!";
 
 //4th king
-"Uups.. You know what to do. Don't forget about your mates." = "Uups.. You know what to do. Don't forget about your mates.";
+"Oops.. You know what to do. Don't forget about your mates." = "Oops.. You know what to do. Don't forget about your mates.";
 
 //rhyme
-"You say a word (or a sentence), and the person to your left has to say a word that rhymes with it. This continues around the table until someone can't think of a word and they must drink. The same word cannot be used twice." = "You say a word (or a sentence), and the person to your left has to say a word that rhymes with it. This continues around the table until someone can't think of a word and they must drink. The same word cannot be used twice.";
+"You say a word (or a sentence) and the person on your left has to say something that rhymes with it. This continues around the table until someone can't think of a rhyme - they have to drink. Same words cannot be used twice." = "You say a word (or a sentence) and the person on your left has to say something that rhymes with it. This continues around the table until someone can't think of a rhyme - they have to drink. Same words cannot be used twice.";
 
 //tale
-"Each player takes it in turns to say one word from the sentence: „The Frog Jumped in the Pond!” Once the sentence has been completed, the play continues around the circle in the same manner, except that each word of the sentence must be said twice, with each person still only saying one word. The game is then continued by repeating each word of the sentence thrice. Alternatively, you may wish to use your own sentence." = "Each player takes it in turns to say one word from the sentence: „The Frog Jumped in the Pond!” Once the sentence has been completed, the play continues around the circle in the same manner, except that each word of the sentence must be said twice, with each person still only saying one word. The game is then continued by repeating each word of the sentence thrice. Alternatively, you may wish to use your own sentence.";
+"You say a sentence. In turns, every player has to say one word from that sentence. Once you reach the end of the sentence, the play continues around the circle in the same manner, only now each word of the sentence must be repeated twice (once you reach the end, three times, then four times etc.). Whoever messes it up - drinks!" = "You say a sentence. In turns, every player has to say one word from that sentence. Once you reach the end of the sentence, the play continues around the circle in the same manner, only now each word of the sentence must be repeated twice (once you reach the end, three times, then four times etc.). Whoever messes it up - drinks!";
 
 //smoke
-"This card allows you to make break. Roll a doubie and chill out with the homies ;>" = "This card allows you to make break. Roll a doubie and chill out with the homies ;>";
+"This card allows you to take a break. Roll a doubie and chill out with the homies ;>" = "This card allows you to take a break. Roll a doubie and chill out with the homies ;>";
 

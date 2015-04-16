@@ -27,11 +27,11 @@ class TutorialView1: UIView
         self.textView1.textAlignment = NSTextAlignment.Left;
         self.textView1.backgroundColor = UIColor.clearColor()
         
-        self.textView2.attributedText = NSAttributedString(string: NSLocalizedString("An empty cup or bowl to put in the middle of the table.", comment: "tutorialView1text2"), attributes: attrs)
+        self.textView2.attributedText = NSAttributedString(string: NSLocalizedString("A big empty cup or bowl to put in the middle of the table.", comment: "tutorialView1text2"), attributes: attrs)
         self.textView2.textAlignment = NSTextAlignment.Right;
         self.textView2.backgroundColor = UIColor.clearColor()
         
-        self.textView3.attributedText = NSAttributedString(string: NSLocalizedString("A group of friends who are willing to have the best night ever!", comment: "tutorialView1text3"), attributes: attrs)
+        self.textView3.attributedText = NSAttributedString(string: NSLocalizedString("A group of friends willing to have the best night ever!", comment: "tutorialView1text3"), attributes: attrs)
         self.textView3.textAlignment = NSTextAlignment.Left;
         self.textView3.backgroundColor = UIColor.clearColor()
     }
