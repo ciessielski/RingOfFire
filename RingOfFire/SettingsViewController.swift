@@ -10,6 +10,11 @@ import UIKit
 
 class SettingsViewController: UIViewController
 {
+    @IBOutlet weak var restartButton: UIButton!
+    @IBOutlet weak var continueButton: UIButton!
+    @IBOutlet weak var shopButton: UIButton!
+    
+    
     @IBAction func continueAction(sender: AnyObject)
     {
         performSegueWithIdentifier("backToGame", sender: self)
@@ -52,6 +57,11 @@ class SettingsViewController: UIViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        restartButton.setImage(UIImage(named: "restartPressed"), forState: UIControlState.Highlighted)
+        continueButton.setImage(UIImage(named: "continuePressed"), forState: UIControlState.Highlighted)
+        shopButton.setImage(UIImage(named: "shopPressed"), forState: UIControlState.Highlighted)
+
+        
     }
     
     override func didReceiveMemoryWarning()

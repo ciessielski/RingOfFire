@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="m1W-BJ-Rai">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="m1W-BJ-Rai">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -400,14 +400,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="redraw" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZi-GE-odp" userLabel="RestartButton">
+                            <button opaque="NO" contentMode="redraw" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZi-GE-odp" userLabel="ShopButton">
                                 <rect key="frame" x="16" y="20" width="568" height="142"/>
                                 <state key="normal" image="shop"/>
                                 <connections>
                                     <action selector="goToStoreButton:" destination="Pkl-37-KhO" eventType="touchUpInside" id="sIp-xl-RH1"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="redraw" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vi6-K1-Hbv" userLabel="ShopButton">
+                            <button opaque="NO" contentMode="redraw" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vi6-K1-Hbv" userLabel="RestartButton">
                                 <rect key="frame" x="16" y="220" width="568" height="160"/>
                                 <state key="normal" image="restart">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -441,6 +441,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="continueButton" destination="Gzn-z5-RjO" id="Ds3-nu-qsV"/>
+                        <outlet property="restartButton" destination="Vi6-K1-Hbv" id="Nov-Vc-Yrb"/>
+                        <outlet property="shopButton" destination="kZi-GE-odp" id="r0m-9G-ELU"/>
                         <segue destination="m1W-BJ-Rai" kind="custom" identifier="backToGame" customClass="FromTopVerticalSegue" id="wP8-l2-ifS"/>
                     </connections>
                 </viewController>
