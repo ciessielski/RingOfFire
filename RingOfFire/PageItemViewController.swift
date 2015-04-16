@@ -53,7 +53,7 @@ class PageItemController: UIViewController
                     }
                 }
                 
-                buffor.animationImages = images
+                buffor.animationImages = images as [AnyObject]
                 buffor.startAnimating()
             }
 

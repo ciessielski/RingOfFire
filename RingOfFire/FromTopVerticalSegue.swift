@@ -15,8 +15,8 @@ class FromTopVerticalSegue: UIStoryboardSegue
 {
     override func perform()
     {
-        var sourceViewController = self.sourceViewController as UIViewController
-        var destinationViewController = self.destinationViewController as UIViewController
+        var sourceViewController = self.sourceViewController as! UIViewController
+        var destinationViewController = self.destinationViewController as! UIViewController
         var duplicatedSourceView: UIView = sourceViewController.view.snapshotViewAfterScreenUpdates(false)
             destinationViewController.view.addSubview(duplicatedSourceView)
         

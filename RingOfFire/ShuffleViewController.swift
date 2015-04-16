@@ -27,7 +27,7 @@ class ShuffleViewController: UIViewController
             images.addObject(image!)
         }
         
-        shuffleImageView.animationImages = images
+        shuffleImageView.animationImages = images as [AnyObject]
         shuffleImageView.animationDuration = 1.9
         shuffleImageView.startAnimating()
 
@@ -52,7 +52,7 @@ class ShuffleViewController: UIViewController
     
     func performSegue()
     {
-        let vc : UIViewController = self.storyboard?.instantiateViewControllerWithIdentifier("CardViewController") as CardViewController;
+        let vc : UIViewController = self.storyboard?.instantiateViewControllerWithIdentifier("CardViewController") as! CardViewController;
         self.presentViewController(vc, animated: false, completion: nil)
         
     }

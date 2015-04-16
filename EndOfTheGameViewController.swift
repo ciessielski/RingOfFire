@@ -37,7 +37,7 @@ class EndOfTheGameViewController: UIViewController
             }
         }
         
-        endAnimationView.animationImages = images
+        endAnimationView.animationImages = images as [AnyObject]
         endAnimationView.animationDuration = 1.8
         endAnimationView.startAnimating()
     }
