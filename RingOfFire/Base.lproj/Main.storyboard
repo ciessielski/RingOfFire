@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -117,6 +118,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="←  swipe to shuffle  →" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r1w-kO-UJk">
                                 <rect key="frame" x="150" y="500" width="300" height="21"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="cNT-FW-AV4"/>
                                     <constraint firstAttribute="height" constant="21" id="qKH-88-azo"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -125,19 +127,34 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GCi-o4-mRt">
                                 <rect key="frame" x="150" y="500" width="300" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="oih-od-2LO"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" image="bucket" translatesAutoresizingMaskIntoConstraints="NO" id="cOi-22-dcw">
-                                <rect key="frame" x="150" y="45" width="300" height="428"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NhD-19-xI5" userLabel="bucketScrollView">
+                                <rect key="frame" x="0.0" y="65" width="600" height="406"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" image="bucket" translatesAutoresizingMaskIntoConstraints="NO" id="cOi-22-dcw">
+                                        <rect key="frame" x="-250" y="-11" width="1100" height="392"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="cOi-22-dcw" secondAttribute="height" multiplier="300:107" id="EYT-i5-SV8"/>
+                                            <constraint firstAttribute="width" constant="1100" id="vdV-cQ-jP4"/>
+                                        </constraints>
+                                        <variation key="heightClass=regular" fixedFrame="YES">
+                                            <rect key="frame" x="150" y="175" width="300" height="450"/>
+                                        </variation>
+                                    </imageView>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="poK-yg-Vwq"/>
+                                    <constraint firstAttribute="bottom" secondItem="cOi-22-dcw" secondAttribute="bottom" constant="-11" id="8L8-LC-1ES"/>
+                                    <constraint firstItem="cOi-22-dcw" firstAttribute="top" secondItem="NhD-19-xI5" secondAttribute="top" constant="-11" id="ZoD-Ja-cGz"/>
+                                    <constraint firstAttribute="trailing" secondItem="cOi-22-dcw" secondAttribute="trailing" constant="-250" id="a90-fu-W1F"/>
+                                    <constraint firstItem="cOi-22-dcw" firstAttribute="leading" secondItem="NhD-19-xI5" secondAttribute="leading" constant="-250" id="pSR-qa-uzf"/>
                                 </constraints>
-                                <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="150" y="175" width="300" height="450"/>
-                                </variation>
-                            </imageView>
+                            </scrollView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swipeToShuffle" translatesAutoresizingMaskIntoConstraints="NO" id="tFl-c8-pXl">
                                 <rect key="frame" x="176" y="478" width="249" height="66"/>
                             </imageView>
@@ -154,7 +171,6 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="cOi-22-dcw" firstAttribute="centerX" secondItem="JM7-UK-vi3" secondAttribute="centerX" id="1Uc-TH-kS1"/>
                             <constraint firstItem="r1w-kO-UJk" firstAttribute="bottom" secondItem="GCi-o4-mRt" secondAttribute="bottom" id="53c-he-oqW"/>
                             <constraint firstItem="z8H-0o-zSq" firstAttribute="top" secondItem="tFl-c8-pXl" secondAttribute="bottom" constant="56" id="7kp-PW-SX9"/>
                             <constraint firstAttribute="centerX" secondItem="tFl-c8-pXl" secondAttribute="centerX" id="8GK-p6-Sck"/>
@@ -162,20 +178,22 @@
                             <constraint firstItem="L2a-mt-Ngm" firstAttribute="top" secondItem="a6Q-GF-GJ5" secondAttribute="top" id="98K-Cv-YV5"/>
                             <constraint firstAttribute="trailingMargin" secondItem="RnQ-6I-OQ4" secondAttribute="trailing" id="9ER-2Z-y43"/>
                             <constraint firstAttribute="trailingMargin" secondItem="RnQ-6I-OQ4" secondAttribute="trailing" constant="-7" id="9Lz-hh-3mB"/>
+                            <constraint firstItem="NhD-19-xI5" firstAttribute="top" secondItem="3ya-M3-3DX" secondAttribute="bottom" constant="65" id="HD6-DI-RCl"/>
                             <constraint firstItem="z8H-0o-zSq" firstAttribute="top" secondItem="GCi-o4-mRt" secondAttribute="bottom" constant="79" id="NZe-lA-RaB"/>
                             <constraint firstItem="z8H-0o-zSq" firstAttribute="top" secondItem="a6Q-GF-GJ5" secondAttribute="bottom" constant="8" symbolic="YES" id="Qgo-BA-Fs7"/>
                             <constraint firstItem="RnQ-6I-OQ4" firstAttribute="top" secondItem="3ya-M3-3DX" secondAttribute="bottom" constant="8" symbolic="YES" id="UsN-yO-VFS"/>
-                            <constraint firstItem="r1w-kO-UJk" firstAttribute="leading" secondItem="cOi-22-dcw" secondAttribute="leading" id="XT6-qw-WYZ"/>
+                            <constraint firstAttribute="trailing" secondItem="NhD-19-xI5" secondAttribute="trailing" id="YmS-sz-Gvm"/>
                             <constraint firstItem="L2a-mt-Ngm" firstAttribute="trailing" secondItem="RnQ-6I-OQ4" secondAttribute="trailing" constant="7" id="a4R-1s-MkO"/>
                             <constraint firstItem="RnQ-6I-OQ4" firstAttribute="trailing" secondItem="JM7-UK-vi3" secondAttribute="trailingMargin" constant="7" id="aZw-Ga-sBQ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="RnQ-6I-OQ4" secondAttribute="trailing" constant="8" id="azc-3m-ON5"/>
+                            <constraint firstAttribute="centerX" secondItem="NhD-19-xI5" secondAttribute="centerX" id="ct7-NR-ZC5"/>
                             <constraint firstItem="a6Q-GF-GJ5" firstAttribute="leading" secondItem="JM7-UK-vi3" secondAttribute="leadingMargin" constant="-7" id="dNC-II-qxJ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="RnQ-6I-OQ4" secondAttribute="trailing" constant="-7" id="di7-xV-f5Z"/>
-                            <constraint firstItem="GCi-o4-mRt" firstAttribute="trailing" secondItem="cOi-22-dcw" secondAttribute="trailing" id="mMr-JY-6Ve"/>
-                            <constraint firstItem="r1w-kO-UJk" firstAttribute="top" secondItem="cOi-22-dcw" secondAttribute="bottom" constant="27" id="rQs-ni-vhn"/>
+                            <constraint firstAttribute="centerX" secondItem="GCi-o4-mRt" secondAttribute="centerX" id="mES-x2-M4e"/>
+                            <constraint firstItem="tFl-c8-pXl" firstAttribute="top" secondItem="NhD-19-xI5" secondAttribute="bottom" constant="7" id="sra-vU-ml9"/>
                             <constraint firstItem="GCi-o4-mRt" firstAttribute="leading" secondItem="r1w-kO-UJk" secondAttribute="leading" id="wyN-HE-bxJ"/>
+                            <constraint firstItem="NhD-19-xI5" firstAttribute="leading" secondItem="JM7-UK-vi3" secondAttribute="leading" id="xN2-of-hnN"/>
                             <constraint firstItem="r1w-kO-UJk" firstAttribute="trailing" secondItem="GCi-o4-mRt" secondAttribute="trailing" id="yFj-R7-zcU"/>
-                            <constraint firstItem="cOi-22-dcw" firstAttribute="top" secondItem="JM7-UK-vi3" secondAttribute="top" constant="45" id="yM5-lS-Z5J"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -186,8 +204,6 @@
                             </mask>
                         </variation>
                         <connections>
-                            <outletCollection property="gestureRecognizers" destination="06e-bO-Lar" appends="YES" id="O3W-xZ-dqI"/>
-                            <outletCollection property="gestureRecognizers" destination="vJd-Jw-eZg" appends="YES" id="cKl-2v-eBR"/>
                             <outletCollection property="gestureRecognizers" destination="UKN-i3-sNH" appends="YES" id="BP3-TD-V77"/>
                         </connections>
                     </view>
@@ -202,16 +218,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Gy-OO-rXk" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="06e-bO-Lar" userLabel="Swipe Right Gesture Recognizer">
-                    <connections>
-                        <segue destination="e15-nk-I4h" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="Jwq-cr-fhB"/>
-                    </connections>
-                </swipeGestureRecognizer>
-                <swipeGestureRecognizer direction="left" id="vJd-Jw-eZg" userLabel="Swipe Left Gesture Recognizer">
-                    <connections>
-                        <segue destination="e15-nk-I4h" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="fZB-2o-AoI"/>
-                    </connections>
-                </swipeGestureRecognizer>
                 <swipeGestureRecognizer direction="down" id="UKN-i3-sNH" userLabel="Swipe Down Gesture Recognizer">
                     <connections>
                         <segue destination="vXZ-lx-hvc" kind="custom" identifier="showMeLastCard" customClass="FromTopVerticalSegue" id="OG2-7B-Wpg"/>
@@ -622,6 +628,5 @@
         <segue reference="OG2-7B-Wpg"/>
         <segue reference="yxi-qg-uPl"/>
         <segue reference="KcM-EB-eAo"/>
-        <segue reference="Jwq-cr-fhB"/>
     </inferredMetricsTieBreakers>
 </document>
