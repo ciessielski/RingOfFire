@@ -89,6 +89,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hcL-ge-scd">
+                                <rect key="frame" x="180" y="45" width="240" height="128"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L2a-mt-Ngm" userLabel="Settings">
                                 <rect key="frame" x="561" y="562" width="30" height="30"/>
                                 <constraints>
@@ -191,6 +194,7 @@
                     <nil key="simulatedStatusBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
+                        <outlet property="animationBuffor" destination="hcL-ge-scd" id="Har-Y9-AAr"/>
                         <outlet property="numberOfCardsLabel" destination="RnQ-6I-OQ4" id="zdp-F0-fzt"/>
                         <outlet property="swipeDownGesture" destination="UKN-i3-sNH" id="rGe-5m-CU5"/>
                         <outlet property="swipeToShuffle" destination="tFl-c8-pXl" id="Blh-pZ-4m7"/>
