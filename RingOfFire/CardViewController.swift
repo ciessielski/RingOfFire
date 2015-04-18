@@ -40,10 +40,15 @@ class CardViewController: UIViewController
     
     func nextCard()
     {
-        if game.deck.count < 49
+        if (game.deck.count < 49 && game.deck.count > 1)
         {
             game.willPickNewCard = true
             performSegueWithIdentifier("cardToShuffle", sender: self)
+        }
+        
+        if (game.deck.count == 1)
+        {
+            performSegueWithIdentifier("cardToEnd", sender: self)
         }
     }
     
