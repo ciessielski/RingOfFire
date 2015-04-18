@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="m1W-BJ-Rai">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="m1W-BJ-Rai">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
@@ -441,6 +441,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="continueButton" destination="Gzn-z5-RjO" id="AIa-JQ-RUM"/>
+                        <outlet property="restartButton" destination="Vi6-K1-Hbv" id="nWi-ly-dcM"/>
+                        <outlet property="shopButton" destination="kZi-GE-odp" id="ieF-mJ-LIB"/>
                         <segue destination="m1W-BJ-Rai" kind="custom" identifier="backToGame" customClass="FromTopVerticalSegue" id="wP8-l2-ifS"/>
                     </connections>
                 </viewController>
@@ -619,9 +622,9 @@
         <image name="swipeToShuffle" width="249" height="66"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="OG2-7B-Wpg"/>
-        <segue reference="yxi-qg-uPl"/>
-        <segue reference="KcM-EB-eAo"/>
         <segue reference="Jwq-cr-fhB"/>
+        <segue reference="wP8-l2-ifS"/>
+        <segue reference="OG2-7B-Wpg"/>
+        <segue reference="KcM-EB-eAo"/>
     </inferredMetricsTieBreakers>
 </document>
